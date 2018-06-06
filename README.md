@@ -8,18 +8,21 @@ This repository will include both the c++/qt code and the Verilog code.
 
 ### Contents
 
-This sub-directory contains the Qt project code (C++) that is under re-construction. 
+This sub-directory contains the Qt project code (C++) that we are modifying both for the Intan Stimulation/Recording System Software (RHS2000) and RHD2000 Evaluation System Software.
 
 ### Goal
 
-We are currently de-constructing [mainwindow.cpp](../Max/GUI/mainwindow.cpp),
-in order to make it scalable/extensible. 
+We are currently in the process of adding features like:
+
+1. a new spike scope window to visualize a new spike detection method (similar to the one detailed in [Azin, Guggenmos et. al. (2011)](https://ieeexplore.ieee.org/document/5723023/ "A Battery-Powered Activity-Dependent Intracortical Microstimulation IC for Brain-Machine-Brain Interface");
+2. a new tab for event detection (e.g. spike count, rasterplots, PSTH);
+3. an option to detect Local Field Potentials (LFPs);
+4. the possibility to replay the amplifier activity instead of the generation of synthetic neural data for demonstration purposes if no Controller or Evaluation board is connected.
 
 
 ### Status
 
-Mostly, this will consist of creating easily resizable arrays/objects that will replace odd
-variable naming conventions. We are currently in the most preliminary planning stages.
+We are currently in the most preliminary planning stages.
 
 ### Significance
 
@@ -28,12 +31,12 @@ a greater number of data streams, and with different combinations of online func
 
 ## Hardware Configuration Development
 
-[Hardware](../Max/Hardware)
+[Hardware](Hardware)
 
 ### Contents
 
 This sub-directory contains the Verilog hardware code that is under re-construction.
-We are currently breaking down the various combinations of state machines in [main.v](../Max/Hardware/main.v).
+We are currently breaking down the various combinations of state machines in [main.v](../master/Hardware/main.v).
 
 ### Goal
 
