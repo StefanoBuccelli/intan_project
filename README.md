@@ -23,7 +23,11 @@ We are currently in the process of adding features like:
 ### Status
 
 We are currently in the most preliminary planning stages.
+
+
 ![alt text](doc/Images/filter_tab.PNG)
+
+
 ![alt text](doc/Images/window_discriminator_tab.PNG)
 
 ### Significance
