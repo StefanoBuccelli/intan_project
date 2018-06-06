@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Thu Jan 25 07:42:57 2018
+# Process ID: 6016
+# Current directory: C:/Users/Max Murphy/Desktop/Preliminary intan/2018-01-16_RHD2000 Window Discriminator/RHD2000InterfaceXEM6010
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7260 C:\Users\Max Murphy\Desktop\Preliminary intan\2018-01-16_RHD2000 Window Discriminator\RHD2000InterfaceXEM6010\main_isim_beh.wdb
+# Log file: C:/Users/Max Murphy/Desktop/Preliminary intan/2018-01-16_RHD2000 Window Discriminator/RHD2000InterfaceXEM6010/vivado.log
+# Journal file: C:/Users/Max Murphy/Desktop/Preliminary intan/2018-01-16_RHD2000 Window Discriminator/RHD2000InterfaceXEM6010\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_wave_database {C:\Users\Max Murphy\Desktop\Preliminary intan\2018-01-16_RHD2000 Window Discriminator\RHD2000InterfaceXEM6010\main_isim_beh.wdb}

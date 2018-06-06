@@ -1,0 +1,2 @@
+verilog work "multiplier_18x18.v"
+verilog work "DAC_output_scalable_HPF.v"
