@@ -36,7 +36,7 @@ a greater number of data streams, and with different combinations of online func
 ### Contents
 
 This sub-directory contains the Verilog hardware code that is under re-construction.
-We are currently breaking down the various combinations of state machines in [main.v](../master/Hardware/main.v).
+We are currently breaking down the various combinations of state machines in [main.v](Hardware/main.v).
 
 ### Goal
 
