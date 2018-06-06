@@ -4,7 +4,7 @@ This repository will include both the c++/qt code and the Verilog code.
 
 ## User Interface Development
 
-[GUI](../Max/GUI)
+[GUI](../GUI)
 
 ### Contents
 
