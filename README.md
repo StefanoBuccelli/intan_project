@@ -8,10 +8,13 @@ This repository includes:
 
 ## Table of Contents ##
 
-[Motivation](#motivation)  
-[Goals](#goals)  
-[Examples](#examples)  
-[Significance](#significance)
+* [Motivation](#motivation)  
+* [Goals](#goals)  
+* [Examples](#examples)
+	* [Filters](#filter-updates)
+	* [Window Discriminator](#window-discriminator)
+	* [FPGA Signal Routing](#fpga-signal-routing)
+* [Significance](#significance)
 
 ### Motivation ###
 
@@ -55,18 +58,18 @@ Current goals for Verilog/Hardware modifications **(Updated June 15, 2018)**:
 
 Examples of substantial modifications
 
-#### Filter Tab Modifications ####
+#### Filter Updates ####
 ![Fig. 1: Updates to filter settings](doc/Images/filter_tab.PNG)  
 _**Figure 1:** New filter configuration tab layout and capabilities. A major addition with this combination of modified GUI and modified main.bit hardware configuration file is the ability to switch between a highpass and lowpass filter on the DAC, so that slow events (for example, amplitude of particular LFP rhythms of interest) could be used in conjunction with a state machine discriminator to trigger stimulation for neuromodulation. Previously, this was possible by changing the bandwidth settings on the amplifier; however, this would prevent the simultaneous acquisition of fullband signals, so that information of interest in high frequency bands such as multi-unit activity (approx. 300-5000 Hz) would be lost. The Hardware Event Filters at the bottom currently don't do anything since they are not connected to any output signal from the FPGA. However, the goal is that most filtering and detection functionality that is currently implemented through the DAC will be moved to these streams, which can be expanded to take advantage of unused resources on the FPGA._
 
-#### DAC Tab Modifications ####
+#### Window Discriminator ####
 ![Fig. 2: Finite State Machine (FSM) Disciminator](doc/Images/window_discriminator_tab.PNG)  
 _**Figure 2:** New DAC tab layout and capabilities. In order to add the ability to reject waveforms that cross a single amplitude threshold, but are too large in amplitude (for example, due to chewing artifact or stimulation artifact), multiple threshold levels in combination must be incorporated into a state machine that determines whether stimulation should be delivered. For convenience, preliminary development of such a "window discriminator" module was made by modifying the existing DAC tab, since data streams were already passed through a hardware highpass filter there. A similar mechanism will be implemented for the hardware event streams indicated by the bottom panel of Fig. 1._
 
 ![Fig. 3: Spike Scope FSM Discriminator](doc/Images/window_discriminator_SpikeWindow.PNG)  
 _**Figure 3:** New Spike Scope. By enabling the Window Disciminator checkbox in the main interface, the Spike Scope changes to allow online setting of window levels and onset/durations. In this example, spikes are greyed because they have passed the initial state conditions of the first blue and red line, but fail to meet the amplitude levels required by the third and fourth criteria. Blue indicates an inclusion criterion, which means that the monopolar threshold set by that level must be high for the duration of the level. Similarly, red is an exclusion criterion, indicating that the monopolar threshold set by that level must remain low for the duration of the level. Waveforms that pass through all specified levels and durations trigger a high impulse for a single sample on Digital Input 13, which can be used to trigger stimulation._
 
-#### Verilog Modifications ####
+#### FPGA Signal Routing ####
 
 ![Fig. 4: ADS using Intan with no modifications](doc/Images/basic_config_fpga.PNG)  
 _**Figure 4:** Activity Dependent Stimulation (ADS) using the Intan Stimulation Controller with no modifications to FPGA hardware or software. A monopolar threshold is set on a single DAC channel that is determined to contain adequate neural spiking activity. A BNC cable hooks the digital TTL output corresponding to thresholded output from that DAC channel to a digital TTL input. The TTL digital input channel is then set to trigger stimulation on the rising edge of the digital trigger with a fixed delay and blanking period after the stimulus delivery._
@@ -75,7 +78,7 @@ _**Figure 4:** Activity Dependent Stimulation (ADS) using the Intan Stimulation 
 _**Figure 5:** ADS using the Intan Stimulation Controller with window discriminator option added to DAC via FPGA hardware and software interface modifications. For a single channel, multiple monopolar thresholds (up to 8) are set as "inclusion" or "exclusion" criteria for a state machine, for which all conditions must be true for the duration of each monopolar threshold level (e.g. a given threshold can be set to be maintained for the first two samples after a spike of sufficient amplitude is detected). All circuits are connected internally. Because the state machine runs through the DAC, multiple channels cannot trigger stimulation independently because the state machine "complete" output is routed to apparent "Digital Input 13" (because the lab didn't purchase the digital I/O expander and therefore didn't need that input). Stimulation is triggered at a fixed latency after Digital Input 13 achieves a high state, and a fixed blanking period during which Digital Input 13 cannot trigger stimulation is imposed._
 
 ![Fig. 6: Future Intan configuration possibility](doc/Images/new_module_fpga.PNG)  
-_**Figure 6:** Intan modifications designed to implement architecture more similar to a classical engineering control system. A computational module is implemented between the SPI and FIFO buffer, which does not necessarily need to involve the DAC in any way. Possible computations could include implementing [filters](#filter-tab-modifications) or some sort of feedback control that depends on activity detected on many channels simultaneously._
+_**Figure 6:** Intan modifications designed to implement architecture more similar to a classical engineering control system. A computational module is implemented between the SPI and FIFO buffer, which does not necessarily need to involve the DAC in any way. Possible computations could include implementing [filters](#filter-updates), [state machines](#window-discriminator), or some sort of feedback control that depends on activity detected on many channels simultaneously._
 
 ### Significance ###
 
