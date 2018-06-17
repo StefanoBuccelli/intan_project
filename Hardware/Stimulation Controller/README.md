@@ -1,4 +1,4 @@
-# Stimulation Controller #
+# ![][Logo_Small] Stimulation Controller #
 
 ** Verilog code for the Intan Stimulation Controller and Intan RHS that adds an improved threshold-based state machine for event detection and additional filtering capabilities. **
 
@@ -8,6 +8,9 @@
 * [Filters](#Filters "New Filter Capabilities")  
 
 ## FSM ##
+
+![][FSM_Schematic]  
+_**Figure 1:** Updated method for detecting spikes or other events of interest in the filtered extracellular waveform, with sub-millisecond differential between event detection and downstream control events.  
 
 ### Description ###
 The finite state machine (FSM) is a level discriminator that starts as soon as a waveform from a pre-specified recording stream (channel) meets an initial criterion. Additional waveform amplitude criteria can be added, such that at subsequent samples relative to the initiation of the state machine, the waveform must stay within a pre-specified range (by using both the "include" and "exclude" level-type criteria).  
@@ -26,3 +29,20 @@ When a finer resolution is desired, for example when using tetrode (or other spa
 Event-related potentials in the LFP may have certain characteristics over a long timescale. Detection of these features (possibly in conjunction with detection of spiking activity) may be more reliable when multiple "checkpoints" are introduced.  
   
 ---  
+
+## Filters ##
+
+### Description ###
+We added separate filter stream modules that can realize both simple high-pass and simple low-pass filters.
+  
+---  
+
+### Utility ###
+
+#### LFP ####
+The Intan RhythmStim FPGA interface utilizes hardware filters on the Intan ADC chip, and in the DAC for listening to high-pass filtered spiking during experiments. By adding a separate sub-module for filter streams, and giving those streams the ability to digitally implement either simple high-pass or low-pass filters, it will be possible to use control-system methods that rely on LFP event detection while still acquiring and recording wideband signals (i.e. keeping spikes).   
+  
+---  
+ 
+[FSM_Schematic]: ../../doc/Images/window_discriminator_schematic.PNG "Fig. 1: Updated State Machine Architecture" 
+[Logo_Small]: ../../doc/Images/Logo_Small.PNG "Intan Modifications"
