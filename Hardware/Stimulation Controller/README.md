@@ -46,4 +46,4 @@ The Intan RhythmStim FPGA interface utilizes hardware filters on the Intan ADC c
 ---  
  
 [FSM_Schematic]: ../../doc/Images/window_discriminator_schematic.PNG "Fig. 1: Updated State Machine Architecture" 
-[Logo_Small]: ../../doc/Images/Logo_Small.PNG "Intan Modifications"
+[Logo_Small]: https://github.com/StefanoBuccelli/intan_project/blob/KUMC/doc/Images/Logo_Small.PNG "Intan Modifications"
