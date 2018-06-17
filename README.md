@@ -94,6 +94,6 @@ The end-goal is to make a user interface which can easily be reconfigured to wor
 
 Closed-loop neuromodulation strategies have, in recent years (as of writing this in 2018), become a widespread approach for a variety of neurorehabilitation and therapeutic strategies. It is important to not only be able to use event-detection algorithms, in near-real-time, for spiking events, but also for broader population measures such as the LFP (which is in the low-frequency component of the extracellular field data). It is not inconceivable that the combination of detected LFP events as well as detected spiking events could prove useful as a biomarker of critical periods for introducing stimulation to the system. Therefore, the improvements to the existing Intan interface architecture provided by this collaboration will hopefully be of use to others such as ourselves, who endeavor to improve the field of adaptive neuromodulation through technological advancement.
 
-[Logo_Small]: https://github.com/StefanoBuccelli/intan_project/blob/KUMC/doc/Images/Logo_Small.PNG "Intan Modifications"
+[Logo_Small]: https://github.com/StefanoBuccelli/intan_project/blob/KUMC/doc/Images/Logo_Small.png "Intan Modifications"
 
 
