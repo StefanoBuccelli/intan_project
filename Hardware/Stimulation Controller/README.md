@@ -1,4 +1,5 @@
-# ![][Logo_Small] Stimulation Controller #
+![][Logo_Small] 
+# Stimulation Controller #
 
 ** Verilog code for the Intan Stimulation Controller and Intan RHS that adds an improved threshold-based state machine for event detection and additional filtering capabilities. **
 
@@ -10,7 +11,7 @@
 ## FSM ##
 
 ![][FSM_Schematic]  
-_**Figure 1:** Updated method for detecting spikes or other events of interest in the filtered extracellular waveform, with sub-millisecond differential between event detection and downstream control events.  
+_**Figure 1:** Updated method for detecting spikes or other events of interest in the filtered extracellular waveform, with sub-millisecond differential between event detection and downstream control events._  
 
 ### Description ###
 The finite state machine (FSM) is a level discriminator that starts as soon as a waveform from a pre-specified recording stream (channel) meets an initial criterion. Additional waveform amplitude criteria can be added, such that at subsequent samples relative to the initiation of the state machine, the waveform must stay within a pre-specified range (by using both the "include" and "exclude" level-type criteria).  
