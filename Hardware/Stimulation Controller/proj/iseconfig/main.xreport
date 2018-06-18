@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-05-29T16:27:34</DateModified>
+  <DateModified>2018-06-18T08:01:21</DateModified>
   <ModuleName>main</ModuleName>
   <SummaryTimeStamp>2018-01-16T10:16:03</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/BuccelliLab/Documents/intan_stuff/Hardware/MM-FSM/2018-01-16_RHS2000 Window Discriminator/iseconfig/main.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/BuccelliLab/Documents/intan_stuff/Hardware/MM-FSM/2018-01-16_RHS2000 Window Discriminator\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/MyRepos/shared/Intan/Hardware/Stimulation Controller/proj/iseconfig/main.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/MyRepos/shared/Intan/Hardware/Stimulation Controller/proj\</ImplementationReportsDirectory>
   <DateInitialized>2012-10-13T13:30:46</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

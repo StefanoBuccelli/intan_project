@@ -1,12 +1,12 @@
-C:\Users\Max Murphy\Desktop\Preliminary intan\2018-01-16_RHS2000 Window Discriminator\RHS2000InterfaceXEM6010_release_170328\main.ngc 1517610307
-C:\Users\Max Murphy\Desktop\Preliminary intan\2018-01-16_RHS2000 Window Discriminator\RHS2000InterfaceXEM6010_release_170328/okWireIn.ngc 1299977430
-C:\Users\Max Murphy\Desktop\Preliminary intan\2018-01-16_RHS2000 Window Discriminator\RHS2000InterfaceXEM6010_release_170328/okTriggerIn.ngc 1299977440
-C:\Users\Max Murphy\Desktop\Preliminary intan\2018-01-16_RHS2000 Window Discriminator\RHS2000InterfaceXEM6010_release_170328/okWireOut.ngc 1299977434
-C:\Users\Max Murphy\Desktop\Preliminary intan\2018-01-16_RHS2000 Window Discriminator\RHS2000InterfaceXEM6010_release_170328/okPipeIn.ngc 1299977452
-C:\Users\Max Murphy\Desktop\Preliminary intan\2018-01-16_RHS2000 Window Discriminator\RHS2000InterfaceXEM6010_release_170328/okPipeOut.ngc 1299977456
-C:\Users\Max Murphy\Desktop\Preliminary intan\2018-01-16_RHS2000 Window Discriminator\RHS2000InterfaceXEM6010_release_170328/okCoreHarness.ngc 1299977418
-C:\Users\Max Murphy\Desktop\Preliminary intan\2018-01-16_RHS2000 Window Discriminator\RHS2000InterfaceXEM6010_release_170328/TFIFO64x8a_64x8b.ngc 1291743188
-C:\Users\Max Murphy\Desktop\Preliminary intan\2018-01-16_RHS2000 Window Discriminator\RHS2000InterfaceXEM6010_release_170328/fifo_w16_2048_r64_512.ngc 1298072986
-C:\Users\Max Murphy\Desktop\Preliminary intan\2018-01-16_RHS2000 Window Discriminator\RHS2000InterfaceXEM6010_release_170328/fifo_w64_512_r16_2048.ngc 1298072986
-C:\Users\Max Murphy\Desktop\Preliminary intan\2018-01-16_RHS2000 Window Discriminator\RHS2000InterfaceXEM6010_release_170328/multiplier_18x18.ngc 1386259692
+C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.ngc 1529329126
+C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj/okWireIn.ngc 1528722422
+C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj/okTriggerIn.ngc 1528722422
+C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj/okWireOut.ngc 1528722422
+C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj/okPipeIn.ngc 1528722422
+C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj/okPipeOut.ngc 1528722422
+C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj/okCoreHarness.ngc 1528722422
+C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj/TFIFO64x8a_64x8b.ngc 1528722420
+C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj/fifo_w16_2048_r64_512.ngc 1528722420
+C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj/fifo_w64_512_r16_2048.ngc 1528722420
+C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj/multiplier_18x18.ngc 1528722422
 OK

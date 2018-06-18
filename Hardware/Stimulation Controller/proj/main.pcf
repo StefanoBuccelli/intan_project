@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Feb 02 16:30:52 2018
+// Written by: Map P.20131013 on Mon Jun 18 08:43:56 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -587,41 +587,110 @@ TIMEGRP CustomClk = BEL "max_timestep_0" BEL "max_timestep_1" BEL
         "in4x_A2_122" BEL "in4x_A2_123" BEL "in4x_A2_124" BEL "in4x_A2_125"
         BEL "in4x_A2_126" BEL "in4x_A2_127" BEL "in4x_A2_128" BEL
         "in4x_A2_129" BEL "in4x_A2_130" BEL "in4x_A2_131" BEL "in4x_A2_132"
-        BEL "in4x_A2_133" BEL "in4x_B1_0" BEL "in4x_B1_1" BEL "in4x_B1_2" BEL
-        "in4x_B1_3" BEL "in4x_B1_4" BEL "in4x_B1_5" BEL "in4x_B1_6" BEL
-        "in4x_B1_7" BEL "in4x_B1_8" BEL "in4x_B1_9" BEL "in4x_B1_10" BEL
-        "in4x_B1_11" BEL "in4x_B1_12" BEL "in4x_B1_13" BEL "in4x_B1_14" BEL
-        "in4x_B1_15" BEL "in4x_B1_16" BEL "in4x_B1_17" BEL "in4x_B1_18" BEL
-        "in4x_B1_19" BEL "in4x_B1_20" BEL "in4x_B1_21" BEL "in4x_B1_22" BEL
-        "in4x_B1_23" BEL "in4x_B1_24" BEL "in4x_B1_25" BEL "in4x_B1_26" BEL
-        "in4x_B1_27" BEL "in4x_B1_28" BEL "in4x_B1_29" BEL "in4x_B1_30" BEL
-        "in4x_B1_31" BEL "in4x_B1_32" BEL "in4x_B1_33" BEL "in4x_B1_34" BEL
-        "in4x_B1_35" BEL "in4x_B1_36" BEL "in4x_B1_37" BEL "in4x_B1_38" BEL
-        "in4x_B1_39" BEL "in4x_B1_40" BEL "in4x_B1_41" BEL "in4x_B1_42" BEL
-        "in4x_B1_43" BEL "in4x_B1_44" BEL "in4x_B1_45" BEL "in4x_B1_46" BEL
-        "in4x_B1_47" BEL "in4x_B1_48" BEL "in4x_B1_49" BEL "in4x_B1_50" BEL
-        "in4x_B1_51" BEL "in4x_B1_52" BEL "in4x_B1_53" BEL "in4x_B1_54" BEL
-        "in4x_B1_55" BEL "in4x_B1_56" BEL "in4x_B1_57" BEL "in4x_B1_58" BEL
-        "in4x_B1_59" BEL "in4x_B1_60" BEL "in4x_B1_61" BEL "in4x_B1_62" BEL
-        "in4x_B1_63" BEL "in4x_B1_64" BEL "in4x_B1_65" BEL "in4x_B1_66" BEL
-        "in4x_B1_67" BEL "in4x_B1_68" BEL "in4x_B1_69" BEL "in4x_B1_70" BEL
-        "in4x_B1_71" BEL "in4x_B1_72" BEL "in4x_B1_73" BEL "in4x_B1_74" BEL
-        "in4x_B1_75" BEL "in4x_B1_76" BEL "in4x_B1_77" BEL "in4x_B1_78" BEL
-        "in4x_B1_79" BEL "in4x_B1_80" BEL "in4x_B1_81" BEL "in4x_B1_82" BEL
-        "in4x_B1_83" BEL "in4x_B1_84" BEL "in4x_B1_85" BEL "in4x_B1_86" BEL
-        "in4x_B1_87" BEL "in4x_B1_88" BEL "in4x_B1_89" BEL "in4x_B1_90" BEL
-        "in4x_B1_91" BEL "in4x_B1_92" BEL "in4x_B1_93" BEL "in4x_B1_94" BEL
-        "in4x_B1_95" BEL "in4x_B1_96" BEL "in4x_B1_97" BEL "in4x_B1_98" BEL
-        "in4x_B1_99" BEL "in4x_B1_100" BEL "in4x_B1_101" BEL "in4x_B1_102" BEL
-        "in4x_B1_103" BEL "in4x_B1_104" BEL "in4x_B1_105" BEL "in4x_B1_106"
-        BEL "in4x_B1_107" BEL "in4x_B1_108" BEL "in4x_B1_109" BEL
-        "in4x_B1_110" BEL "in4x_B1_111" BEL "in4x_B1_112" BEL "in4x_B1_113"
-        BEL "in4x_B1_114" BEL "in4x_B1_115" BEL "in4x_B1_116" BEL
-        "in4x_B1_117" BEL "in4x_B1_118" BEL "in4x_B1_119" BEL "in4x_B1_120"
-        BEL "in4x_B1_121" BEL "in4x_B1_122" BEL "in4x_B1_123" BEL
-        "in4x_B1_124" BEL "in4x_B1_125" BEL "in4x_B1_126" BEL "in4x_B1_127"
-        BEL "in4x_B1_128" BEL "in4x_B1_129" BEL "in4x_B1_130" BEL
-        "in4x_B1_131" BEL "in4x_B1_132" BEL "in4x_B1_133" BEL "in4x_C2_0" BEL
+        BEL "in4x_A2_133" BEL "in4x_C1_0" BEL "in4x_C1_1" BEL "in4x_C1_2" BEL
+        "in4x_C1_3" BEL "in4x_C1_4" BEL "in4x_C1_5" BEL "in4x_C1_6" BEL
+        "in4x_C1_7" BEL "in4x_C1_8" BEL "in4x_C1_9" BEL "in4x_C1_10" BEL
+        "in4x_C1_11" BEL "in4x_C1_12" BEL "in4x_C1_13" BEL "in4x_C1_14" BEL
+        "in4x_C1_15" BEL "in4x_C1_16" BEL "in4x_C1_17" BEL "in4x_C1_18" BEL
+        "in4x_C1_19" BEL "in4x_C1_20" BEL "in4x_C1_21" BEL "in4x_C1_22" BEL
+        "in4x_C1_23" BEL "in4x_C1_24" BEL "in4x_C1_25" BEL "in4x_C1_26" BEL
+        "in4x_C1_27" BEL "in4x_C1_28" BEL "in4x_C1_29" BEL "in4x_C1_30" BEL
+        "in4x_C1_31" BEL "in4x_C1_32" BEL "in4x_C1_33" BEL "in4x_C1_34" BEL
+        "in4x_C1_35" BEL "in4x_C1_36" BEL "in4x_C1_37" BEL "in4x_C1_38" BEL
+        "in4x_C1_39" BEL "in4x_C1_40" BEL "in4x_C1_41" BEL "in4x_C1_42" BEL
+        "in4x_C1_43" BEL "in4x_C1_44" BEL "in4x_C1_45" BEL "in4x_C1_46" BEL
+        "in4x_C1_47" BEL "in4x_C1_48" BEL "in4x_C1_49" BEL "in4x_C1_50" BEL
+        "in4x_C1_51" BEL "in4x_C1_52" BEL "in4x_C1_53" BEL "in4x_C1_54" BEL
+        "in4x_C1_55" BEL "in4x_C1_56" BEL "in4x_C1_57" BEL "in4x_C1_58" BEL
+        "in4x_C1_59" BEL "in4x_C1_60" BEL "in4x_C1_61" BEL "in4x_C1_62" BEL
+        "in4x_C1_63" BEL "in4x_C1_64" BEL "in4x_C1_65" BEL "in4x_C1_66" BEL
+        "in4x_C1_67" BEL "in4x_C1_68" BEL "in4x_C1_69" BEL "in4x_C1_70" BEL
+        "in4x_C1_71" BEL "in4x_C1_72" BEL "in4x_C1_73" BEL "in4x_C1_74" BEL
+        "in4x_C1_75" BEL "in4x_C1_76" BEL "in4x_C1_77" BEL "in4x_C1_78" BEL
+        "in4x_C1_79" BEL "in4x_C1_80" BEL "in4x_C1_81" BEL "in4x_C1_82" BEL
+        "in4x_C1_83" BEL "in4x_C1_84" BEL "in4x_C1_85" BEL "in4x_C1_86" BEL
+        "in4x_C1_87" BEL "in4x_C1_88" BEL "in4x_C1_89" BEL "in4x_C1_90" BEL
+        "in4x_C1_91" BEL "in4x_C1_92" BEL "in4x_C1_93" BEL "in4x_C1_94" BEL
+        "in4x_C1_95" BEL "in4x_C1_96" BEL "in4x_C1_97" BEL "in4x_C1_98" BEL
+        "in4x_C1_99" BEL "in4x_C1_100" BEL "in4x_C1_101" BEL "in4x_C1_102" BEL
+        "in4x_C1_103" BEL "in4x_C1_104" BEL "in4x_C1_105" BEL "in4x_C1_106"
+        BEL "in4x_C1_107" BEL "in4x_C1_108" BEL "in4x_C1_109" BEL
+        "in4x_C1_110" BEL "in4x_C1_111" BEL "in4x_C1_112" BEL "in4x_C1_113"
+        BEL "in4x_C1_114" BEL "in4x_C1_115" BEL "in4x_C1_116" BEL
+        "in4x_C1_117" BEL "in4x_C1_118" BEL "in4x_C1_119" BEL "in4x_C1_120"
+        BEL "in4x_C1_121" BEL "in4x_C1_122" BEL "in4x_C1_123" BEL
+        "in4x_C1_124" BEL "in4x_C1_125" BEL "in4x_C1_126" BEL "in4x_C1_127"
+        BEL "in4x_C1_128" BEL "in4x_C1_129" BEL "in4x_C1_130" BEL
+        "in4x_C1_131" BEL "in4x_C1_132" BEL "in4x_C1_133" BEL "in4x_B1_0" BEL
+        "in4x_B1_1" BEL "in4x_B1_2" BEL "in4x_B1_3" BEL "in4x_B1_4" BEL
+        "in4x_B1_5" BEL "in4x_B1_6" BEL "in4x_B1_7" BEL "in4x_B1_8" BEL
+        "in4x_B1_9" BEL "in4x_B1_10" BEL "in4x_B1_11" BEL "in4x_B1_12" BEL
+        "in4x_B1_13" BEL "in4x_B1_14" BEL "in4x_B1_15" BEL "in4x_B1_16" BEL
+        "in4x_B1_17" BEL "in4x_B1_18" BEL "in4x_B1_19" BEL "in4x_B1_20" BEL
+        "in4x_B1_21" BEL "in4x_B1_22" BEL "in4x_B1_23" BEL "in4x_B1_24" BEL
+        "in4x_B1_25" BEL "in4x_B1_26" BEL "in4x_B1_27" BEL "in4x_B1_28" BEL
+        "in4x_B1_29" BEL "in4x_B1_30" BEL "in4x_B1_31" BEL "in4x_B1_32" BEL
+        "in4x_B1_33" BEL "in4x_B1_34" BEL "in4x_B1_35" BEL "in4x_B1_36" BEL
+        "in4x_B1_37" BEL "in4x_B1_38" BEL "in4x_B1_39" BEL "in4x_B1_40" BEL
+        "in4x_B1_41" BEL "in4x_B1_42" BEL "in4x_B1_43" BEL "in4x_B1_44" BEL
+        "in4x_B1_45" BEL "in4x_B1_46" BEL "in4x_B1_47" BEL "in4x_B1_48" BEL
+        "in4x_B1_49" BEL "in4x_B1_50" BEL "in4x_B1_51" BEL "in4x_B1_52" BEL
+        "in4x_B1_53" BEL "in4x_B1_54" BEL "in4x_B1_55" BEL "in4x_B1_56" BEL
+        "in4x_B1_57" BEL "in4x_B1_58" BEL "in4x_B1_59" BEL "in4x_B1_60" BEL
+        "in4x_B1_61" BEL "in4x_B1_62" BEL "in4x_B1_63" BEL "in4x_B1_64" BEL
+        "in4x_B1_65" BEL "in4x_B1_66" BEL "in4x_B1_67" BEL "in4x_B1_68" BEL
+        "in4x_B1_69" BEL "in4x_B1_70" BEL "in4x_B1_71" BEL "in4x_B1_72" BEL
+        "in4x_B1_73" BEL "in4x_B1_74" BEL "in4x_B1_75" BEL "in4x_B1_76" BEL
+        "in4x_B1_77" BEL "in4x_B1_78" BEL "in4x_B1_79" BEL "in4x_B1_80" BEL
+        "in4x_B1_81" BEL "in4x_B1_82" BEL "in4x_B1_83" BEL "in4x_B1_84" BEL
+        "in4x_B1_85" BEL "in4x_B1_86" BEL "in4x_B1_87" BEL "in4x_B1_88" BEL
+        "in4x_B1_89" BEL "in4x_B1_90" BEL "in4x_B1_91" BEL "in4x_B1_92" BEL
+        "in4x_B1_93" BEL "in4x_B1_94" BEL "in4x_B1_95" BEL "in4x_B1_96" BEL
+        "in4x_B1_97" BEL "in4x_B1_98" BEL "in4x_B1_99" BEL "in4x_B1_100" BEL
+        "in4x_B1_101" BEL "in4x_B1_102" BEL "in4x_B1_103" BEL "in4x_B1_104"
+        BEL "in4x_B1_105" BEL "in4x_B1_106" BEL "in4x_B1_107" BEL
+        "in4x_B1_108" BEL "in4x_B1_109" BEL "in4x_B1_110" BEL "in4x_B1_111"
+        BEL "in4x_B1_112" BEL "in4x_B1_113" BEL "in4x_B1_114" BEL
+        "in4x_B1_115" BEL "in4x_B1_116" BEL "in4x_B1_117" BEL "in4x_B1_118"
+        BEL "in4x_B1_119" BEL "in4x_B1_120" BEL "in4x_B1_121" BEL
+        "in4x_B1_122" BEL "in4x_B1_123" BEL "in4x_B1_124" BEL "in4x_B1_125"
+        BEL "in4x_B1_126" BEL "in4x_B1_127" BEL "in4x_B1_128" BEL
+        "in4x_B1_129" BEL "in4x_B1_130" BEL "in4x_B1_131" BEL "in4x_B1_132"
+        BEL "in4x_B1_133" BEL "in4x_B2_0" BEL "in4x_B2_1" BEL "in4x_B2_2" BEL
+        "in4x_B2_3" BEL "in4x_B2_4" BEL "in4x_B2_5" BEL "in4x_B2_6" BEL
+        "in4x_B2_7" BEL "in4x_B2_8" BEL "in4x_B2_9" BEL "in4x_B2_10" BEL
+        "in4x_B2_11" BEL "in4x_B2_12" BEL "in4x_B2_13" BEL "in4x_B2_14" BEL
+        "in4x_B2_15" BEL "in4x_B2_16" BEL "in4x_B2_17" BEL "in4x_B2_18" BEL
+        "in4x_B2_19" BEL "in4x_B2_20" BEL "in4x_B2_21" BEL "in4x_B2_22" BEL
+        "in4x_B2_23" BEL "in4x_B2_24" BEL "in4x_B2_25" BEL "in4x_B2_26" BEL
+        "in4x_B2_27" BEL "in4x_B2_28" BEL "in4x_B2_29" BEL "in4x_B2_30" BEL
+        "in4x_B2_31" BEL "in4x_B2_32" BEL "in4x_B2_33" BEL "in4x_B2_34" BEL
+        "in4x_B2_35" BEL "in4x_B2_36" BEL "in4x_B2_37" BEL "in4x_B2_38" BEL
+        "in4x_B2_39" BEL "in4x_B2_40" BEL "in4x_B2_41" BEL "in4x_B2_42" BEL
+        "in4x_B2_43" BEL "in4x_B2_44" BEL "in4x_B2_45" BEL "in4x_B2_46" BEL
+        "in4x_B2_47" BEL "in4x_B2_48" BEL "in4x_B2_49" BEL "in4x_B2_50" BEL
+        "in4x_B2_51" BEL "in4x_B2_52" BEL "in4x_B2_53" BEL "in4x_B2_54" BEL
+        "in4x_B2_55" BEL "in4x_B2_56" BEL "in4x_B2_57" BEL "in4x_B2_58" BEL
+        "in4x_B2_59" BEL "in4x_B2_60" BEL "in4x_B2_61" BEL "in4x_B2_62" BEL
+        "in4x_B2_63" BEL "in4x_B2_64" BEL "in4x_B2_65" BEL "in4x_B2_66" BEL
+        "in4x_B2_67" BEL "in4x_B2_68" BEL "in4x_B2_69" BEL "in4x_B2_70" BEL
+        "in4x_B2_71" BEL "in4x_B2_72" BEL "in4x_B2_73" BEL "in4x_B2_74" BEL
+        "in4x_B2_75" BEL "in4x_B2_76" BEL "in4x_B2_77" BEL "in4x_B2_78" BEL
+        "in4x_B2_79" BEL "in4x_B2_80" BEL "in4x_B2_81" BEL "in4x_B2_82" BEL
+        "in4x_B2_83" BEL "in4x_B2_84" BEL "in4x_B2_85" BEL "in4x_B2_86" BEL
+        "in4x_B2_87" BEL "in4x_B2_88" BEL "in4x_B2_89" BEL "in4x_B2_90" BEL
+        "in4x_B2_91" BEL "in4x_B2_92" BEL "in4x_B2_93" BEL "in4x_B2_94" BEL
+        "in4x_B2_95" BEL "in4x_B2_96" BEL "in4x_B2_97" BEL "in4x_B2_98" BEL
+        "in4x_B2_99" BEL "in4x_B2_100" BEL "in4x_B2_101" BEL "in4x_B2_102" BEL
+        "in4x_B2_103" BEL "in4x_B2_104" BEL "in4x_B2_105" BEL "in4x_B2_106"
+        BEL "in4x_B2_107" BEL "in4x_B2_108" BEL "in4x_B2_109" BEL
+        "in4x_B2_110" BEL "in4x_B2_111" BEL "in4x_B2_112" BEL "in4x_B2_113"
+        BEL "in4x_B2_114" BEL "in4x_B2_115" BEL "in4x_B2_116" BEL
+        "in4x_B2_117" BEL "in4x_B2_118" BEL "in4x_B2_119" BEL "in4x_B2_120"
+        BEL "in4x_B2_121" BEL "in4x_B2_122" BEL "in4x_B2_123" BEL
+        "in4x_B2_124" BEL "in4x_B2_125" BEL "in4x_B2_126" BEL "in4x_B2_127"
+        BEL "in4x_B2_128" BEL "in4x_B2_129" BEL "in4x_B2_130" BEL
+        "in4x_B2_131" BEL "in4x_B2_132" BEL "in4x_B2_133" BEL "in4x_C2_0" BEL
         "in4x_C2_1" BEL "in4x_C2_2" BEL "in4x_C2_3" BEL "in4x_C2_4" BEL
         "in4x_C2_5" BEL "in4x_C2_6" BEL "in4x_C2_7" BEL "in4x_C2_8" BEL
         "in4x_C2_9" BEL "in4x_C2_10" BEL "in4x_C2_11" BEL "in4x_C2_12" BEL
@@ -656,76 +725,7 @@ TIMEGRP CustomClk = BEL "max_timestep_0" BEL "max_timestep_1" BEL
         "in4x_C2_122" BEL "in4x_C2_123" BEL "in4x_C2_124" BEL "in4x_C2_125"
         BEL "in4x_C2_126" BEL "in4x_C2_127" BEL "in4x_C2_128" BEL
         "in4x_C2_129" BEL "in4x_C2_130" BEL "in4x_C2_131" BEL "in4x_C2_132"
-        BEL "in4x_C2_133" BEL "in4x_B2_0" BEL "in4x_B2_1" BEL "in4x_B2_2" BEL
-        "in4x_B2_3" BEL "in4x_B2_4" BEL "in4x_B2_5" BEL "in4x_B2_6" BEL
-        "in4x_B2_7" BEL "in4x_B2_8" BEL "in4x_B2_9" BEL "in4x_B2_10" BEL
-        "in4x_B2_11" BEL "in4x_B2_12" BEL "in4x_B2_13" BEL "in4x_B2_14" BEL
-        "in4x_B2_15" BEL "in4x_B2_16" BEL "in4x_B2_17" BEL "in4x_B2_18" BEL
-        "in4x_B2_19" BEL "in4x_B2_20" BEL "in4x_B2_21" BEL "in4x_B2_22" BEL
-        "in4x_B2_23" BEL "in4x_B2_24" BEL "in4x_B2_25" BEL "in4x_B2_26" BEL
-        "in4x_B2_27" BEL "in4x_B2_28" BEL "in4x_B2_29" BEL "in4x_B2_30" BEL
-        "in4x_B2_31" BEL "in4x_B2_32" BEL "in4x_B2_33" BEL "in4x_B2_34" BEL
-        "in4x_B2_35" BEL "in4x_B2_36" BEL "in4x_B2_37" BEL "in4x_B2_38" BEL
-        "in4x_B2_39" BEL "in4x_B2_40" BEL "in4x_B2_41" BEL "in4x_B2_42" BEL
-        "in4x_B2_43" BEL "in4x_B2_44" BEL "in4x_B2_45" BEL "in4x_B2_46" BEL
-        "in4x_B2_47" BEL "in4x_B2_48" BEL "in4x_B2_49" BEL "in4x_B2_50" BEL
-        "in4x_B2_51" BEL "in4x_B2_52" BEL "in4x_B2_53" BEL "in4x_B2_54" BEL
-        "in4x_B2_55" BEL "in4x_B2_56" BEL "in4x_B2_57" BEL "in4x_B2_58" BEL
-        "in4x_B2_59" BEL "in4x_B2_60" BEL "in4x_B2_61" BEL "in4x_B2_62" BEL
-        "in4x_B2_63" BEL "in4x_B2_64" BEL "in4x_B2_65" BEL "in4x_B2_66" BEL
-        "in4x_B2_67" BEL "in4x_B2_68" BEL "in4x_B2_69" BEL "in4x_B2_70" BEL
-        "in4x_B2_71" BEL "in4x_B2_72" BEL "in4x_B2_73" BEL "in4x_B2_74" BEL
-        "in4x_B2_75" BEL "in4x_B2_76" BEL "in4x_B2_77" BEL "in4x_B2_78" BEL
-        "in4x_B2_79" BEL "in4x_B2_80" BEL "in4x_B2_81" BEL "in4x_B2_82" BEL
-        "in4x_B2_83" BEL "in4x_B2_84" BEL "in4x_B2_85" BEL "in4x_B2_86" BEL
-        "in4x_B2_87" BEL "in4x_B2_88" BEL "in4x_B2_89" BEL "in4x_B2_90" BEL
-        "in4x_B2_91" BEL "in4x_B2_92" BEL "in4x_B2_93" BEL "in4x_B2_94" BEL
-        "in4x_B2_95" BEL "in4x_B2_96" BEL "in4x_B2_97" BEL "in4x_B2_98" BEL
-        "in4x_B2_99" BEL "in4x_B2_100" BEL "in4x_B2_101" BEL "in4x_B2_102" BEL
-        "in4x_B2_103" BEL "in4x_B2_104" BEL "in4x_B2_105" BEL "in4x_B2_106"
-        BEL "in4x_B2_107" BEL "in4x_B2_108" BEL "in4x_B2_109" BEL
-        "in4x_B2_110" BEL "in4x_B2_111" BEL "in4x_B2_112" BEL "in4x_B2_113"
-        BEL "in4x_B2_114" BEL "in4x_B2_115" BEL "in4x_B2_116" BEL
-        "in4x_B2_117" BEL "in4x_B2_118" BEL "in4x_B2_119" BEL "in4x_B2_120"
-        BEL "in4x_B2_121" BEL "in4x_B2_122" BEL "in4x_B2_123" BEL
-        "in4x_B2_124" BEL "in4x_B2_125" BEL "in4x_B2_126" BEL "in4x_B2_127"
-        BEL "in4x_B2_128" BEL "in4x_B2_129" BEL "in4x_B2_130" BEL
-        "in4x_B2_131" BEL "in4x_B2_132" BEL "in4x_B2_133" BEL "in4x_C1_0" BEL
-        "in4x_C1_1" BEL "in4x_C1_2" BEL "in4x_C1_3" BEL "in4x_C1_4" BEL
-        "in4x_C1_5" BEL "in4x_C1_6" BEL "in4x_C1_7" BEL "in4x_C1_8" BEL
-        "in4x_C1_9" BEL "in4x_C1_10" BEL "in4x_C1_11" BEL "in4x_C1_12" BEL
-        "in4x_C1_13" BEL "in4x_C1_14" BEL "in4x_C1_15" BEL "in4x_C1_16" BEL
-        "in4x_C1_17" BEL "in4x_C1_18" BEL "in4x_C1_19" BEL "in4x_C1_20" BEL
-        "in4x_C1_21" BEL "in4x_C1_22" BEL "in4x_C1_23" BEL "in4x_C1_24" BEL
-        "in4x_C1_25" BEL "in4x_C1_26" BEL "in4x_C1_27" BEL "in4x_C1_28" BEL
-        "in4x_C1_29" BEL "in4x_C1_30" BEL "in4x_C1_31" BEL "in4x_C1_32" BEL
-        "in4x_C1_33" BEL "in4x_C1_34" BEL "in4x_C1_35" BEL "in4x_C1_36" BEL
-        "in4x_C1_37" BEL "in4x_C1_38" BEL "in4x_C1_39" BEL "in4x_C1_40" BEL
-        "in4x_C1_41" BEL "in4x_C1_42" BEL "in4x_C1_43" BEL "in4x_C1_44" BEL
-        "in4x_C1_45" BEL "in4x_C1_46" BEL "in4x_C1_47" BEL "in4x_C1_48" BEL
-        "in4x_C1_49" BEL "in4x_C1_50" BEL "in4x_C1_51" BEL "in4x_C1_52" BEL
-        "in4x_C1_53" BEL "in4x_C1_54" BEL "in4x_C1_55" BEL "in4x_C1_56" BEL
-        "in4x_C1_57" BEL "in4x_C1_58" BEL "in4x_C1_59" BEL "in4x_C1_60" BEL
-        "in4x_C1_61" BEL "in4x_C1_62" BEL "in4x_C1_63" BEL "in4x_C1_64" BEL
-        "in4x_C1_65" BEL "in4x_C1_66" BEL "in4x_C1_67" BEL "in4x_C1_68" BEL
-        "in4x_C1_69" BEL "in4x_C1_70" BEL "in4x_C1_71" BEL "in4x_C1_72" BEL
-        "in4x_C1_73" BEL "in4x_C1_74" BEL "in4x_C1_75" BEL "in4x_C1_76" BEL
-        "in4x_C1_77" BEL "in4x_C1_78" BEL "in4x_C1_79" BEL "in4x_C1_80" BEL
-        "in4x_C1_81" BEL "in4x_C1_82" BEL "in4x_C1_83" BEL "in4x_C1_84" BEL
-        "in4x_C1_85" BEL "in4x_C1_86" BEL "in4x_C1_87" BEL "in4x_C1_88" BEL
-        "in4x_C1_89" BEL "in4x_C1_90" BEL "in4x_C1_91" BEL "in4x_C1_92" BEL
-        "in4x_C1_93" BEL "in4x_C1_94" BEL "in4x_C1_95" BEL "in4x_C1_96" BEL
-        "in4x_C1_97" BEL "in4x_C1_98" BEL "in4x_C1_99" BEL "in4x_C1_100" BEL
-        "in4x_C1_101" BEL "in4x_C1_102" BEL "in4x_C1_103" BEL "in4x_C1_104"
-        BEL "in4x_C1_105" BEL "in4x_C1_106" BEL "in4x_C1_107" BEL
-        "in4x_C1_108" BEL "in4x_C1_109" BEL "in4x_C1_110" BEL "in4x_C1_111"
-        BEL "in4x_C1_112" BEL "in4x_C1_113" BEL "in4x_C1_114" BEL
-        "in4x_C1_115" BEL "in4x_C1_116" BEL "in4x_C1_117" BEL "in4x_C1_118"
-        BEL "in4x_C1_119" BEL "in4x_C1_120" BEL "in4x_C1_121" BEL
-        "in4x_C1_122" BEL "in4x_C1_123" BEL "in4x_C1_124" BEL "in4x_C1_125"
-        BEL "in4x_C1_126" BEL "in4x_C1_127" BEL "in4x_C1_128" BEL
-        "in4x_C1_129" BEL "in4x_C1_130" BEL "in4x_C1_131" BEL "in4x_C1_132"
-        BEL "in4x_C1_133" BEL "in4x_D1_0" BEL "in4x_D1_1" BEL "in4x_D1_2" BEL
+        BEL "in4x_C2_133" BEL "in4x_D1_0" BEL "in4x_D1_1" BEL "in4x_D1_2" BEL
         "in4x_D1_3" BEL "in4x_D1_4" BEL "in4x_D1_5" BEL "in4x_D1_6" BEL
         "in4x_D1_7" BEL "in4x_D1_8" BEL "in4x_D1_9" BEL "in4x_D1_10" BEL
         "in4x_D1_11" BEL "in4x_D1_12" BEL "in4x_D1_13" BEL "in4x_D1_14" BEL
@@ -1836,30 +1836,38 @@ TIMEGRP CustomClk = BEL "max_timestep_0" BEL "max_timestep_1" BEL
         BEL "stim_sequencer_D2/stim_on_4" BEL "stim_sequencer_D2/stim_on_3"
         BEL "stim_sequencer_D2/stim_on_2" BEL "stim_sequencer_D2/stim_on_1"
         BEL "stim_sequencer_D2/stim_on_0" BEL
-        "stim_sequencer_A1/Mram_stim_counter3" BEL
-        "stim_sequencer_A1/Mram_stim_counter1" BEL
         "stim_sequencer_A1/Mram_stim_counter2" BEL
+        "stim_sequencer_A1/Mram_stim_counter1" BEL
+        "stim_sequencer_A1/Mram_stim_counter3" BEL
         "stim_sequencer_A1/Mram_stim_counter4" BEL
-        "stim_sequencer_A1/Mram_stim_counter5" BEL
-        "stim_sequencer_A1/Mram_stim_counter8" BEL
-        "stim_sequencer_A1/Mram_stim_counter6" BEL
         "stim_sequencer_A1/Mram_stim_counter7" BEL
+        "stim_sequencer_A1/Mram_stim_counter5" BEL
+        "stim_sequencer_A1/Mram_stim_counter6" BEL
+        "stim_sequencer_A1/Mram_stim_counter8" BEL
         "stim_sequencer_A1/Mram_counter1" BEL
-        "stim_sequencer_A1/Mram_counter2" BEL
-        "stim_sequencer_A1/Mram_counter5" BEL
-        "stim_sequencer_A1/Mram_counter3" BEL
         "stim_sequencer_A1/Mram_counter4" BEL
+        "stim_sequencer_A1/Mram_counter2" BEL
+        "stim_sequencer_A1/Mram_counter3" BEL
+        "stim_sequencer_A1/Mram_counter5" BEL
         "stim_sequencer_A1/Mram_counter6" BEL
         "stim_sequencer_A1/Mram_counter7" BEL
         "stim_sequencer_A1/Mram_counter8" BEL
         "stim_sequencer_A1/Mram_counter9" BEL
         "stim_sequencer_A1/Mram_counter10" BEL
-        "stim_sequencer_A1/Mram_counter11" BEL
-        "stim_sequencer_A1/Mram_counter14" BEL
-        "stim_sequencer_A1/Mram_counter12" BEL
         "stim_sequencer_A1/Mram_counter13" BEL
+        "stim_sequencer_A1/Mram_counter11" BEL
+        "stim_sequencer_A1/Mram_counter12" BEL
+        "stim_sequencer_A1/Mram_counter14" BEL
         "stim_sequencer_A1/Mram_counter15" BEL
         "stim_sequencer_A1/Mram_counter16" BEL
+        "stim_sequencer_A2/Mram_stim_counter1" BEL
+        "stim_sequencer_A2/Mram_stim_counter2" BEL
+        "stim_sequencer_A2/Mram_stim_counter3" BEL
+        "stim_sequencer_A2/Mram_stim_counter6" BEL
+        "stim_sequencer_A2/Mram_stim_counter4" BEL
+        "stim_sequencer_A2/Mram_stim_counter5" BEL
+        "stim_sequencer_A2/Mram_stim_counter7" BEL
+        "stim_sequencer_A2/Mram_stim_counter8" BEL
         "stim_sequencer_A2/Mram_counter1" BEL
         "stim_sequencer_A2/Mram_counter2" BEL
         "stim_sequencer_A2/Mram_counter3" BEL
@@ -1869,36 +1877,28 @@ TIMEGRP CustomClk = BEL "max_timestep_0" BEL "max_timestep_1" BEL
         "stim_sequencer_A2/Mram_counter6" BEL
         "stim_sequencer_A2/Mram_counter8" BEL
         "stim_sequencer_A2/Mram_counter9" BEL
+        "stim_sequencer_A2/Mram_counter12" BEL
         "stim_sequencer_A2/Mram_counter10" BEL
         "stim_sequencer_A2/Mram_counter11" BEL
-        "stim_sequencer_A2/Mram_counter12" BEL
         "stim_sequencer_A2/Mram_counter13" BEL
-        "stim_sequencer_A2/Mram_counter16" BEL
         "stim_sequencer_A2/Mram_counter14" BEL
-        "stim_sequencer_A2/Mram_counter15" BEL
-        "stim_sequencer_A2/Mram_stim_counter1" BEL
-        "stim_sequencer_A2/Mram_stim_counter2" BEL
-        "stim_sequencer_A2/Mram_stim_counter5" BEL
-        "stim_sequencer_A2/Mram_stim_counter3" BEL
-        "stim_sequencer_A2/Mram_stim_counter4" BEL
-        "stim_sequencer_A2/Mram_stim_counter6" BEL
-        "stim_sequencer_A2/Mram_stim_counter7" BEL
-        "stim_sequencer_B1/Mram_stim_counter2" BEL
-        "stim_sequencer_A2/Mram_stim_counter8" BEL
         "stim_sequencer_B1/Mram_stim_counter1" BEL
+        "stim_sequencer_A2/Mram_counter15" BEL
+        "stim_sequencer_A2/Mram_counter16" BEL
+        "stim_sequencer_B1/Mram_stim_counter2" BEL
         "stim_sequencer_B1/Mram_stim_counter3" BEL
         "stim_sequencer_B1/Mram_stim_counter4" BEL
         "stim_sequencer_B1/Mram_stim_counter5" BEL
         "stim_sequencer_B1/Mram_stim_counter6" BEL
         "stim_sequencer_B1/Mram_stim_counter7" BEL
-        "stim_sequencer_B1/Mram_stim_counter8" BEL
-        "stim_sequencer_B1/Mram_counter3" BEL
-        "stim_sequencer_B1/Mram_counter1" BEL
         "stim_sequencer_B1/Mram_counter2" BEL
+        "stim_sequencer_B1/Mram_stim_counter8" BEL
+        "stim_sequencer_B1/Mram_counter1" BEL
+        "stim_sequencer_B1/Mram_counter3" BEL
         "stim_sequencer_B1/Mram_counter4" BEL
+        "stim_sequencer_B1/Mram_counter7" BEL
         "stim_sequencer_B1/Mram_counter5" BEL
         "stim_sequencer_B1/Mram_counter6" BEL
-        "stim_sequencer_B1/Mram_counter7" BEL
         "stim_sequencer_B1/Mram_counter8" BEL
         "stim_sequencer_B1/Mram_counter9" BEL
         "stim_sequencer_B1/Mram_counter12" BEL
@@ -2546,12 +2546,10 @@ TIMEGRP CustomClk = BEL "max_timestep_0" BEL "max_timestep_1" BEL
         "digout_sequencer_1/digout_5" BEL "digout_sequencer_1/digout_4" BEL
         "digout_sequencer_1/digout_3" BEL "digout_sequencer_1/digout_2" BEL
         "digout_sequencer_1/digout_1" BEL "digout_sequencer_1/digout_0" BEL
-        "DAC_output_8/state_clk" BEL "DAC_output_8/DAC_DIN" BEL
-        "DAC_output_7/DAC_DIN" BEL "DAC_output_6/DAC_DIN" BEL
-        "DAC_output_5/DAC_DIN" BEL "DAC_output_4/DAC_DIN" BEL
-        "DAC_output_3/DAC_DIN" BEL "DAC_output_2/DAC_DIN" BEL
-        "DAC_output_1/DAC_SYNC" BEL "DAC_output_1/DAC_DIN" BEL
-        "DAC_output_1/DAC_SCLK" PIN
+        "DAC_output_8/state_clk" BEL "DAC_output_8/DIN" BEL "DAC_output_7/DIN"
+        BEL "DAC_output_6/DIN" BEL "DAC_output_5/DIN" BEL "DAC_output_4/DIN"
+        BEL "DAC_output_3/DIN" BEL "DAC_output_2/DIN" BEL "DAC_output_1/SYNC"
+        BEL "DAC_output_1/DIN" BEL "DAC_output_1/SCLK" PIN
         "RAM_bank_1_MSW/RAM_block_0/RAM_block_0/RAMB16BWER_inst_pins<29>" PIN
         "RAM_bank_1_MSW/RAM_block_0/RAM_block_1/RAMB16BWER_inst_pins<29>" PIN
         "RAM_bank_1_MSW/RAM_block_0/RAM_block_2/RAMB16BWER_inst_pins<29>" PIN
@@ -3036,41 +3034,110 @@ TIMEGRP variable_freq_clk_generator_inst_clkout_i = BEL "max_timestep_0" BEL
         "in4x_A2_122" BEL "in4x_A2_123" BEL "in4x_A2_124" BEL "in4x_A2_125"
         BEL "in4x_A2_126" BEL "in4x_A2_127" BEL "in4x_A2_128" BEL
         "in4x_A2_129" BEL "in4x_A2_130" BEL "in4x_A2_131" BEL "in4x_A2_132"
-        BEL "in4x_A2_133" BEL "in4x_B1_0" BEL "in4x_B1_1" BEL "in4x_B1_2" BEL
-        "in4x_B1_3" BEL "in4x_B1_4" BEL "in4x_B1_5" BEL "in4x_B1_6" BEL
-        "in4x_B1_7" BEL "in4x_B1_8" BEL "in4x_B1_9" BEL "in4x_B1_10" BEL
-        "in4x_B1_11" BEL "in4x_B1_12" BEL "in4x_B1_13" BEL "in4x_B1_14" BEL
-        "in4x_B1_15" BEL "in4x_B1_16" BEL "in4x_B1_17" BEL "in4x_B1_18" BEL
-        "in4x_B1_19" BEL "in4x_B1_20" BEL "in4x_B1_21" BEL "in4x_B1_22" BEL
-        "in4x_B1_23" BEL "in4x_B1_24" BEL "in4x_B1_25" BEL "in4x_B1_26" BEL
-        "in4x_B1_27" BEL "in4x_B1_28" BEL "in4x_B1_29" BEL "in4x_B1_30" BEL
-        "in4x_B1_31" BEL "in4x_B1_32" BEL "in4x_B1_33" BEL "in4x_B1_34" BEL
-        "in4x_B1_35" BEL "in4x_B1_36" BEL "in4x_B1_37" BEL "in4x_B1_38" BEL
-        "in4x_B1_39" BEL "in4x_B1_40" BEL "in4x_B1_41" BEL "in4x_B1_42" BEL
-        "in4x_B1_43" BEL "in4x_B1_44" BEL "in4x_B1_45" BEL "in4x_B1_46" BEL
-        "in4x_B1_47" BEL "in4x_B1_48" BEL "in4x_B1_49" BEL "in4x_B1_50" BEL
-        "in4x_B1_51" BEL "in4x_B1_52" BEL "in4x_B1_53" BEL "in4x_B1_54" BEL
-        "in4x_B1_55" BEL "in4x_B1_56" BEL "in4x_B1_57" BEL "in4x_B1_58" BEL
-        "in4x_B1_59" BEL "in4x_B1_60" BEL "in4x_B1_61" BEL "in4x_B1_62" BEL
-        "in4x_B1_63" BEL "in4x_B1_64" BEL "in4x_B1_65" BEL "in4x_B1_66" BEL
-        "in4x_B1_67" BEL "in4x_B1_68" BEL "in4x_B1_69" BEL "in4x_B1_70" BEL
-        "in4x_B1_71" BEL "in4x_B1_72" BEL "in4x_B1_73" BEL "in4x_B1_74" BEL
-        "in4x_B1_75" BEL "in4x_B1_76" BEL "in4x_B1_77" BEL "in4x_B1_78" BEL
-        "in4x_B1_79" BEL "in4x_B1_80" BEL "in4x_B1_81" BEL "in4x_B1_82" BEL
-        "in4x_B1_83" BEL "in4x_B1_84" BEL "in4x_B1_85" BEL "in4x_B1_86" BEL
-        "in4x_B1_87" BEL "in4x_B1_88" BEL "in4x_B1_89" BEL "in4x_B1_90" BEL
-        "in4x_B1_91" BEL "in4x_B1_92" BEL "in4x_B1_93" BEL "in4x_B1_94" BEL
-        "in4x_B1_95" BEL "in4x_B1_96" BEL "in4x_B1_97" BEL "in4x_B1_98" BEL
-        "in4x_B1_99" BEL "in4x_B1_100" BEL "in4x_B1_101" BEL "in4x_B1_102" BEL
-        "in4x_B1_103" BEL "in4x_B1_104" BEL "in4x_B1_105" BEL "in4x_B1_106"
-        BEL "in4x_B1_107" BEL "in4x_B1_108" BEL "in4x_B1_109" BEL
-        "in4x_B1_110" BEL "in4x_B1_111" BEL "in4x_B1_112" BEL "in4x_B1_113"
-        BEL "in4x_B1_114" BEL "in4x_B1_115" BEL "in4x_B1_116" BEL
-        "in4x_B1_117" BEL "in4x_B1_118" BEL "in4x_B1_119" BEL "in4x_B1_120"
-        BEL "in4x_B1_121" BEL "in4x_B1_122" BEL "in4x_B1_123" BEL
-        "in4x_B1_124" BEL "in4x_B1_125" BEL "in4x_B1_126" BEL "in4x_B1_127"
-        BEL "in4x_B1_128" BEL "in4x_B1_129" BEL "in4x_B1_130" BEL
-        "in4x_B1_131" BEL "in4x_B1_132" BEL "in4x_B1_133" BEL "in4x_C2_0" BEL
+        BEL "in4x_A2_133" BEL "in4x_C1_0" BEL "in4x_C1_1" BEL "in4x_C1_2" BEL
+        "in4x_C1_3" BEL "in4x_C1_4" BEL "in4x_C1_5" BEL "in4x_C1_6" BEL
+        "in4x_C1_7" BEL "in4x_C1_8" BEL "in4x_C1_9" BEL "in4x_C1_10" BEL
+        "in4x_C1_11" BEL "in4x_C1_12" BEL "in4x_C1_13" BEL "in4x_C1_14" BEL
+        "in4x_C1_15" BEL "in4x_C1_16" BEL "in4x_C1_17" BEL "in4x_C1_18" BEL
+        "in4x_C1_19" BEL "in4x_C1_20" BEL "in4x_C1_21" BEL "in4x_C1_22" BEL
+        "in4x_C1_23" BEL "in4x_C1_24" BEL "in4x_C1_25" BEL "in4x_C1_26" BEL
+        "in4x_C1_27" BEL "in4x_C1_28" BEL "in4x_C1_29" BEL "in4x_C1_30" BEL
+        "in4x_C1_31" BEL "in4x_C1_32" BEL "in4x_C1_33" BEL "in4x_C1_34" BEL
+        "in4x_C1_35" BEL "in4x_C1_36" BEL "in4x_C1_37" BEL "in4x_C1_38" BEL
+        "in4x_C1_39" BEL "in4x_C1_40" BEL "in4x_C1_41" BEL "in4x_C1_42" BEL
+        "in4x_C1_43" BEL "in4x_C1_44" BEL "in4x_C1_45" BEL "in4x_C1_46" BEL
+        "in4x_C1_47" BEL "in4x_C1_48" BEL "in4x_C1_49" BEL "in4x_C1_50" BEL
+        "in4x_C1_51" BEL "in4x_C1_52" BEL "in4x_C1_53" BEL "in4x_C1_54" BEL
+        "in4x_C1_55" BEL "in4x_C1_56" BEL "in4x_C1_57" BEL "in4x_C1_58" BEL
+        "in4x_C1_59" BEL "in4x_C1_60" BEL "in4x_C1_61" BEL "in4x_C1_62" BEL
+        "in4x_C1_63" BEL "in4x_C1_64" BEL "in4x_C1_65" BEL "in4x_C1_66" BEL
+        "in4x_C1_67" BEL "in4x_C1_68" BEL "in4x_C1_69" BEL "in4x_C1_70" BEL
+        "in4x_C1_71" BEL "in4x_C1_72" BEL "in4x_C1_73" BEL "in4x_C1_74" BEL
+        "in4x_C1_75" BEL "in4x_C1_76" BEL "in4x_C1_77" BEL "in4x_C1_78" BEL
+        "in4x_C1_79" BEL "in4x_C1_80" BEL "in4x_C1_81" BEL "in4x_C1_82" BEL
+        "in4x_C1_83" BEL "in4x_C1_84" BEL "in4x_C1_85" BEL "in4x_C1_86" BEL
+        "in4x_C1_87" BEL "in4x_C1_88" BEL "in4x_C1_89" BEL "in4x_C1_90" BEL
+        "in4x_C1_91" BEL "in4x_C1_92" BEL "in4x_C1_93" BEL "in4x_C1_94" BEL
+        "in4x_C1_95" BEL "in4x_C1_96" BEL "in4x_C1_97" BEL "in4x_C1_98" BEL
+        "in4x_C1_99" BEL "in4x_C1_100" BEL "in4x_C1_101" BEL "in4x_C1_102" BEL
+        "in4x_C1_103" BEL "in4x_C1_104" BEL "in4x_C1_105" BEL "in4x_C1_106"
+        BEL "in4x_C1_107" BEL "in4x_C1_108" BEL "in4x_C1_109" BEL
+        "in4x_C1_110" BEL "in4x_C1_111" BEL "in4x_C1_112" BEL "in4x_C1_113"
+        BEL "in4x_C1_114" BEL "in4x_C1_115" BEL "in4x_C1_116" BEL
+        "in4x_C1_117" BEL "in4x_C1_118" BEL "in4x_C1_119" BEL "in4x_C1_120"
+        BEL "in4x_C1_121" BEL "in4x_C1_122" BEL "in4x_C1_123" BEL
+        "in4x_C1_124" BEL "in4x_C1_125" BEL "in4x_C1_126" BEL "in4x_C1_127"
+        BEL "in4x_C1_128" BEL "in4x_C1_129" BEL "in4x_C1_130" BEL
+        "in4x_C1_131" BEL "in4x_C1_132" BEL "in4x_C1_133" BEL "in4x_B1_0" BEL
+        "in4x_B1_1" BEL "in4x_B1_2" BEL "in4x_B1_3" BEL "in4x_B1_4" BEL
+        "in4x_B1_5" BEL "in4x_B1_6" BEL "in4x_B1_7" BEL "in4x_B1_8" BEL
+        "in4x_B1_9" BEL "in4x_B1_10" BEL "in4x_B1_11" BEL "in4x_B1_12" BEL
+        "in4x_B1_13" BEL "in4x_B1_14" BEL "in4x_B1_15" BEL "in4x_B1_16" BEL
+        "in4x_B1_17" BEL "in4x_B1_18" BEL "in4x_B1_19" BEL "in4x_B1_20" BEL
+        "in4x_B1_21" BEL "in4x_B1_22" BEL "in4x_B1_23" BEL "in4x_B1_24" BEL
+        "in4x_B1_25" BEL "in4x_B1_26" BEL "in4x_B1_27" BEL "in4x_B1_28" BEL
+        "in4x_B1_29" BEL "in4x_B1_30" BEL "in4x_B1_31" BEL "in4x_B1_32" BEL
+        "in4x_B1_33" BEL "in4x_B1_34" BEL "in4x_B1_35" BEL "in4x_B1_36" BEL
+        "in4x_B1_37" BEL "in4x_B1_38" BEL "in4x_B1_39" BEL "in4x_B1_40" BEL
+        "in4x_B1_41" BEL "in4x_B1_42" BEL "in4x_B1_43" BEL "in4x_B1_44" BEL
+        "in4x_B1_45" BEL "in4x_B1_46" BEL "in4x_B1_47" BEL "in4x_B1_48" BEL
+        "in4x_B1_49" BEL "in4x_B1_50" BEL "in4x_B1_51" BEL "in4x_B1_52" BEL
+        "in4x_B1_53" BEL "in4x_B1_54" BEL "in4x_B1_55" BEL "in4x_B1_56" BEL
+        "in4x_B1_57" BEL "in4x_B1_58" BEL "in4x_B1_59" BEL "in4x_B1_60" BEL
+        "in4x_B1_61" BEL "in4x_B1_62" BEL "in4x_B1_63" BEL "in4x_B1_64" BEL
+        "in4x_B1_65" BEL "in4x_B1_66" BEL "in4x_B1_67" BEL "in4x_B1_68" BEL
+        "in4x_B1_69" BEL "in4x_B1_70" BEL "in4x_B1_71" BEL "in4x_B1_72" BEL
+        "in4x_B1_73" BEL "in4x_B1_74" BEL "in4x_B1_75" BEL "in4x_B1_76" BEL
+        "in4x_B1_77" BEL "in4x_B1_78" BEL "in4x_B1_79" BEL "in4x_B1_80" BEL
+        "in4x_B1_81" BEL "in4x_B1_82" BEL "in4x_B1_83" BEL "in4x_B1_84" BEL
+        "in4x_B1_85" BEL "in4x_B1_86" BEL "in4x_B1_87" BEL "in4x_B1_88" BEL
+        "in4x_B1_89" BEL "in4x_B1_90" BEL "in4x_B1_91" BEL "in4x_B1_92" BEL
+        "in4x_B1_93" BEL "in4x_B1_94" BEL "in4x_B1_95" BEL "in4x_B1_96" BEL
+        "in4x_B1_97" BEL "in4x_B1_98" BEL "in4x_B1_99" BEL "in4x_B1_100" BEL
+        "in4x_B1_101" BEL "in4x_B1_102" BEL "in4x_B1_103" BEL "in4x_B1_104"
+        BEL "in4x_B1_105" BEL "in4x_B1_106" BEL "in4x_B1_107" BEL
+        "in4x_B1_108" BEL "in4x_B1_109" BEL "in4x_B1_110" BEL "in4x_B1_111"
+        BEL "in4x_B1_112" BEL "in4x_B1_113" BEL "in4x_B1_114" BEL
+        "in4x_B1_115" BEL "in4x_B1_116" BEL "in4x_B1_117" BEL "in4x_B1_118"
+        BEL "in4x_B1_119" BEL "in4x_B1_120" BEL "in4x_B1_121" BEL
+        "in4x_B1_122" BEL "in4x_B1_123" BEL "in4x_B1_124" BEL "in4x_B1_125"
+        BEL "in4x_B1_126" BEL "in4x_B1_127" BEL "in4x_B1_128" BEL
+        "in4x_B1_129" BEL "in4x_B1_130" BEL "in4x_B1_131" BEL "in4x_B1_132"
+        BEL "in4x_B1_133" BEL "in4x_B2_0" BEL "in4x_B2_1" BEL "in4x_B2_2" BEL
+        "in4x_B2_3" BEL "in4x_B2_4" BEL "in4x_B2_5" BEL "in4x_B2_6" BEL
+        "in4x_B2_7" BEL "in4x_B2_8" BEL "in4x_B2_9" BEL "in4x_B2_10" BEL
+        "in4x_B2_11" BEL "in4x_B2_12" BEL "in4x_B2_13" BEL "in4x_B2_14" BEL
+        "in4x_B2_15" BEL "in4x_B2_16" BEL "in4x_B2_17" BEL "in4x_B2_18" BEL
+        "in4x_B2_19" BEL "in4x_B2_20" BEL "in4x_B2_21" BEL "in4x_B2_22" BEL
+        "in4x_B2_23" BEL "in4x_B2_24" BEL "in4x_B2_25" BEL "in4x_B2_26" BEL
+        "in4x_B2_27" BEL "in4x_B2_28" BEL "in4x_B2_29" BEL "in4x_B2_30" BEL
+        "in4x_B2_31" BEL "in4x_B2_32" BEL "in4x_B2_33" BEL "in4x_B2_34" BEL
+        "in4x_B2_35" BEL "in4x_B2_36" BEL "in4x_B2_37" BEL "in4x_B2_38" BEL
+        "in4x_B2_39" BEL "in4x_B2_40" BEL "in4x_B2_41" BEL "in4x_B2_42" BEL
+        "in4x_B2_43" BEL "in4x_B2_44" BEL "in4x_B2_45" BEL "in4x_B2_46" BEL
+        "in4x_B2_47" BEL "in4x_B2_48" BEL "in4x_B2_49" BEL "in4x_B2_50" BEL
+        "in4x_B2_51" BEL "in4x_B2_52" BEL "in4x_B2_53" BEL "in4x_B2_54" BEL
+        "in4x_B2_55" BEL "in4x_B2_56" BEL "in4x_B2_57" BEL "in4x_B2_58" BEL
+        "in4x_B2_59" BEL "in4x_B2_60" BEL "in4x_B2_61" BEL "in4x_B2_62" BEL
+        "in4x_B2_63" BEL "in4x_B2_64" BEL "in4x_B2_65" BEL "in4x_B2_66" BEL
+        "in4x_B2_67" BEL "in4x_B2_68" BEL "in4x_B2_69" BEL "in4x_B2_70" BEL
+        "in4x_B2_71" BEL "in4x_B2_72" BEL "in4x_B2_73" BEL "in4x_B2_74" BEL
+        "in4x_B2_75" BEL "in4x_B2_76" BEL "in4x_B2_77" BEL "in4x_B2_78" BEL
+        "in4x_B2_79" BEL "in4x_B2_80" BEL "in4x_B2_81" BEL "in4x_B2_82" BEL
+        "in4x_B2_83" BEL "in4x_B2_84" BEL "in4x_B2_85" BEL "in4x_B2_86" BEL
+        "in4x_B2_87" BEL "in4x_B2_88" BEL "in4x_B2_89" BEL "in4x_B2_90" BEL
+        "in4x_B2_91" BEL "in4x_B2_92" BEL "in4x_B2_93" BEL "in4x_B2_94" BEL
+        "in4x_B2_95" BEL "in4x_B2_96" BEL "in4x_B2_97" BEL "in4x_B2_98" BEL
+        "in4x_B2_99" BEL "in4x_B2_100" BEL "in4x_B2_101" BEL "in4x_B2_102" BEL
+        "in4x_B2_103" BEL "in4x_B2_104" BEL "in4x_B2_105" BEL "in4x_B2_106"
+        BEL "in4x_B2_107" BEL "in4x_B2_108" BEL "in4x_B2_109" BEL
+        "in4x_B2_110" BEL "in4x_B2_111" BEL "in4x_B2_112" BEL "in4x_B2_113"
+        BEL "in4x_B2_114" BEL "in4x_B2_115" BEL "in4x_B2_116" BEL
+        "in4x_B2_117" BEL "in4x_B2_118" BEL "in4x_B2_119" BEL "in4x_B2_120"
+        BEL "in4x_B2_121" BEL "in4x_B2_122" BEL "in4x_B2_123" BEL
+        "in4x_B2_124" BEL "in4x_B2_125" BEL "in4x_B2_126" BEL "in4x_B2_127"
+        BEL "in4x_B2_128" BEL "in4x_B2_129" BEL "in4x_B2_130" BEL
+        "in4x_B2_131" BEL "in4x_B2_132" BEL "in4x_B2_133" BEL "in4x_C2_0" BEL
         "in4x_C2_1" BEL "in4x_C2_2" BEL "in4x_C2_3" BEL "in4x_C2_4" BEL
         "in4x_C2_5" BEL "in4x_C2_6" BEL "in4x_C2_7" BEL "in4x_C2_8" BEL
         "in4x_C2_9" BEL "in4x_C2_10" BEL "in4x_C2_11" BEL "in4x_C2_12" BEL
@@ -3105,76 +3172,7 @@ TIMEGRP variable_freq_clk_generator_inst_clkout_i = BEL "max_timestep_0" BEL
         "in4x_C2_122" BEL "in4x_C2_123" BEL "in4x_C2_124" BEL "in4x_C2_125"
         BEL "in4x_C2_126" BEL "in4x_C2_127" BEL "in4x_C2_128" BEL
         "in4x_C2_129" BEL "in4x_C2_130" BEL "in4x_C2_131" BEL "in4x_C2_132"
-        BEL "in4x_C2_133" BEL "in4x_B2_0" BEL "in4x_B2_1" BEL "in4x_B2_2" BEL
-        "in4x_B2_3" BEL "in4x_B2_4" BEL "in4x_B2_5" BEL "in4x_B2_6" BEL
-        "in4x_B2_7" BEL "in4x_B2_8" BEL "in4x_B2_9" BEL "in4x_B2_10" BEL
-        "in4x_B2_11" BEL "in4x_B2_12" BEL "in4x_B2_13" BEL "in4x_B2_14" BEL
-        "in4x_B2_15" BEL "in4x_B2_16" BEL "in4x_B2_17" BEL "in4x_B2_18" BEL
-        "in4x_B2_19" BEL "in4x_B2_20" BEL "in4x_B2_21" BEL "in4x_B2_22" BEL
-        "in4x_B2_23" BEL "in4x_B2_24" BEL "in4x_B2_25" BEL "in4x_B2_26" BEL
-        "in4x_B2_27" BEL "in4x_B2_28" BEL "in4x_B2_29" BEL "in4x_B2_30" BEL
-        "in4x_B2_31" BEL "in4x_B2_32" BEL "in4x_B2_33" BEL "in4x_B2_34" BEL
-        "in4x_B2_35" BEL "in4x_B2_36" BEL "in4x_B2_37" BEL "in4x_B2_38" BEL
-        "in4x_B2_39" BEL "in4x_B2_40" BEL "in4x_B2_41" BEL "in4x_B2_42" BEL
-        "in4x_B2_43" BEL "in4x_B2_44" BEL "in4x_B2_45" BEL "in4x_B2_46" BEL
-        "in4x_B2_47" BEL "in4x_B2_48" BEL "in4x_B2_49" BEL "in4x_B2_50" BEL
-        "in4x_B2_51" BEL "in4x_B2_52" BEL "in4x_B2_53" BEL "in4x_B2_54" BEL
-        "in4x_B2_55" BEL "in4x_B2_56" BEL "in4x_B2_57" BEL "in4x_B2_58" BEL
-        "in4x_B2_59" BEL "in4x_B2_60" BEL "in4x_B2_61" BEL "in4x_B2_62" BEL
-        "in4x_B2_63" BEL "in4x_B2_64" BEL "in4x_B2_65" BEL "in4x_B2_66" BEL
-        "in4x_B2_67" BEL "in4x_B2_68" BEL "in4x_B2_69" BEL "in4x_B2_70" BEL
-        "in4x_B2_71" BEL "in4x_B2_72" BEL "in4x_B2_73" BEL "in4x_B2_74" BEL
-        "in4x_B2_75" BEL "in4x_B2_76" BEL "in4x_B2_77" BEL "in4x_B2_78" BEL
-        "in4x_B2_79" BEL "in4x_B2_80" BEL "in4x_B2_81" BEL "in4x_B2_82" BEL
-        "in4x_B2_83" BEL "in4x_B2_84" BEL "in4x_B2_85" BEL "in4x_B2_86" BEL
-        "in4x_B2_87" BEL "in4x_B2_88" BEL "in4x_B2_89" BEL "in4x_B2_90" BEL
-        "in4x_B2_91" BEL "in4x_B2_92" BEL "in4x_B2_93" BEL "in4x_B2_94" BEL
-        "in4x_B2_95" BEL "in4x_B2_96" BEL "in4x_B2_97" BEL "in4x_B2_98" BEL
-        "in4x_B2_99" BEL "in4x_B2_100" BEL "in4x_B2_101" BEL "in4x_B2_102" BEL
-        "in4x_B2_103" BEL "in4x_B2_104" BEL "in4x_B2_105" BEL "in4x_B2_106"
-        BEL "in4x_B2_107" BEL "in4x_B2_108" BEL "in4x_B2_109" BEL
-        "in4x_B2_110" BEL "in4x_B2_111" BEL "in4x_B2_112" BEL "in4x_B2_113"
-        BEL "in4x_B2_114" BEL "in4x_B2_115" BEL "in4x_B2_116" BEL
-        "in4x_B2_117" BEL "in4x_B2_118" BEL "in4x_B2_119" BEL "in4x_B2_120"
-        BEL "in4x_B2_121" BEL "in4x_B2_122" BEL "in4x_B2_123" BEL
-        "in4x_B2_124" BEL "in4x_B2_125" BEL "in4x_B2_126" BEL "in4x_B2_127"
-        BEL "in4x_B2_128" BEL "in4x_B2_129" BEL "in4x_B2_130" BEL
-        "in4x_B2_131" BEL "in4x_B2_132" BEL "in4x_B2_133" BEL "in4x_C1_0" BEL
-        "in4x_C1_1" BEL "in4x_C1_2" BEL "in4x_C1_3" BEL "in4x_C1_4" BEL
-        "in4x_C1_5" BEL "in4x_C1_6" BEL "in4x_C1_7" BEL "in4x_C1_8" BEL
-        "in4x_C1_9" BEL "in4x_C1_10" BEL "in4x_C1_11" BEL "in4x_C1_12" BEL
-        "in4x_C1_13" BEL "in4x_C1_14" BEL "in4x_C1_15" BEL "in4x_C1_16" BEL
-        "in4x_C1_17" BEL "in4x_C1_18" BEL "in4x_C1_19" BEL "in4x_C1_20" BEL
-        "in4x_C1_21" BEL "in4x_C1_22" BEL "in4x_C1_23" BEL "in4x_C1_24" BEL
-        "in4x_C1_25" BEL "in4x_C1_26" BEL "in4x_C1_27" BEL "in4x_C1_28" BEL
-        "in4x_C1_29" BEL "in4x_C1_30" BEL "in4x_C1_31" BEL "in4x_C1_32" BEL
-        "in4x_C1_33" BEL "in4x_C1_34" BEL "in4x_C1_35" BEL "in4x_C1_36" BEL
-        "in4x_C1_37" BEL "in4x_C1_38" BEL "in4x_C1_39" BEL "in4x_C1_40" BEL
-        "in4x_C1_41" BEL "in4x_C1_42" BEL "in4x_C1_43" BEL "in4x_C1_44" BEL
-        "in4x_C1_45" BEL "in4x_C1_46" BEL "in4x_C1_47" BEL "in4x_C1_48" BEL
-        "in4x_C1_49" BEL "in4x_C1_50" BEL "in4x_C1_51" BEL "in4x_C1_52" BEL
-        "in4x_C1_53" BEL "in4x_C1_54" BEL "in4x_C1_55" BEL "in4x_C1_56" BEL
-        "in4x_C1_57" BEL "in4x_C1_58" BEL "in4x_C1_59" BEL "in4x_C1_60" BEL
-        "in4x_C1_61" BEL "in4x_C1_62" BEL "in4x_C1_63" BEL "in4x_C1_64" BEL
-        "in4x_C1_65" BEL "in4x_C1_66" BEL "in4x_C1_67" BEL "in4x_C1_68" BEL
-        "in4x_C1_69" BEL "in4x_C1_70" BEL "in4x_C1_71" BEL "in4x_C1_72" BEL
-        "in4x_C1_73" BEL "in4x_C1_74" BEL "in4x_C1_75" BEL "in4x_C1_76" BEL
-        "in4x_C1_77" BEL "in4x_C1_78" BEL "in4x_C1_79" BEL "in4x_C1_80" BEL
-        "in4x_C1_81" BEL "in4x_C1_82" BEL "in4x_C1_83" BEL "in4x_C1_84" BEL
-        "in4x_C1_85" BEL "in4x_C1_86" BEL "in4x_C1_87" BEL "in4x_C1_88" BEL
-        "in4x_C1_89" BEL "in4x_C1_90" BEL "in4x_C1_91" BEL "in4x_C1_92" BEL
-        "in4x_C1_93" BEL "in4x_C1_94" BEL "in4x_C1_95" BEL "in4x_C1_96" BEL
-        "in4x_C1_97" BEL "in4x_C1_98" BEL "in4x_C1_99" BEL "in4x_C1_100" BEL
-        "in4x_C1_101" BEL "in4x_C1_102" BEL "in4x_C1_103" BEL "in4x_C1_104"
-        BEL "in4x_C1_105" BEL "in4x_C1_106" BEL "in4x_C1_107" BEL
-        "in4x_C1_108" BEL "in4x_C1_109" BEL "in4x_C1_110" BEL "in4x_C1_111"
-        BEL "in4x_C1_112" BEL "in4x_C1_113" BEL "in4x_C1_114" BEL
-        "in4x_C1_115" BEL "in4x_C1_116" BEL "in4x_C1_117" BEL "in4x_C1_118"
-        BEL "in4x_C1_119" BEL "in4x_C1_120" BEL "in4x_C1_121" BEL
-        "in4x_C1_122" BEL "in4x_C1_123" BEL "in4x_C1_124" BEL "in4x_C1_125"
-        BEL "in4x_C1_126" BEL "in4x_C1_127" BEL "in4x_C1_128" BEL
-        "in4x_C1_129" BEL "in4x_C1_130" BEL "in4x_C1_131" BEL "in4x_C1_132"
-        BEL "in4x_C1_133" BEL "in4x_D1_0" BEL "in4x_D1_1" BEL "in4x_D1_2" BEL
+        BEL "in4x_C2_133" BEL "in4x_D1_0" BEL "in4x_D1_1" BEL "in4x_D1_2" BEL
         "in4x_D1_3" BEL "in4x_D1_4" BEL "in4x_D1_5" BEL "in4x_D1_6" BEL
         "in4x_D1_7" BEL "in4x_D1_8" BEL "in4x_D1_9" BEL "in4x_D1_10" BEL
         "in4x_D1_11" BEL "in4x_D1_12" BEL "in4x_D1_13" BEL "in4x_D1_14" BEL
@@ -4285,30 +4283,38 @@ TIMEGRP variable_freq_clk_generator_inst_clkout_i = BEL "max_timestep_0" BEL
         BEL "stim_sequencer_D2/stim_on_4" BEL "stim_sequencer_D2/stim_on_3"
         BEL "stim_sequencer_D2/stim_on_2" BEL "stim_sequencer_D2/stim_on_1"
         BEL "stim_sequencer_D2/stim_on_0" BEL
-        "stim_sequencer_A1/Mram_stim_counter3" BEL
-        "stim_sequencer_A1/Mram_stim_counter1" BEL
         "stim_sequencer_A1/Mram_stim_counter2" BEL
+        "stim_sequencer_A1/Mram_stim_counter1" BEL
+        "stim_sequencer_A1/Mram_stim_counter3" BEL
         "stim_sequencer_A1/Mram_stim_counter4" BEL
-        "stim_sequencer_A1/Mram_stim_counter5" BEL
-        "stim_sequencer_A1/Mram_stim_counter8" BEL
-        "stim_sequencer_A1/Mram_stim_counter6" BEL
         "stim_sequencer_A1/Mram_stim_counter7" BEL
+        "stim_sequencer_A1/Mram_stim_counter5" BEL
+        "stim_sequencer_A1/Mram_stim_counter6" BEL
+        "stim_sequencer_A1/Mram_stim_counter8" BEL
         "stim_sequencer_A1/Mram_counter1" BEL
-        "stim_sequencer_A1/Mram_counter2" BEL
-        "stim_sequencer_A1/Mram_counter5" BEL
-        "stim_sequencer_A1/Mram_counter3" BEL
         "stim_sequencer_A1/Mram_counter4" BEL
+        "stim_sequencer_A1/Mram_counter2" BEL
+        "stim_sequencer_A1/Mram_counter3" BEL
+        "stim_sequencer_A1/Mram_counter5" BEL
         "stim_sequencer_A1/Mram_counter6" BEL
         "stim_sequencer_A1/Mram_counter7" BEL
         "stim_sequencer_A1/Mram_counter8" BEL
         "stim_sequencer_A1/Mram_counter9" BEL
         "stim_sequencer_A1/Mram_counter10" BEL
-        "stim_sequencer_A1/Mram_counter11" BEL
-        "stim_sequencer_A1/Mram_counter14" BEL
-        "stim_sequencer_A1/Mram_counter12" BEL
         "stim_sequencer_A1/Mram_counter13" BEL
+        "stim_sequencer_A1/Mram_counter11" BEL
+        "stim_sequencer_A1/Mram_counter12" BEL
+        "stim_sequencer_A1/Mram_counter14" BEL
         "stim_sequencer_A1/Mram_counter15" BEL
         "stim_sequencer_A1/Mram_counter16" BEL
+        "stim_sequencer_A2/Mram_stim_counter1" BEL
+        "stim_sequencer_A2/Mram_stim_counter2" BEL
+        "stim_sequencer_A2/Mram_stim_counter3" BEL
+        "stim_sequencer_A2/Mram_stim_counter6" BEL
+        "stim_sequencer_A2/Mram_stim_counter4" BEL
+        "stim_sequencer_A2/Mram_stim_counter5" BEL
+        "stim_sequencer_A2/Mram_stim_counter7" BEL
+        "stim_sequencer_A2/Mram_stim_counter8" BEL
         "stim_sequencer_A2/Mram_counter1" BEL
         "stim_sequencer_A2/Mram_counter2" BEL
         "stim_sequencer_A2/Mram_counter3" BEL
@@ -4318,36 +4324,28 @@ TIMEGRP variable_freq_clk_generator_inst_clkout_i = BEL "max_timestep_0" BEL
         "stim_sequencer_A2/Mram_counter6" BEL
         "stim_sequencer_A2/Mram_counter8" BEL
         "stim_sequencer_A2/Mram_counter9" BEL
+        "stim_sequencer_A2/Mram_counter12" BEL
         "stim_sequencer_A2/Mram_counter10" BEL
         "stim_sequencer_A2/Mram_counter11" BEL
-        "stim_sequencer_A2/Mram_counter12" BEL
         "stim_sequencer_A2/Mram_counter13" BEL
-        "stim_sequencer_A2/Mram_counter16" BEL
         "stim_sequencer_A2/Mram_counter14" BEL
-        "stim_sequencer_A2/Mram_counter15" BEL
-        "stim_sequencer_A2/Mram_stim_counter1" BEL
-        "stim_sequencer_A2/Mram_stim_counter2" BEL
-        "stim_sequencer_A2/Mram_stim_counter5" BEL
-        "stim_sequencer_A2/Mram_stim_counter3" BEL
-        "stim_sequencer_A2/Mram_stim_counter4" BEL
-        "stim_sequencer_A2/Mram_stim_counter6" BEL
-        "stim_sequencer_A2/Mram_stim_counter7" BEL
-        "stim_sequencer_B1/Mram_stim_counter2" BEL
-        "stim_sequencer_A2/Mram_stim_counter8" BEL
         "stim_sequencer_B1/Mram_stim_counter1" BEL
+        "stim_sequencer_A2/Mram_counter15" BEL
+        "stim_sequencer_A2/Mram_counter16" BEL
+        "stim_sequencer_B1/Mram_stim_counter2" BEL
         "stim_sequencer_B1/Mram_stim_counter3" BEL
         "stim_sequencer_B1/Mram_stim_counter4" BEL
         "stim_sequencer_B1/Mram_stim_counter5" BEL
         "stim_sequencer_B1/Mram_stim_counter6" BEL
         "stim_sequencer_B1/Mram_stim_counter7" BEL
-        "stim_sequencer_B1/Mram_stim_counter8" BEL
-        "stim_sequencer_B1/Mram_counter3" BEL
-        "stim_sequencer_B1/Mram_counter1" BEL
         "stim_sequencer_B1/Mram_counter2" BEL
+        "stim_sequencer_B1/Mram_stim_counter8" BEL
+        "stim_sequencer_B1/Mram_counter1" BEL
+        "stim_sequencer_B1/Mram_counter3" BEL
         "stim_sequencer_B1/Mram_counter4" BEL
+        "stim_sequencer_B1/Mram_counter7" BEL
         "stim_sequencer_B1/Mram_counter5" BEL
         "stim_sequencer_B1/Mram_counter6" BEL
-        "stim_sequencer_B1/Mram_counter7" BEL
         "stim_sequencer_B1/Mram_counter8" BEL
         "stim_sequencer_B1/Mram_counter9" BEL
         "stim_sequencer_B1/Mram_counter12" BEL
@@ -4997,12 +4995,10 @@ TIMEGRP variable_freq_clk_generator_inst_clkout_i = BEL "max_timestep_0" BEL
         "digout_sequencer_1/digout_5" BEL "digout_sequencer_1/digout_4" BEL
         "digout_sequencer_1/digout_3" BEL "digout_sequencer_1/digout_2" BEL
         "digout_sequencer_1/digout_1" BEL "digout_sequencer_1/digout_0" BEL
-        "DAC_output_8/state_clk" BEL "DAC_output_8/DAC_DIN" BEL
-        "DAC_output_7/DAC_DIN" BEL "DAC_output_6/DAC_DIN" BEL
-        "DAC_output_5/DAC_DIN" BEL "DAC_output_4/DAC_DIN" BEL
-        "DAC_output_3/DAC_DIN" BEL "DAC_output_2/DAC_DIN" BEL
-        "DAC_output_1/DAC_SYNC" BEL "DAC_output_1/DAC_DIN" BEL
-        "DAC_output_1/DAC_SCLK" PIN
+        "DAC_output_8/state_clk" BEL "DAC_output_8/DIN" BEL "DAC_output_7/DIN"
+        BEL "DAC_output_6/DIN" BEL "DAC_output_5/DIN" BEL "DAC_output_4/DIN"
+        BEL "DAC_output_3/DIN" BEL "DAC_output_2/DIN" BEL "DAC_output_1/SYNC"
+        BEL "DAC_output_1/DIN" BEL "DAC_output_1/SCLK" PIN
         "RAM_bank_1_MSW/RAM_block_0/RAM_block_0/RAMB16BWER_inst_pins<29>" PIN
         "RAM_bank_1_MSW/RAM_block_0/RAM_block_1/RAMB16BWER_inst_pins<29>" PIN
         "RAM_bank_1_MSW/RAM_block_0/RAM_block_2/RAMB16BWER_inst_pins<29>" PIN
@@ -5913,31 +5909,32 @@ TIMEGRP host_dcm_clk0 = BEL "RAM_addr_wr_counter_0" BEL
         "ti45/ep_trigger_2" BEL "ti45/ep_trigger_3" BEL "ti45/ep_trigger_4"
         BEL "ti45/ep_trigger_5" BEL "ti45/ep_trigger_6" BEL
         "ti45/ep_trigger_7" BEL "ti44/eptrig_0" BEL "ti44/eptrig_1" BEL
-        "ti44/trigff0_0" BEL "ti44/trigff0_1" BEL "ti44/trigff1_0" BEL
-        "ti44/trigff1_1" BEL "ti44/ep_trigger_0" BEL "ti44/ep_trigger_1" BEL
-        "ti43/eptrig_0" BEL "ti43/eptrig_1" BEL "ti43/eptrig_2" BEL
-        "ti43/eptrig_3" BEL "ti43/eptrig_4" BEL "ti43/eptrig_5" BEL
-        "ti43/eptrig_6" BEL "ti43/eptrig_7" BEL "ti43/eptrig_8" BEL
-        "ti43/eptrig_9" BEL "ti43/eptrig_10" BEL "ti43/eptrig_11" BEL
-        "ti43/eptrig_12" BEL "ti43/eptrig_13" BEL "ti43/eptrig_14" BEL
-        "ti43/eptrig_15" BEL "ti43/trigff0_0" BEL "ti43/trigff0_1" BEL
-        "ti43/trigff0_2" BEL "ti43/trigff0_3" BEL "ti43/trigff0_4" BEL
-        "ti43/trigff0_5" BEL "ti43/trigff0_6" BEL "ti43/trigff0_7" BEL
-        "ti43/trigff0_8" BEL "ti43/trigff0_9" BEL "ti43/trigff0_10" BEL
-        "ti43/trigff0_11" BEL "ti43/trigff0_12" BEL "ti43/trigff0_13" BEL
-        "ti43/trigff0_14" BEL "ti43/trigff0_15" BEL "ti43/trigff1_0" BEL
-        "ti43/trigff1_1" BEL "ti43/trigff1_2" BEL "ti43/trigff1_3" BEL
-        "ti43/trigff1_4" BEL "ti43/trigff1_5" BEL "ti43/trigff1_6" BEL
-        "ti43/trigff1_7" BEL "ti43/trigff1_8" BEL "ti43/trigff1_9" BEL
-        "ti43/trigff1_10" BEL "ti43/trigff1_11" BEL "ti43/trigff1_12" BEL
-        "ti43/trigff1_13" BEL "ti43/trigff1_14" BEL "ti43/trigff1_15" BEL
-        "ti43/ep_trigger_0" BEL "ti43/ep_trigger_1" BEL "ti43/ep_trigger_2"
-        BEL "ti43/ep_trigger_3" BEL "ti43/ep_trigger_4" BEL
-        "ti43/ep_trigger_5" BEL "ti43/ep_trigger_6" BEL "ti43/ep_trigger_7"
-        BEL "ti43/ep_trigger_8" BEL "ti43/ep_trigger_9" BEL
-        "ti43/ep_trigger_10" BEL "ti43/ep_trigger_11" BEL "ti43/ep_trigger_12"
-        BEL "ti43/ep_trigger_13" BEL "ti43/ep_trigger_14" BEL
-        "ti43/ep_trigger_15" BEL "ti42/eptrig_0" BEL "ti42/eptrig_1" BEL
+        "ti44/eptrig_2" BEL "ti44/trigff0_0" BEL "ti44/trigff0_1" BEL
+        "ti44/trigff0_2" BEL "ti44/trigff1_0" BEL "ti44/trigff1_1" BEL
+        "ti44/trigff1_2" BEL "ti44/ep_trigger_0" BEL "ti44/ep_trigger_1" BEL
+        "ti44/ep_trigger_2" BEL "ti43/eptrig_0" BEL "ti43/eptrig_1" BEL
+        "ti43/eptrig_2" BEL "ti43/eptrig_3" BEL "ti43/eptrig_4" BEL
+        "ti43/eptrig_5" BEL "ti43/eptrig_6" BEL "ti43/eptrig_7" BEL
+        "ti43/eptrig_8" BEL "ti43/eptrig_9" BEL "ti43/eptrig_10" BEL
+        "ti43/eptrig_11" BEL "ti43/eptrig_12" BEL "ti43/eptrig_13" BEL
+        "ti43/eptrig_14" BEL "ti43/eptrig_15" BEL "ti43/trigff0_0" BEL
+        "ti43/trigff0_1" BEL "ti43/trigff0_2" BEL "ti43/trigff0_3" BEL
+        "ti43/trigff0_4" BEL "ti43/trigff0_5" BEL "ti43/trigff0_6" BEL
+        "ti43/trigff0_7" BEL "ti43/trigff0_8" BEL "ti43/trigff0_9" BEL
+        "ti43/trigff0_10" BEL "ti43/trigff0_11" BEL "ti43/trigff0_12" BEL
+        "ti43/trigff0_13" BEL "ti43/trigff0_14" BEL "ti43/trigff0_15" BEL
+        "ti43/trigff1_0" BEL "ti43/trigff1_1" BEL "ti43/trigff1_2" BEL
+        "ti43/trigff1_3" BEL "ti43/trigff1_4" BEL "ti43/trigff1_5" BEL
+        "ti43/trigff1_6" BEL "ti43/trigff1_7" BEL "ti43/trigff1_8" BEL
+        "ti43/trigff1_9" BEL "ti43/trigff1_10" BEL "ti43/trigff1_11" BEL
+        "ti43/trigff1_12" BEL "ti43/trigff1_13" BEL "ti43/trigff1_14" BEL
+        "ti43/trigff1_15" BEL "ti43/ep_trigger_0" BEL "ti43/ep_trigger_1" BEL
+        "ti43/ep_trigger_2" BEL "ti43/ep_trigger_3" BEL "ti43/ep_trigger_4"
+        BEL "ti43/ep_trigger_5" BEL "ti43/ep_trigger_6" BEL
+        "ti43/ep_trigger_7" BEL "ti43/ep_trigger_8" BEL "ti43/ep_trigger_9"
+        BEL "ti43/ep_trigger_10" BEL "ti43/ep_trigger_11" BEL
+        "ti43/ep_trigger_12" BEL "ti43/ep_trigger_13" BEL "ti43/ep_trigger_14"
+        BEL "ti43/ep_trigger_15" BEL "ti42/eptrig_0" BEL "ti42/eptrig_1" BEL
         "ti42/trigff0_0" BEL "ti42/trigff0_1" BEL "ti42/trigff1_0" BEL
         "ti42/trigff1_1" BEL "ti42/ep_trigger_0" BEL "ti42/ep_trigger_1" BEL
         "ti41/eptrig_0" BEL "ti41/eptrig_1" BEL "ti40/eptrig_0" BEL

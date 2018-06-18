@@ -31,7 +31,7 @@ module scalable_filter #(
 	input wire			dataclk,
 	input wire [31:0] main_state,
 	input wire [5:0]	channel,
-	input wire [15:0]	filter_input,
+	input wire [15:0]	filter_in,
 	input wire [15:0] sequencer_in,
 	input wire			use_sequencer,
 	input wire			en,
@@ -46,7 +46,7 @@ module scalable_filter #(
 	input wire [15:0] fsm_start_win_in,     // MM - UPDATE - 1/16/18
 	input wire [15:0] fsm_stop_win_in,      // MM - UPDATE - 1/16/18
 	input wire [15:0] fsm_state_counter_in, // MM - UPDATE - 1/16/18
-	output wire			fsm_inwin_out,		  // MM - UPDATE - 1/16/18
+	output wire			fsm_inwin_out,		  	 // MM - UPDATE - 1/16/18
 	input wire [15:0] filter_coefficient,
 	input wire			filter_en,
 	input wire			software_reference_mode,
@@ -63,7 +63,7 @@ module scalable_filter #(
 	wire [15:0]    filter_output;
 	wire [31:0]    filter_new_state;
 	wire [35:0]		multiplier_out;
-	reg  [31:0] 	filter_state;
+	reg  [31:0] 	filter_state, filter_type_dependent_state;
 	wire 				positive_overflow, negative_overflow;
 	reg				state_clk;
 	wire [15:0]		pre_ref_input_twos_comp, software_reference_twos_comp, input_minus_ref;
@@ -79,7 +79,7 @@ module scalable_filter #(
 	
 	// Convert input and software_reference from unsigned (offset) representation to signed
 	// (two's complement) represention by inverting the MSB.
-	assign pre_ref_input_twos_comp = {~filter_input[15], filter_input[14:0]};
+	assign pre_ref_input_twos_comp = {~filter_in[15], filter_in[14:0]};
 	assign software_reference_twos_comp = {~software_reference[15], software_reference[14:0]};
 	
 	assign input_minus_ref_before_limit = pre_ref_input_twos_comp + ~software_reference_twos_comp + 1; // pre_ref_input - software_reference
@@ -92,24 +92,15 @@ module scalable_filter #(
 	assign filter_input = software_reference_mode ? { input_minus_ref, 2'b00 } : {~filter_input[15], filter_input[14:0], 2'b00};
 	
 	
-	if(filter_type==0) begin
-	// Implement one-pole low-pass filter
 	
-		assign multiplier_in_before_limit = filter_input + filter_state[31:14] + 1; // filter_input + filter_state
-		assign negative_overflow = filter_input[17] & ~filter_state[31] & ~multiplier_in_before_limit[17]; // detect negative overflow from subtraction
-		assign positive_overflow = ~filter_input[17] & filter_state[31] & multiplier_in_before_limit[17]; // detect positive overflow from subtraction
-		assign multiplier_in = positive_overflow ? 18'h1ffff : (negative_overflow ? 18'h20000 : multiplier_in_before_limit[17:0]); // limit subtractor output
-	
-	end else begin
 
-		// Implement one-pole high-pass filter
-		
-		assign multiplier_in_before_limit = filter_input + ~filter_state[31:14] + 1; // filter_input - filter_state
-		assign negative_overflow = filter_input[17] & ~filter_state[31] & ~multiplier_in_before_limit[17]; // detect negative overflow from subtraction
-		assign positive_overflow = ~filter_input[17] & filter_state[31] & multiplier_in_before_limit[17]; // detect positive overflow from subtraction
-		assign multiplier_in = positive_overflow ? 18'h1ffff : (negative_overflow ? 18'h20000 : multiplier_in_before_limit[17:0]); // limit subtractor output
+	// Implement single-pole butterworth state filter
 	
-	end
+	assign multiplier_in_before_limit = filter_input + filter_type_dependent_state[31:14] + 1; 
+	assign negative_overflow = filter_input[17] & ~filter_state[31] & ~multiplier_in_before_limit[17]; // detect negative overflow from subtraction
+	assign positive_overflow = ~filter_input[17] & filter_state[31] & multiplier_in_before_limit[17]; // detect positive overflow from subtraction
+	assign multiplier_in = positive_overflow ? 18'h1ffff : (negative_overflow ? 18'h20000 : multiplier_in_before_limit[17:0]); // limit subtractor output
+	
 	
 	// Multiplier with two 18-bit signed inputs and 36-bit output
 	multiplier_18x18 multiplier_1 (
@@ -131,6 +122,8 @@ module scalable_filter #(
 		end else begin
 			filter_state <= filter_new_state;
 		end
+		// If filter_type == 1, high-pass (filter_input - filter_state) otherwise, low-pass (filter_input + filter_state)
+		filter_type_dependent_state <= filter_type ? { ~filter_state } : { filter_state }; 
 	end
 	
 	// End of high-pass filter

@@ -44,11 +44,12 @@ activation of multiple independent "neural event" discriminators- both in highpa
 Current goals for GUI modifications **(Updated June 15, 2018)**:
 
 1. ~~Create a new spike scope window to visualize a new spike detection method (similar to the one detailed in [Azin, Guggenmos et. al. (2011)](https://ieeexplore.ieee.org/document/5723023/ "A Battery-Powered Activity-Dependent Intracortical Microstimulation IC for Brain-Machine-Brain Interface");~~ **complete**  
-2. Create a [new tab](../GUI/MM-RHS2000_Interface/source/mainwindow.cpp "link to C++ code") for event detection (e.g. spike count, rasterplots, PSTH); - partially complete  
+2. ~~Create a [new tab](../GUI/MM-RHS2000_Interface/source/mainwindow.cpp "link to C++ code") for event detection (e.g. spike count, rasterplots, PSTH);~~ **completed during May 2018 MAECI collaboration at IIT**  
 3. ~~Create an option to detect Local Field Potentials (LFPs);~~ **completed during May 2018 MAECI collaboration at IIT**  
 4. ~~Add the possibility to replay the amplifier activity instead of the generation of synthetic neural data for demonstration purposes if no Controller or Evaluation board is connected.~~ **completed during May 2018 MAECI collaboration at IIT**  
-5. Complete "Event Streams" tab module (relates to Goal 2);  
+5. Integrate "Event Streams" tab module with hardware code (relates to Goal 2);  
 6. Break mainwindow.cpp into many smaller code files and functions to make it easier to work with. Also, remove hard-coded indexing values such as DAC_Threshold1, etc.  
+7. Automatically generate digital record of parameters used in detection state machine to facilitate subsequent offline analyses  
 
 Current goals for Verilog/Hardware modifications **(Updated June 15, 2018)**:
 

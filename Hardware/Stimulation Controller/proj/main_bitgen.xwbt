@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\Max Murphy\Desktop\Preliminary intan\2018-01-16_RHS2000 Window Discriminator\RHS2000InterfaceXEM6010_release_170328\main.ncd
-OUTFILE=C:\Users\Max Murphy\Desktop\Preliminary intan\2018-01-16_RHS2000 Window Discriminator\RHS2000InterfaceXEM6010_release_170328\main.bit
+INFILE=C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.ncd
+OUTFILE=C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.bit
 FAMILY=Spartan6
 PART=xc6slx45-2fgg484
-WORKINGDIR=C:\Users\Max Murphy\Desktop\Preliminary intan\2018-01-16_RHS2000 Window Discriminator\RHS2000InterfaceXEM6010_release_170328
+WORKINGDIR=C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj
 LICENSE=WebPack
 USER_INFO=211341499_1777530695_0_275

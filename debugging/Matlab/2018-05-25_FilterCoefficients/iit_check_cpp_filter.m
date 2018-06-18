@@ -26,6 +26,7 @@ function [b,a] = iit_check_cpp_filter(fc,fs,varargin)
 %   single-pole butterworth filter estimated using the Intan UI.
 %
 % By: Max Murphy    v1.0    05/25/2018  Original version (R2017a)
+%                   v1.1    06/18/2018  Fixing bad implementation.
 
 %% DEFAULTS
 TYPE = 'lowpass';
@@ -69,14 +70,7 @@ switch TYPE
 %                 }
 %             }
 %         }
-%
-%           state-space representation
-%
-%           state(k+1) = A*state(k) + B*input(k);
-%           output(k)  = D*input(k) + C*state(k);        
-
-
-        
+%      
         a = exp(-1.0 * 2 * pi * fc / fs);
         b = 1 - a;
         
@@ -85,15 +79,16 @@ switch TYPE
         output = input;
         for k = 1:N_POINT
            
+%            state(k+1) = a * state(k) + input(k) - a * input(k);
            state(k+1) = a * state(k) + b * input(k);
            output(k) = input(k) - state(k);
            
         end
         
         p = a;
-        k = 1 - b/2;
+        k = b;
         
-        [b_f,a_f] = zp2tf(1,p,k);
+        [b_f,a_f] = zp2tf(1,p,1);
         
         figure('Name','Sinusoid Attenuation - HPF',...
                'WindowStyle','docked');
@@ -124,6 +119,7 @@ switch TYPE
         
         
     case 'lowpass'
+        fprintf(1,'\nComputing coefficients for lowpass filter...');
 % To recreate:
 %
 %         void SignalProcessor::setLowpassFilter(double cutoffFreq, double sampleFreq)
@@ -146,16 +142,9 @@ switch TYPE
 %                 }
 %             }
 %         }
-%
-%           state-space representation
-%
-%           state(k+1) = A*state(k) + B*input(k);
-%           output(k)  = D*input(k) + C*state(k);        
 
-
-        fprintf(1,'\nComputing coefficients for lowpass filter...');
-        a = exp(-1.0 * 2 * pi * fc / fs);
-        b = a - 1;
+        a = 1 - exp(-1.0 * 2 * pi * fc / fs);
+        b = 1 - a;
         
         state = zeros(1,numel(input)+1);
         
@@ -163,12 +152,12 @@ switch TYPE
         for k = 1:N_POINT
            
            state(k+1) = a * state(k) + b * input(k);
-           output(k) = input(k) - state(k);
+           output(k) = input(k) + state(k);
            
         end
         
         p = a;
-        k = b/2;
+        k = b;
         
         [b_f,a_f] = zp2tf(-1,p,k);
         
