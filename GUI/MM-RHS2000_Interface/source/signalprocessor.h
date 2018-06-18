@@ -46,11 +46,10 @@ public:
     void allocateMemory(int numStreams);
     void setNotchFilter(double notchFreq, double bandwidth, double sampleFreq);
     void setNotchFilterEnabled(bool enable);
-    void setHighpassFilter(double cutoffFreq, double sampleFreq);
     void setHighpassFilterEnabled(bool enable);
 
     // MM - UPDATE - IIT:FILTERS FOR EVENT STREAMS TAB - 5/25/2018
-    void setLowpassFilter(double cutoffFreq, double sampleFreq);
+    void setFilterCutoff(double cutoffFreq, double sampleFreq);
     void setLowpassFilterEnabled(bool enable);
     // MM - END UPDATE
 
@@ -112,14 +111,12 @@ private:
     double b1;
     double b2;
     bool notchFilterEnabled;
-    double aHpf;
-    double bHpf;
     bool highpassFilterEnabled;
 
     // MM - UPDATE - IIT:EVENT STREAMS TAB - 5/25/2018
     // add elements for lowpass filter to be implemented in hardware
-    double aLpf;
-    double bLpf;
+    double a;
+    double b;
     bool lowpassFilterEnabled;
     // MM - END UPDATE
 

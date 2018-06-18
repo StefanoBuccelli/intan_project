@@ -2354,13 +2354,13 @@ void MainWindow::setDacFilterCutoff(double cutoff, int type)
     dacFilterFrequency = cutoff;
     switch (type) {
     case 1:
-        signalProcessor->setHighpassFilter(cutoff, boardSampleRate);
+        signalProcessor->setFilterCutoff(cutoff, boardSampleRate);
         if (!synthMode) {
             evalBoard->setDacHighpassFilter(cutoff);
         }
         break;
     case 2:
-        signalProcessor->setLowpassFilter(cutoff, boardSampleRate);
+        signalProcessor->setFilterCutoff(cutoff, boardSampleRate);
         if (!synthMode) {
             evalBoard->setDacLowpassFilter(cutoff);
         }
@@ -2515,7 +2515,7 @@ void MainWindow::changeSampleRate(int sampleRateIndex, bool updateStimParams)
 
     wavePlot->setSampleRate(boardSampleRate);
 
-    signalProcessor->setHighpassFilter(dacFilterFrequency, boardSampleRate);
+    signalProcessor->setFilterCutoff(dacFilterFrequency, boardSampleRate);
 
     if (!synthMode) {
         evalBoard->setDacHighpassFilter(dacFilterFrequency);

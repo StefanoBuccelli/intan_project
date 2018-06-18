@@ -66,14 +66,12 @@ SignalProcessor::SignalProcessor()
 
     // Highpass filter initial parameters.
     highpassFilterEnabled = true;
-    aHpf = 0.0;
-    bHpf = 0.0;
+    a = 0.0;
+    b = 0.0;
 
     // MM - UPDATE - IIT:EVENT STREAMS TAB - 5/25/2018
     // Lowpass filter initial parameters.
     lowpassFilterEnabled = false;
-    aLpf = 0.0;
-    bLpf = 0.0;
     // MM - END UPDATE
 
     // Set up random number generator in case we are asked to generate synthetic data.
@@ -2225,12 +2223,12 @@ void SignalProcessor::setNotchFilterEnabled(bool enable)
     notchFilterEnabled = enable;
 }
 
-// Set highpass filter parameters.  All filter parameters are given in Hz (or
+// Set filter coefficients (they are same for HPF and LPF).  All filter parameters are given in Hz (or
 // in Samples/s).
-void SignalProcessor::setHighpassFilter(double cutoffFreq, double sampleFreq)
+void SignalProcessor::setFilterCutoff(double cutoffFreq, double sampleFreq)
 {
-    aHpf = exp(-1.0 * TWO_PI * cutoffFreq / sampleFreq);
-    bHpf = 1.0 - aHpf;
+    a = exp(-1.0 * TWO_PI * cutoffFreq / sampleFreq);
+    b = 1.0 - a;
 }
 
 // Enables or disables amplifier waveform highpass filter.
@@ -2240,13 +2238,6 @@ void SignalProcessor::setHighpassFilterEnabled(bool enable)
 }
 
 // MM - UPDATE - IIT:FILTERS FOR EVENT STREAMS TAB - 5/25/2018
-// Set lowpass filter parameters.  All filter parameters are given in Hz (or
-// in Samples/s).
-void SignalProcessor::setLowpassFilter(double cutoffFreq, double sampleFreq)
-{
-    aLpf = exp(-1.0 * TWO_PI * cutoffFreq / sampleFreq);
-    bLpf = aLpf - 1.0;
-}
 
 // Enables or disables amplifier waveform lowpass filter.
 void SignalProcessor::setLowpassFilterEnabled(bool enable)
@@ -2357,7 +2348,7 @@ void SignalProcessor::filterData(int numBlocks,
                         hptemp = amplifierPostFilter[stream][channel][t];
                         amplifierPostFilter[stream][channel][t] -= filterState[stream][channel];
                         filterState[stream][channel] =
-                                aHpf * filterState[stream][channel] + bHpf * hptemp;
+                                a * filterState[stream][channel] + b * hptemp;
                     }
                 }
             }
@@ -2373,9 +2364,9 @@ void SignalProcessor::filterData(int numBlocks,
                 if (channelVisible.at(stream).at(channel)) {
                     for (t = 0; t < length; ++t) {
                         lptemp = amplifierPostFilter[stream][channel][t];
-                        amplifierPostFilter[stream][channel][t] -= filterState[stream][channel];
+                        amplifierPostFilter[stream][channel][t] = filterState[stream][channel];
                         filterState[stream][channel] =
-                                aLpf * filterState[stream][channel] + bLpf * lptemp;
+                                a * filterState[stream][channel] + b * lptemp;
                     }
                 }
             }
