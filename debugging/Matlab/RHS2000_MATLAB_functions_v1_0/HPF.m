@@ -1,4 +1,4 @@
-function out = HPF(in, fSample, fCutoff)
+function [out,tmp] = HPF(in, fSample, fCutoff)
 
 % out = HPF(in, fSample, fCutoff)
 %
@@ -15,17 +15,13 @@ function out = HPF(in, fSample, fCutoff)
 A = exp(-(2*pi*fCutoff)/fSample);
 B = 1 - A;
 
-% This algorithm implements a first-order LOW-pass filter, and then
-% subtracts the output of this low-pass filter from the input to create
-% a first-order high-pass filter.
-
-outLPF = zeros(size(in));
-outLPF(1) = in(1);  % if filtering a continuous data stream, change this
+tmp = zeros(size(in));
+tmp(1) = in(1);  % if filtering a continuous data stream, change this
                     % to use the previous final value of outLPF
 
 % Run filter
 for i = 2:length(in)
-    outLPF(i) = (B*in(i-1) + A*outLPF(i-1));
+   tmp(i) = (B*in(i-1) + A*tmp(i-1));
 end
 
-out = in - outLPF;
+out = in - tmp;
