@@ -46,7 +46,7 @@ input = cos(2*pi*F_OSC*n);
 
 %% COMPUTE COEFFICIENTS
 switch TYPE
-    case 'highpass'
+    case 'highpass' % Works
         fprintf(1,'\nComputing coefficients for highpass filter...');
 % To recreate:
 %
@@ -79,16 +79,12 @@ switch TYPE
         output = input;
         for k = 1:N_POINT
            
-%            state(k+1) = a * state(k) + input(k) - a * input(k);
            state(k+1) = a * state(k) + b * input(k);
            output(k) = input(k) - state(k);
            
         end
         
-        p = a;
-        k = b;
-        
-        [b_f,a_f] = zp2tf(1,p,1);
+        [b_f,a_f] = ss2tf(a,b,-1,1);
         
         figure('Name','Sinusoid Attenuation - HPF',...
                'WindowStyle','docked');
@@ -104,17 +100,19 @@ switch TYPE
         subplot(2,1,1);
         plot(n,input);
         title('x[n]');
+        ylim([-1 1]);
         subplot(2,1,2);
         plot(n,output);
         title('y[n]');
+        ylim([-1 1]);
         
         freqz(b_f,a_f,N,fs);
         ax = get(gcf,'Children');
         axes(ax(1));
-        xlim([0 2*fc]);
+        xlim([0 2*max(fc,F_OSC)]);
         title(sprintf('Highpass Butterworth Filter (f_c = %d)',fc));
         axes(ax(2));
-        xlim([0 2*fc]);
+        xlim([0 2*max(fc,F_OSC)]);
         
         
         
@@ -143,7 +141,7 @@ switch TYPE
 %             }
 %         }
 
-        a = 1 - exp(-1.0 * 2 * pi * fc / fs);
+        a = exp(-1.0 * 2 * pi * fc / fs);
         b = 1 - a;
         
         state = zeros(1,numel(input)+1);
@@ -152,43 +150,32 @@ switch TYPE
         for k = 1:N_POINT
            
            state(k+1) = a * state(k) + b * input(k);
-           output(k) = input(k) + state(k);
+           output(k) = state(k);
            
         end
-        
-        p = a;
-        k = b;
-        
-        [b_f,a_f] = zp2tf(-1,p,k);
-        
-        state = 0;
-        
-        output = input;
-        for k = 1:N_POINT
-           temp = output(k);
-           output(k) = output(k) - state;
-           state = a * state + b * temp;
-        end
+
+        [b_f,a_f] = ss2tf(a,b,1,0);
         
         figure('Name','Sinusoid Attenuation - LPF',...
                'WindowStyle','docked');
         subplot(2,1,1);
         plot(n,input);
         title(sprintf('x[n] (f_{osc} = %d)',F_OSC));
+        ylim([-1 1]);
         subplot(2,1,2);
         plot(n,output);
         title(sprintf('y[n] (f_{osc} = %d)',F_OSC));
-        
+        ylim([-1 1]);
         
         figure('Name', 'FreqZ - LPF',...
                'WindowStyle','docked');
         freqz(b_f,a_f,N,fs);
         ax = get(gcf,'Children');
         axes(ax(1));
-        xlim([0 2*fc]);
+        xlim([0 2*max(fc,F_OSC)]);
         title(sprintf('Lowpass Butterworth Filter (f_c = %d)',fc));
         axes(ax(2));
-        xlim([0 2*fc]);
+        xlim([0 2*max(fc,F_OSC)]);
         
     otherwise
         error('Invalid specification for TYPE (%s). Must be lowpass or highpass.',TYPE);
