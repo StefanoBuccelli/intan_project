@@ -144,15 +144,14 @@ public:
     void setAudioNoiseSuppress(int noiseSuppress);
     void selectDacDataStream(int dacChannel, int stream);
     void selectDacDataChannel(int dacChannel, int dataChannel);
-    void enableDacHighpassFilter(bool enable);
-    void setDacHighpassFilter(double cutoff);
+    void enableDacFilter(bool enable);
+    void setDacFilter(double cutoff);
     void setDacThreshold(int dacChannel, int threshold, bool trigPolarity);
 
     // MM - UPDATE - IIT:EVENT STREAMS FILTER TAB - 5/27/2018
-    void enableDacLowpassFilter(bool enable);
-    void setDacLowpassFilter(double cutoff);
     void setEvtHighpassFilter(double cutoff);
     void setEvtLowpassFilter(double cutoff);
+    void updateDacFilterType(int channel);
     // MM - END UPDATE
 
     // MM - DISCRIMINATOR - UPDATE - 1/16/2018
@@ -235,6 +234,10 @@ public:
     void setChargeRecoveryMode(bool useSwitch);
 
 private:
+    // MM - UPDATE - DAC FILTERS - 6/18/18
+    void toggle(unsigned int &num,int pos);
+    // END UPDATE
+
     // MM - UPDATE - WINDOW DISCRIMINATOR - 1/16/18
     int maxWindowStop; // max. duration to run FSM
     int maxWindowDAC; // DAC number with current max. window size
@@ -358,6 +361,7 @@ private:
     unsigned int lastNumWordsInFifo;
     bool numWordsHasBeenUpdated;
     unsigned int numWordsInFifo();
+    unsigned int dacFilterType;
 };
 
 #endif // RHS2000EVALBOARD_H

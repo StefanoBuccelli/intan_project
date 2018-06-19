@@ -63,7 +63,7 @@ module scalable_filter #(
 	wire [15:0]    filter_output;
 	wire [31:0]    filter_new_state;
 	wire [35:0]		multiplier_out;
-	reg  [31:0] 	filter_state, filter_type_dependent_state;
+	reg  [31:0] 	filter_state;
 	wire 				positive_overflow, negative_overflow;
 	reg				state_clk;
 	wire [15:0]		pre_ref_input_twos_comp, software_reference_twos_comp, input_minus_ref;
@@ -91,12 +91,9 @@ module scalable_filter #(
 	// represention by inverting the MSB.	And extend to 18 bits since we use an 18-bit multiplier.
 	assign filter_input = software_reference_mode ? { input_minus_ref, 2'b00 } : {~filter_input[15], filter_input[14:0], 2'b00};
 	
-	
-	
-
 	// Implement single-pole butterworth state filter
 	
-	assign multiplier_in_before_limit = filter_input + filter_type_dependent_state[31:14] + 1; 
+	assign multiplier_in_before_limit = filter_input + filter_state[31:14] + 1; 
 	assign negative_overflow = filter_input[17] & ~filter_state[31] & ~multiplier_in_before_limit[17]; // detect negative overflow from subtraction
 	assign positive_overflow = ~filter_input[17] & filter_state[31] & multiplier_in_before_limit[17]; // detect positive overflow from subtraction
 	assign multiplier_in = positive_overflow ? 18'h1ffff : (negative_overflow ? 18'h20000 : multiplier_in_before_limit[17:0]); // limit subtractor output
@@ -114,7 +111,8 @@ module scalable_filter #(
 	assign filter_new_state = filter_state + multiplier_out[34:3];
 	
 	// HPF output = sample - state
-	assign filter_output = filter_en ? multiplier_in[17:2] : filter_input[17:2];
+	// If filter_type == 1, high-pass (filter_input - filter_state ["slow" component]) otherwise, low-pass (filter_state // "slow" component)
+	assign filter_output = filter_en ? (filter_type ?  multiplier_in[17:2] : filter_state): filter_input[17:2];
 	
 	always @(posedge state_clk) begin
 		if (reset) begin
@@ -122,8 +120,7 @@ module scalable_filter #(
 		end else begin
 			filter_state <= filter_new_state;
 		end
-		// If filter_type == 1, high-pass (filter_input - filter_state) otherwise, low-pass (filter_input + filter_state)
-		filter_type_dependent_state <= filter_type ? { ~filter_state } : { filter_state }; 
+		
 	end
 	
 	// End of high-pass filter

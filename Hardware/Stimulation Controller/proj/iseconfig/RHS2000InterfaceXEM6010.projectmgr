@@ -7,6 +7,16 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/main C:|MyRepos|shared|Intan|Hardware|Stimulation Controller|proj|main.v</ClosedNode>
+         <ClosedNode>/main C:|MyRepos|shared|Intan|Hardware|Stimulation Controller|proj|main.v/RAM_bank_1_LSW - RAM_bank</ClosedNode>
+         <ClosedNode>/main C:|MyRepos|shared|Intan|Hardware|Stimulation Controller|proj|main.v/RAM_bank_1_MSW - RAM_bank</ClosedNode>
+         <ClosedNode>/main C:|MyRepos|shared|Intan|Hardware|Stimulation Controller|proj|main.v/RAM_bank_2_LSW - RAM_bank</ClosedNode>
+         <ClosedNode>/main C:|MyRepos|shared|Intan|Hardware|Stimulation Controller|proj|main.v/RAM_bank_2_MSW - RAM_bank</ClosedNode>
+         <ClosedNode>/main C:|MyRepos|shared|Intan|Hardware|Stimulation Controller|proj|main.v/RAM_bank_3_LSW - RAM_bank</ClosedNode>
+         <ClosedNode>/main C:|MyRepos|shared|Intan|Hardware|Stimulation Controller|proj|main.v/RAM_bank_3_MSW - RAM_bank</ClosedNode>
+         <ClosedNode>/main C:|MyRepos|shared|Intan|Hardware|Stimulation Controller|proj|main.v/RAM_bank_4_LSW - RAM_bank</ClosedNode>
+         <ClosedNode>/main C:|MyRepos|shared|Intan|Hardware|Stimulation Controller|proj|main.v/RAM_bank_4_MSW - RAM_bank</ClosedNode>
+         <ClosedNode>/main C:|MyRepos|shared|Intan|Hardware|Stimulation Controller|proj|main.v/SDRAM_FIFO_inst - SDRAM_FIFO</ClosedNode>
          <ClosedNode>/main C:|Users|Max Murphy|Desktop|Preliminary intan|2018-01-16_RHS2000 Window Discriminator|RHS2000InterfaceXEM6010_release_170328|main.v/DAC_output_1 - DAC_output_scalable_HPF</ClosedNode>
          <ClosedNode>/main C:|Users|Max Murphy|Desktop|Preliminary intan|2018-01-16_RHS2000 Window Discriminator|RHS2000InterfaceXEM6010_release_170328|main.v/DAC_output_2 - DAC_output_scalable_HPF</ClosedNode>
          <ClosedNode>/main C:|Users|Max Murphy|Desktop|Preliminary intan|2018-01-16_RHS2000 Window Discriminator|RHS2000InterfaceXEM6010_release_170328|main.v/DAC_output_3 - DAC_output_scalable_HPF</ClosedNode>
@@ -42,13 +52,13 @@
          <ClosedNode>/main C:|Users|Reid|Documents|Xilinx|OpalKelly|RHS2000InterfaceXEM6010|main.v/RAM_bank_1_MSW - RAM_bank</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>main (C:/Users/Max Murphy/Desktop/Preliminary intan/2018-01-16_RHS2000 Window Discriminator/RHS2000InterfaceXEM6010_release_170328/main.v)</SelectedItem>
+         <SelectedItem>main (C:/MyRepos/shared/Intan/Hardware/Stimulation Controller/proj/main.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000023b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000023b0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000016d000000020000000000000000000000000200000064ffffffff0000008100000003000000020000016d0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>main (C:/Users/Max Murphy/Desktop/Preliminary intan/2018-01-16_RHS2000 Window Discriminator/RHS2000InterfaceXEM6010_release_170328/main.v)</CurrentItem>
+      <CurrentItem>main (C:/MyRepos/shared/Intan/Hardware/Stimulation Controller/proj/main.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
@@ -64,7 +74,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000002b1000000010000000100000000000000000000000064ffffffff000000810000000000000001000002b10000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000024f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000024f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Generate Programming File</CurrentItem>
    </ItemView>

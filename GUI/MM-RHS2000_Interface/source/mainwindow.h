@@ -91,6 +91,9 @@ public:
     QComboBox *tScaleComboBox;
     QComboBox *ampComboBox;
 
+    // MM - UPDATE - 6/18/18 DAC FILTERS
+    QVector<int> dacChannelList;
+    // MM - END UPDATE
     QVector<int> yScaleList;
     QVector<int> yScaleDcAmpList;
     QVector<int> yScaleAdcList;
@@ -147,6 +150,7 @@ private slots:
     // MM - UPDATE - IIT:DAC LPF - 5/28/2018
     void enableLowpassFilter(bool enable);
     void dacFilterLineEditChanged();
+    void setDacFilterChannel(int channel);
     // MM - END UPDATE
     void changeBandwidth();
     void changeImpedanceFrequency();
@@ -280,6 +284,10 @@ private:
     void setlpEvtFilterCutoff(double cutoff);
     // MM - END UPDATE
 
+    // MM - UPDATE - DAC FILTERS - 6/18/18
+    QVector<bool> dacFilterType;
+    // MM - END UPDATE
+
     void referenceSetChannel();
 
     void setChargeRecoveryParameters(bool mode,
@@ -343,8 +351,8 @@ private:
 //    double notchFilterFrequency;
 //    double notchFilterBandwidth;
 //    bool notchFilterEnabled;
-    double dacFilterFrequency;
-    bool dacFilterEnabled;
+    QVector<double> dacFilterFrequency;
+    QVector<bool> dacFilterEnabled;
     double desiredImpedanceFreq;
     double actualImpedanceFreq;
     bool impedanceFreqValid;
@@ -357,6 +365,7 @@ private:
     double lpEvtFilterFrequency;
     bool hpEvtFilterEnabled;
     bool lpEvtFilterEnabled;
+    int curDacFilterChannel;
 
     QRadioButton *hpEvtFilterButton;
     QRadioButton *lpEvtFilterButton;
@@ -472,7 +481,8 @@ private:
     QCheckBox *showImpedanceCheckBox;
     QCheckBox *plotPointsCheckBox;
     // MM - UPDATE - IIT:DAC LPF - 5/28/2018
-    QComboBox *dacFilterComboBox;
+    QComboBox *dacFilterTypeComboBox;
+    QComboBox *dacFilterChannelComboBox;
     // MM - END UPDATE
     QCheckBox *v0AxisLineCheckBox;
     QCheckBox *displayMarkerCheckBox;

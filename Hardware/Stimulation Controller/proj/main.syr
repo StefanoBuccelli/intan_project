@@ -332,7 +332,7 @@ Elaborating module <fifo_w16_2048_r64_512>.
 
 Elaborating module <fifo_w64_512_r16_2048>.
 WARNING:HDLCompiler:634 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\SDRAM_FIFO.v" Line 234: Net <selfrefresh_enter> does not have a driver.
-WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 961: Result of 14-bit expression is truncated to fit in 13-bit target.
+WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 959: Result of 14-bit expression is truncated to fit in 13-bit target.
 
 Elaborating module <RAM_bank>.
 
@@ -361,23 +361,23 @@ WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controll
 WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\RAM_bank.v" Line 182: Size mismatch in connection of port <RAM_addr_B>. Formal port size is 10-bit while actual signal size is 13-bit.
 
 Elaborating module <command_selector_stim>.
-WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 1290: Result of 17-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 1302: Result of 17-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 1430: Result of 32-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3241: Result of 14-bit expression is truncated to fit in 13-bit target.
-WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3247: Result of 14-bit expression is truncated to fit in 13-bit target.
-WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3253: Result of 14-bit expression is truncated to fit in 13-bit target.
-WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3259: Result of 14-bit expression is truncated to fit in 13-bit target.
+WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 1288: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 1300: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 1428: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3239: Result of 14-bit expression is truncated to fit in 13-bit target.
+WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3245: Result of 14-bit expression is truncated to fit in 13-bit target.
+WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3251: Result of 14-bit expression is truncated to fit in 13-bit target.
+WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3257: Result of 14-bit expression is truncated to fit in 13-bit target.
+WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3379: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3380: Result of 32-bit expression is truncated to fit in 16-bit target.
 WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3381: Result of 32-bit expression is truncated to fit in 16-bit target.
 WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3382: Result of 32-bit expression is truncated to fit in 16-bit target.
 WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3383: Result of 32-bit expression is truncated to fit in 16-bit target.
 WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3384: Result of 32-bit expression is truncated to fit in 16-bit target.
 WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3385: Result of 32-bit expression is truncated to fit in 16-bit target.
 WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3386: Result of 32-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3387: Result of 32-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3388: Result of 32-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3403: Result of 7-bit expression is truncated to fit in 6-bit target.
-WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3408: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3401: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3406: Result of 7-bit expression is truncated to fit in 6-bit target.
 
 Elaborating module <stim_sequencer(MODULE=0)>.
 WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\stim_sequencer.v" Line 250: Result of 32-bit expression is truncated to fit in 8-bit target.
@@ -446,28 +446,29 @@ WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controll
 Elaborating module <digout_sequencer(MODULE=16)>.
 WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\digout_sequencer.v" Line 166: Result of 32-bit expression is truncated to fit in 8-bit target.
 WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\digout_sequencer.v" Line 172: Result of 17-bit expression is truncated to fit in 16-bit target.
-WARNING:HDLCompiler:1127 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3537: Assignment to digout_sequencer_enabled ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3535: Assignment to digout_sequencer_enabled ignored, since the identifier is never used
 
 Elaborating module <digital_input_deserializer>.
-WARNING:HDLCompiler:1127 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3587: Assignment to TTL_parallel ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 3585: Assignment to TTL_parallel ignored, since the identifier is never used
 
 Elaborating module <scalable_filter(ms_wait=99,ms_clk1_a=100,ms_clk9_d=135,ms_clk18_c=170,ms_clk27_b=205)>.
 WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\scalable_filter.v" Line 85: Result of 32-bit expression is truncated to fit in 17-bit target.
-WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\scalable_filter.v" Line 99: Result of 20-bit expression is truncated to fit in 19-bit target.
+WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\scalable_filter.v" Line 96: Result of 20-bit expression is truncated to fit in 19-bit target.
 
 Elaborating module <multiplier_18x18>.
+WARNING:HDLCompiler:413 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\scalable_filter.v" Line 115: Result of 32-bit expression is truncated to fit in 16-bit target.
 
 Elaborating module <ADC_input(ms_wait=99,ms_clk1_a=100,ms_clk18_c=170)>.
 
 Elaborating module <MISO_phase_selector>.
-WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4029: Size mismatch in connection of port <MISO>. Formal port size is 33-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4032: Size mismatch in connection of port <MISO>. Formal port size is 33-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4035: Size mismatch in connection of port <MISO>. Formal port size is 33-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4038: Size mismatch in connection of port <MISO>. Formal port size is 33-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4041: Size mismatch in connection of port <MISO>. Formal port size is 33-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4044: Size mismatch in connection of port <MISO>. Formal port size is 33-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4047: Size mismatch in connection of port <MISO>. Formal port size is 33-bit while actual signal size is 32-bit.
-WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4050: Size mismatch in connection of port <MISO>. Formal port size is 33-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4027: Size mismatch in connection of port <MISO>. Formal port size is 33-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4030: Size mismatch in connection of port <MISO>. Formal port size is 33-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4033: Size mismatch in connection of port <MISO>. Formal port size is 33-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4036: Size mismatch in connection of port <MISO>. Formal port size is 33-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4039: Size mismatch in connection of port <MISO>. Formal port size is 33-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4042: Size mismatch in connection of port <MISO>. Formal port size is 33-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4045: Size mismatch in connection of port <MISO>. Formal port size is 33-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4048: Size mismatch in connection of port <MISO>. Formal port size is 33-bit while actual signal size is 32-bit.
 WARNING:HDLCompiler:1016 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\okLibrary.v" Line 40: Port CLK180 is not connected to this instance
 WARNING:HDLCompiler:1016 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\okLibrary.v" Line 68: Port BUSY is not connected to this instance
 
@@ -490,15 +491,15 @@ Elaborating module <okCoreHarness>.
 Elaborating module <okWireOR(N=41)>.
 
 Elaborating module <okWireIn>.
-WARNING:HDLCompiler:1127 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4088: Assignment to ep0bwirein ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4091: Assignment to ep0ewirein ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4098: Assignment to ep15wirein ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4086: Assignment to ep0bwirein ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4089: Assignment to ep0ewirein ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4096: Assignment to ep15wirein ignored, since the identifier is never used
 
 Elaborating module <okTriggerIn>.
-WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4123: Size mismatch in connection of port <ep_trigger>. Formal port size is 16-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4123: Assignment to ep49trigin ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4124: Size mismatch in connection of port <ep_trigger>. Formal port size is 16-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:1127 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4124: Assignment to ep49trigin ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4121: Size mismatch in connection of port <ep_trigger>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4121: Assignment to ep49trigin ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4122: Size mismatch in connection of port <ep_trigger>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" Line 4122: Assignment to ep49trigin ignored, since the identifier is never used
 
 Elaborating module <okWireOut>.
 
@@ -535,49 +536,49 @@ WARNING:Xst:647 - Input <MISO1_F> is never used. This port will be preserved and
 WARNING:Xst:647 - Input <MISO2_F> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <MISO1_H> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <MISO2_H> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 965: Output port <RAM_data_out_A> of the instance <RAM_bank_1_MSW> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 977: Output port <RAM_data_out_A> of the instance <RAM_bank_1_LSW> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 989: Output port <RAM_data_out_A> of the instance <RAM_bank_2_MSW> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 1001: Output port <RAM_data_out_A> of the instance <RAM_bank_2_LSW> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 1013: Output port <RAM_data_out_A> of the instance <RAM_bank_3_MSW> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 1025: Output port <RAM_data_out_A> of the instance <RAM_bank_3_LSW> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 1037: Output port <RAM_data_out_A> of the instance <RAM_bank_4_MSW> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 1049: Output port <RAM_data_out_A> of the instance <RAM_bank_4_LSW> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3535: Output port <digout_enabled> of the instance <digout_sequencer> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3585: Output port <TTL_parallel> of the instance <deserializer> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3650: Output port <SYNC> of the instance <DAC_output_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3650: Output port <SCLK> of the instance <DAC_output_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3686: Output port <SYNC> of the instance <DAC_output_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3686: Output port <SCLK> of the instance <DAC_output_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3722: Output port <SYNC> of the instance <DAC_output_4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3722: Output port <SCLK> of the instance <DAC_output_4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3758: Output port <SYNC> of the instance <DAC_output_5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3758: Output port <SCLK> of the instance <DAC_output_5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3794: Output port <SYNC> of the instance <DAC_output_6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3794: Output port <SCLK> of the instance <DAC_output_6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3830: Output port <SYNC> of the instance <DAC_output_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3830: Output port <SCLK> of the instance <DAC_output_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3866: Output port <SYNC> of the instance <DAC_output_8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3866: Output port <SCLK> of the instance <DAC_output_8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3919: Output port <ADC_CS> of the instance <ADC_inout_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3919: Output port <ADC_SCLK> of the instance <ADC_inout_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3935: Output port <ADC_CS> of the instance <ADC_inout_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3935: Output port <ADC_SCLK> of the instance <ADC_inout_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3951: Output port <ADC_CS> of the instance <ADC_inout_4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3951: Output port <ADC_SCLK> of the instance <ADC_inout_4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3967: Output port <ADC_CS> of the instance <ADC_inout_5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3967: Output port <ADC_SCLK> of the instance <ADC_inout_5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3983: Output port <ADC_CS> of the instance <ADC_inout_6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3983: Output port <ADC_SCLK> of the instance <ADC_inout_6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3999: Output port <ADC_CS> of the instance <ADC_inout_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3999: Output port <ADC_SCLK> of the instance <ADC_inout_7> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 4015: Output port <ADC_CS> of the instance <ADC_inout_8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 4015: Output port <ADC_SCLK> of the instance <ADC_inout_8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 4088: Output port <ep_dataout> of the instance <wi0b> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 4091: Output port <ep_dataout> of the instance <wi0e> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 4098: Output port <ep_dataout> of the instance <wi15> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 4123: Output port <ep_trigger> of the instance <ti49> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 4124: Output port <ep_trigger> of the instance <ti4a> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 963: Output port <RAM_data_out_A> of the instance <RAM_bank_1_MSW> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 975: Output port <RAM_data_out_A> of the instance <RAM_bank_1_LSW> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 987: Output port <RAM_data_out_A> of the instance <RAM_bank_2_MSW> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 999: Output port <RAM_data_out_A> of the instance <RAM_bank_2_LSW> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 1011: Output port <RAM_data_out_A> of the instance <RAM_bank_3_MSW> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 1023: Output port <RAM_data_out_A> of the instance <RAM_bank_3_LSW> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 1035: Output port <RAM_data_out_A> of the instance <RAM_bank_4_MSW> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 1047: Output port <RAM_data_out_A> of the instance <RAM_bank_4_LSW> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3533: Output port <digout_enabled> of the instance <digout_sequencer> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3583: Output port <TTL_parallel> of the instance <deserializer> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3648: Output port <SYNC> of the instance <DAC_output_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3648: Output port <SCLK> of the instance <DAC_output_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3684: Output port <SYNC> of the instance <DAC_output_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3684: Output port <SCLK> of the instance <DAC_output_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3720: Output port <SYNC> of the instance <DAC_output_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3720: Output port <SCLK> of the instance <DAC_output_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3756: Output port <SYNC> of the instance <DAC_output_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3756: Output port <SCLK> of the instance <DAC_output_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3792: Output port <SYNC> of the instance <DAC_output_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3792: Output port <SCLK> of the instance <DAC_output_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3828: Output port <SYNC> of the instance <DAC_output_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3828: Output port <SCLK> of the instance <DAC_output_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3864: Output port <SYNC> of the instance <DAC_output_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3864: Output port <SCLK> of the instance <DAC_output_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3917: Output port <ADC_CS> of the instance <ADC_inout_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3917: Output port <ADC_SCLK> of the instance <ADC_inout_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3933: Output port <ADC_CS> of the instance <ADC_inout_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3933: Output port <ADC_SCLK> of the instance <ADC_inout_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3949: Output port <ADC_CS> of the instance <ADC_inout_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3949: Output port <ADC_SCLK> of the instance <ADC_inout_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3965: Output port <ADC_CS> of the instance <ADC_inout_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3965: Output port <ADC_SCLK> of the instance <ADC_inout_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3981: Output port <ADC_CS> of the instance <ADC_inout_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3981: Output port <ADC_SCLK> of the instance <ADC_inout_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3997: Output port <ADC_CS> of the instance <ADC_inout_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 3997: Output port <ADC_SCLK> of the instance <ADC_inout_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 4013: Output port <ADC_CS> of the instance <ADC_inout_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 4013: Output port <ADC_SCLK> of the instance <ADC_inout_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 4086: Output port <ep_dataout> of the instance <wi0b> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 4089: Output port <ep_dataout> of the instance <wi0e> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 4096: Output port <ep_dataout> of the instance <wi15> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 4121: Output port <ep_trigger> of the instance <ti49> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\main.v" line 4122: Output port <ep_trigger> of the instance <ti4a> is unconnected or connected to loadless signal.
     Found 16-bit register for signal <DAC_manual>.
     Found 16-bit register for signal <DAC_thresh_1>.
     Found 16-bit register for signal <DAC_thresh_2>.
@@ -596,8 +597,7 @@ INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\ma
     Found 1-bit register for signal <DAC_thresh_pol_7>.
     Found 1-bit register for signal <DAC_thresh_pol_8>.
     Found 1-bit register for signal <HPF_en>.
-    Found 16-bit register for signal <HPF_coefficient>.
-    Found 1-bit register for signal <DAC_ftype>.
+    Found 16-bit register for signal <filt_coeff>.
     Found 13-bit register for signal <max_aux_cmd_index_1_in>.
     Found 13-bit register for signal <max_aux_cmd_index_2_in>.
     Found 13-bit register for signal <max_aux_cmd_index_3_in>.
@@ -1784,6 +1784,7 @@ INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\ma
     Found 32-bit register for signal <result_D1>.
     Found 32-bit register for signal <result_D2>.
     Found 32-bit register for signal <max_timestep>.
+    Found 1-bit register for signal <DAC_ftype<0>>.
     Found finite state machine <FSM_0> for signal <main_state>.
     -----------------------------------------------------------------------
     | States             | 141                                            |
@@ -1810,66 +1811,67 @@ INFO:Xst:3210 - "C:\MyRepos\shared\Intan\Hardware\Stimulation Controller\proj\ma
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 13-bit adder for signal <RAM_addr_wr_counter[12]_GND_1_o_add_170_OUT> created at line 961.
-    Found 16-bit adder for signal <DAC_fsm_counter[15]_GND_1_o_add_177_OUT> created at line 1290.
-    Found 13-bit adder for signal <aux_cmd_index_1[12]_GND_1_o_add_425_OUT> created at line 3241.
-    Found 13-bit adder for signal <aux_cmd_index_2[12]_GND_1_o_add_429_OUT> created at line 3247.
-    Found 13-bit adder for signal <aux_cmd_index_3[12]_GND_1_o_add_433_OUT> created at line 3253.
-    Found 13-bit adder for signal <aux_cmd_index_4[12]_GND_1_o_add_437_OUT> created at line 3259.
-    Found 32-bit adder for signal <timestamp[31]_GND_1_o_add_484_OUT> created at line 3393.
-    Found 6-bit adder for signal <channel[5]_GND_1_o_add_487_OUT> created at line 3403.
-    Found 6-bit adder for signal <channel_MISO[5]_GND_1_o_add_490_OUT> created at line 3408.
-    Found 16-bit subtractor for signal <GND_1_o_GND_1_o_sub_206_OUT<15:0>> created at line 1430.
-    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_1[3]_GND_1_o_wide_mux_457_OUT> created at line 3266.
-    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_2[3]_GND_1_o_wide_mux_460_OUT> created at line 3280.
-    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_3[3]_GND_1_o_wide_mux_463_OUT> created at line 3294.
-    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_4[3]_GND_1_o_wide_mux_466_OUT> created at line 3308.
-    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_5[3]_GND_1_o_wide_mux_469_OUT> created at line 3322.
-    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_6[3]_GND_1_o_wide_mux_472_OUT> created at line 3336.
-    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_7[3]_GND_1_o_wide_mux_475_OUT> created at line 3350.
-    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_8[3]_GND_1_o_wide_mux_478_OUT> created at line 3364.
-    Found 16-bit 8-to-1 multiplexer for signal <DAC_reref_stream_sel[2]_data_stream_8[15]_wide_mux_481_OUT> created at line 3380.
+    Found 13-bit adder for signal <RAM_addr_wr_counter[12]_GND_1_o_add_171_OUT> created at line 959.
+    Found 16-bit adder for signal <DAC_fsm_counter[15]_GND_1_o_add_178_OUT> created at line 1288.
+    Found 13-bit adder for signal <aux_cmd_index_1[12]_GND_1_o_add_426_OUT> created at line 3239.
+    Found 13-bit adder for signal <aux_cmd_index_2[12]_GND_1_o_add_430_OUT> created at line 3245.
+    Found 13-bit adder for signal <aux_cmd_index_3[12]_GND_1_o_add_434_OUT> created at line 3251.
+    Found 13-bit adder for signal <aux_cmd_index_4[12]_GND_1_o_add_438_OUT> created at line 3257.
+    Found 32-bit adder for signal <timestamp[31]_GND_1_o_add_485_OUT> created at line 3391.
+    Found 6-bit adder for signal <channel[5]_GND_1_o_add_488_OUT> created at line 3401.
+    Found 6-bit adder for signal <channel_MISO[5]_GND_1_o_add_491_OUT> created at line 3406.
+    Found 16-bit subtractor for signal <GND_1_o_GND_1_o_sub_207_OUT<15:0>> created at line 1428.
+    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_1[3]_GND_1_o_wide_mux_458_OUT> created at line 3264.
+    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_2[3]_GND_1_o_wide_mux_461_OUT> created at line 3278.
+    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_3[3]_GND_1_o_wide_mux_464_OUT> created at line 3292.
+    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_4[3]_GND_1_o_wide_mux_467_OUT> created at line 3306.
+    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_5[3]_GND_1_o_wide_mux_470_OUT> created at line 3320.
+    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_6[3]_GND_1_o_wide_mux_473_OUT> created at line 3334.
+    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_7[3]_GND_1_o_wide_mux_476_OUT> created at line 3348.
+    Found 16-bit 12-to-1 multiplexer for signal <DAC_stream_sel_8[3]_GND_1_o_wide_mux_479_OUT> created at line 3362.
+    Found 16-bit 8-to-1 multiplexer for signal <DAC_reref_stream_sel[2]_data_stream_8[15]_wide_mux_482_OUT> created at line 3378.
     Found 1-bit tristate buffer for signal <i2c_sda> created at line 242
     Found 1-bit tristate buffer for signal <i2c_scl> created at line 243
-    Found 16-bit comparator equal for signal <DAC_fsm_counter[15]_DAC_stop_max[15]_equal_181_o> created at line 1297
-    Found 16-bit comparator greater for signal <ADC_threshold[15]_data_stream_ADC_1[15]_LessThan_394_o> created at line 3071
-    Found 16-bit comparator greater for signal <ADC_threshold[15]_data_stream_ADC_2[15]_LessThan_395_o> created at line 3072
-    Found 16-bit comparator greater for signal <ADC_threshold[15]_data_stream_ADC_3[15]_LessThan_396_o> created at line 3073
-    Found 16-bit comparator greater for signal <ADC_threshold[15]_data_stream_ADC_4[15]_LessThan_397_o> created at line 3074
-    Found 16-bit comparator greater for signal <ADC_threshold[15]_data_stream_ADC_5[15]_LessThan_398_o> created at line 3075
-    Found 16-bit comparator greater for signal <ADC_threshold[15]_data_stream_ADC_6[15]_LessThan_399_o> created at line 3076
-    Found 16-bit comparator greater for signal <ADC_threshold[15]_data_stream_ADC_7[15]_LessThan_400_o> created at line 3077
-    Found 16-bit comparator greater for signal <ADC_threshold[15]_data_stream_ADC_8[15]_LessThan_401_o> created at line 3078
-    Found 13-bit comparator equal for signal <aux_cmd_index_1[12]_max_aux_cmd_index_1[12]_equal_425_o> created at line 3237
-    Found 13-bit comparator equal for signal <aux_cmd_index_2[12]_max_aux_cmd_index_2[12]_equal_429_o> created at line 3243
-    Found 13-bit comparator equal for signal <aux_cmd_index_3[12]_max_aux_cmd_index_3[12]_equal_433_o> created at line 3249
-    Found 13-bit comparator equal for signal <aux_cmd_index_4[12]_max_aux_cmd_index_4[12]_equal_437_o> created at line 3255
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_457_o> created at line 3265
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_460_o> created at line 3279
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_463_o> created at line 3293
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_466_o> created at line 3307
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_469_o> created at line 3321
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_472_o> created at line 3335
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_475_o> created at line 3349
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_478_o> created at line 3363
-    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_481_o> created at line 3379
-    Found 32-bit comparator equal for signal <timestamp[31]_max_timestep[31]_equal_495_o> created at line 3422
-    Found 4-bit comparator equal for signal <DAC_stream_sel_1[3]_GND_1_o_equal_880_o> created at line 3592
-    Found 5-bit comparator equal for signal <DAC_channel_sel_1[4]_DAC_reref_channel_sel[4]_equal_881_o> created at line 3592
-    Found 4-bit comparator equal for signal <DAC_stream_sel_2[3]_GND_1_o_equal_882_o> created at line 3593
-    Found 5-bit comparator equal for signal <DAC_channel_sel_2[4]_DAC_reref_channel_sel[4]_equal_883_o> created at line 3593
-    Found 4-bit comparator equal for signal <DAC_stream_sel_3[3]_GND_1_o_equal_884_o> created at line 3594
-    Found 5-bit comparator equal for signal <DAC_channel_sel_3[4]_DAC_reref_channel_sel[4]_equal_885_o> created at line 3594
-    Found 4-bit comparator equal for signal <DAC_stream_sel_4[3]_GND_1_o_equal_886_o> created at line 3595
-    Found 5-bit comparator equal for signal <DAC_channel_sel_4[4]_DAC_reref_channel_sel[4]_equal_887_o> created at line 3595
-    Found 4-bit comparator equal for signal <DAC_stream_sel_5[3]_GND_1_o_equal_888_o> created at line 3596
-    Found 5-bit comparator equal for signal <DAC_channel_sel_5[4]_DAC_reref_channel_sel[4]_equal_889_o> created at line 3596
-    Found 4-bit comparator equal for signal <DAC_stream_sel_6[3]_GND_1_o_equal_890_o> created at line 3597
-    Found 5-bit comparator equal for signal <DAC_channel_sel_6[4]_DAC_reref_channel_sel[4]_equal_891_o> created at line 3597
-    Found 4-bit comparator equal for signal <DAC_stream_sel_7[3]_GND_1_o_equal_892_o> created at line 3598
-    Found 5-bit comparator equal for signal <DAC_channel_sel_7[4]_DAC_reref_channel_sel[4]_equal_893_o> created at line 3598
-    Found 4-bit comparator equal for signal <DAC_stream_sel_8[3]_GND_1_o_equal_894_o> created at line 3599
-    Found 5-bit comparator equal for signal <DAC_channel_sel_8[4]_DAC_reref_channel_sel[4]_equal_895_o> created at line 3599
+    Found 16-bit comparator equal for signal <DAC_fsm_counter[15]_DAC_stop_max[15]_equal_182_o> created at line 1295
+    Found 16-bit comparator greater for signal <ADC_threshold[15]_data_stream_ADC_1[15]_LessThan_395_o> created at line 3069
+    Found 16-bit comparator greater for signal <ADC_threshold[15]_data_stream_ADC_2[15]_LessThan_396_o> created at line 3070
+    Found 16-bit comparator greater for signal <ADC_threshold[15]_data_stream_ADC_3[15]_LessThan_397_o> created at line 3071
+    Found 16-bit comparator greater for signal <ADC_threshold[15]_data_stream_ADC_4[15]_LessThan_398_o> created at line 3072
+    Found 16-bit comparator greater for signal <ADC_threshold[15]_data_stream_ADC_5[15]_LessThan_399_o> created at line 3073
+    Found 16-bit comparator greater for signal <ADC_threshold[15]_data_stream_ADC_6[15]_LessThan_400_o> created at line 3074
+    Found 16-bit comparator greater for signal <ADC_threshold[15]_data_stream_ADC_7[15]_LessThan_401_o> created at line 3075
+    Found 16-bit comparator greater for signal <ADC_threshold[15]_data_stream_ADC_8[15]_LessThan_402_o> created at line 3076
+    Found 13-bit comparator equal for signal <aux_cmd_index_1[12]_max_aux_cmd_index_1[12]_equal_426_o> created at line 3235
+    Found 13-bit comparator equal for signal <aux_cmd_index_2[12]_max_aux_cmd_index_2[12]_equal_430_o> created at line 3241
+    Found 13-bit comparator equal for signal <aux_cmd_index_3[12]_max_aux_cmd_index_3[12]_equal_434_o> created at line 3247
+    Found 13-bit comparator equal for signal <aux_cmd_index_4[12]_max_aux_cmd_index_4[12]_equal_438_o> created at line 3253
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_458_o> created at line 3263
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_461_o> created at line 3277
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_464_o> created at line 3291
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_467_o> created at line 3305
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_470_o> created at line 3319
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_473_o> created at line 3333
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_476_o> created at line 3347
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_479_o> created at line 3361
+    Found 6-bit comparator equal for signal <channel_MISO[5]_GND_1_o_equal_482_o> created at line 3377
+    Found 32-bit comparator equal for signal <timestamp[31]_max_timestep[31]_equal_496_o> created at line 3420
+    Found 4-bit comparator equal for signal <DAC_stream_sel_1[3]_GND_1_o_equal_881_o> created at line 3590
+    Found 5-bit comparator equal for signal <DAC_channel_sel_1[4]_DAC_reref_channel_sel[4]_equal_882_o> created at line 3590
+    Found 4-bit comparator equal for signal <DAC_stream_sel_2[3]_GND_1_o_equal_883_o> created at line 3591
+    Found 5-bit comparator equal for signal <DAC_channel_sel_2[4]_DAC_reref_channel_sel[4]_equal_884_o> created at line 3591
+    Found 4-bit comparator equal for signal <DAC_stream_sel_3[3]_GND_1_o_equal_885_o> created at line 3592
+    Found 5-bit comparator equal for signal <DAC_channel_sel_3[4]_DAC_reref_channel_sel[4]_equal_886_o> created at line 3592
+    Found 4-bit comparator equal for signal <DAC_stream_sel_4[3]_GND_1_o_equal_887_o> created at line 3593
+    Found 5-bit comparator equal for signal <DAC_channel_sel_4[4]_DAC_reref_channel_sel[4]_equal_888_o> created at line 3593
+    Found 4-bit comparator equal for signal <DAC_stream_sel_5[3]_GND_1_o_equal_889_o> created at line 3594
+    Found 5-bit comparator equal for signal <DAC_channel_sel_5[4]_DAC_reref_channel_sel[4]_equal_890_o> created at line 3594
+    Found 4-bit comparator equal for signal <DAC_stream_sel_6[3]_GND_1_o_equal_891_o> created at line 3595
+    Found 5-bit comparator equal for signal <DAC_channel_sel_6[4]_DAC_reref_channel_sel[4]_equal_892_o> created at line 3595
+    Found 4-bit comparator equal for signal <DAC_stream_sel_7[3]_GND_1_o_equal_893_o> created at line 3596
+    Found 5-bit comparator equal for signal <DAC_channel_sel_7[4]_DAC_reref_channel_sel[4]_equal_894_o> created at line 3596
+    Found 4-bit comparator equal for signal <DAC_stream_sel_8[3]_GND_1_o_equal_895_o> created at line 3597
+    Found 5-bit comparator equal for signal <DAC_channel_sel_8[4]_DAC_reref_channel_sel[4]_equal_896_o> created at line 3597
+    WARNING:Xst:2404 -  FFs/Latches <DAC_ftype<7:0><7:1>> (without init value) have a constant value of 0 in block <main>.
     Summary:
 	inferred  10 Adder/Subtractor(s).
 	inferred 2783 D-type flip-flop(s).
@@ -2437,9 +2439,9 @@ INFO:Xst:1799 - State 101010 is never reached in FSM <STATE>.
     Found 8-bit adder for signal <counter_inc[7]_GND_19_o_add_155_OUT> created at line 1189.
     Found 8-bit adder for signal <DQS_DELAY[7]_GND_19_o_add_158_OUT> created at line 1194.
     Found 8-bit adder for signal <counter_dec[7]_GND_19_o_add_169_OUT> created at line 1214.
-    Found 13-bit adder for signal <_n0707> created at line 437.
+    Found 13-bit adder for signal <_n0703> created at line 437.
     Found 13-bit adder for signal <n0414> created at line 437.
-    Found 12-bit adder for signal <_n0709> created at line 437.
+    Found 12-bit adder for signal <_n0707> created at line 437.
     Found 12-bit adder for signal <n0420> created at line 437.
     Found 1-bit 3-to-1 multiplexer for signal <IODRP_SDO> created at line 666.
     Found 10-bit comparator greater for signal <RstCounter[9]_PWR_17_o_LessThan_17_o> created at line 517
@@ -3701,7 +3703,7 @@ Synthesizing Unit <digital_input_deserializer>.
     Found 16-bit register for signal <TTL_parallel>.
     Found 16-bit register for signal <TTL_parallel_exp>.
     Found 1-bit register for signal <serial_LOAD>.
-    Found 16-bit 17-to-1 multiplexer for signal <_n0216> created at line 79.
+    Found 16-bit 17-to-1 multiplexer for signal <_n0252> created at line 79.
     Summary:
 	inferred  66 D-type flip-flop(s).
 	inferred  20 Multiplexer(s).
@@ -3714,48 +3716,47 @@ Synthesizing Unit <scalable_filter>.
         ms_clk9_d = 135
         ms_clk18_c = 170
         ms_clk27_b = 205
-    Found 18-bit register for signal <filter_type_dependent_state<31:14>>.
     Found 1-bit register for signal <SYNC>.
     Found 1-bit register for signal <SCLK>.
     Found 1-bit register for signal <DIN>.
     Found 1-bit register for signal <state_clk>.
     Found 32-bit register for signal <filter_state>.
-    Found 16-bit subtractor for signal <subtract_result> created at line 151.
-    Found 32-bit adder for signal <n0326> created at line 85.
-    Found 32-bit adder for signal <n0286> created at line 85.
-    Found 19-bit adder for signal <n0331> created at line 99.
-    Found 19-bit adder for signal <multiplier_in_before_limit> created at line 99.
-    Found 32-bit adder for signal <filter_new_state> created at line 114.
-    Found 16-bit adder for signal <add_result> created at line 152.
-    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<14>> created at line 171.
-    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<13>> created at line 171.
-    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<12>> created at line 171.
-    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<11>> created at line 171.
-    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<10>> created at line 171.
-    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<9>> created at line 171.
-    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<8>> created at line 171.
-    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<7>> created at line 171.
-    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<6>> created at line 171.
-    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<5>> created at line 171.
-    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<4>> created at line 171.
-    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<3>> created at line 171.
-    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<2>> created at line 171.
-    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<1>> created at line 171.
-    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<0>> created at line 171.
+    Found 16-bit subtractor for signal <subtract_result> created at line 148.
+    Found 32-bit adder for signal <n0324> created at line 85.
+    Found 32-bit adder for signal <n0283> created at line 85.
+    Found 19-bit adder for signal <n0329> created at line 96.
+    Found 19-bit adder for signal <multiplier_in_before_limit> created at line 96.
+    Found 32-bit adder for signal <filter_new_state> created at line 111.
+    Found 16-bit adder for signal <add_result> created at line 149.
+    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<14>> created at line 168.
+    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<13>> created at line 168.
+    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<12>> created at line 168.
+    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<11>> created at line 168.
+    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<10>> created at line 168.
+    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<9>> created at line 168.
+    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<8>> created at line 168.
+    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<7>> created at line 168.
+    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<6>> created at line 168.
+    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<5>> created at line 168.
+    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<4>> created at line 168.
+    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<3>> created at line 168.
+    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<2>> created at line 168.
+    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<1>> created at line 168.
+    Found 1-bit 8-to-1 multiplexer for signal <input_scaled<0>> created at line 168.
     Found 16-bit comparator lessequal for signal <n0000> created at line 75
     Found 16-bit comparator greater for signal <fsm_state_counter_in[15]_fsm_stop_win_in[15]_LessThan_2_o> created at line 75
-    Found 16-bit comparator lessequal for signal <n0083> created at line 140
-    Found 16-bit comparator lessequal for signal <n0085> created at line 140
-    Found 1-bit comparator equal for signal <input_suppressed[14]_input_suppressed[15]_equal_28_o> created at line 173
-    Found 2-bit comparator equal for signal <input_suppressed[14]_input_suppressed[15]_equal_29_o> created at line 176
-    Found 3-bit comparator equal for signal <input_suppressed[14]_input_suppressed[15]_equal_30_o> created at line 179
-    Found 4-bit comparator equal for signal <input_suppressed[14]_input_suppressed[15]_equal_31_o> created at line 182
-    Found 5-bit comparator equal for signal <input_suppressed[14]_input_suppressed[15]_equal_32_o> created at line 185
-    Found 6-bit comparator equal for signal <input_suppressed[14]_input_suppressed[15]_equal_33_o> created at line 188
-    Found 7-bit comparator equal for signal <input_suppressed[14]_input_suppressed[15]_equal_34_o> created at line 191
+    Found 16-bit comparator lessequal for signal <n0081> created at line 137
+    Found 16-bit comparator lessequal for signal <n0083> created at line 137
+    Found 1-bit comparator equal for signal <input_suppressed[14]_input_suppressed[15]_equal_26_o> created at line 170
+    Found 2-bit comparator equal for signal <input_suppressed[14]_input_suppressed[15]_equal_27_o> created at line 173
+    Found 3-bit comparator equal for signal <input_suppressed[14]_input_suppressed[15]_equal_28_o> created at line 176
+    Found 4-bit comparator equal for signal <input_suppressed[14]_input_suppressed[15]_equal_29_o> created at line 179
+    Found 5-bit comparator equal for signal <input_suppressed[14]_input_suppressed[15]_equal_30_o> created at line 182
+    Found 6-bit comparator equal for signal <input_suppressed[14]_input_suppressed[15]_equal_31_o> created at line 185
+    Found 7-bit comparator equal for signal <input_suppressed[14]_input_suppressed[15]_equal_32_o> created at line 188
     Summary:
 	inferred   7 Adder/Subtractor(s).
-	inferred  54 D-type flip-flop(s).
+	inferred  36 D-type flip-flop(s).
 	inferred  11 Comparator(s).
 	inferred 115 Multiplexer(s).
 Unit <scalable_filter> synthesized.
@@ -3889,14 +3890,13 @@ Macro Statistics
  8-bit addsub                                          : 1
  8-bit subtractor                                      : 21
  9-bit adder                                           : 2
-# Registers                                            : 578
+# Registers                                            : 570
  1-bit register                                        : 210
  10-bit register                                       : 1
  11-bit register                                       : 2
  13-bit register                                       : 18
  134-bit register                                      : 8
  16-bit register                                       : 221
- 18-bit register                                       : 8
  2-bit register                                        : 9
  25-bit register                                       : 1
  26-bit register                                       : 2
@@ -3940,12 +3940,12 @@ Macro Statistics
  13-bit 2-to-1 multiplexer                             : 27
  16-bit 12-to-1 multiplexer                            : 8
  16-bit 17-to-1 multiplexer                            : 1
- 16-bit 2-to-1 multiplexer                             : 851
+ 16-bit 2-to-1 multiplexer                             : 843
  16-bit 21-to-1 multiplexer                            : 8
  16-bit 4-to-1 multiplexer                             : 16
  16-bit 8-to-1 multiplexer                             : 17
  18-bit 2-to-1 multiplexer                             : 24
- 32-bit 2-to-1 multiplexer                             : 109
+ 32-bit 2-to-1 multiplexer                             : 117
  33-bit 12-to-1 multiplexer                            : 8
  5-bit 2-to-1 multiplexer                              : 144
  6-bit 2-to-1 multiplexer                              : 8
@@ -4243,7 +4243,7 @@ The following registers are absorbed into counter <DQS_DELAY>: 1 register on sig
 The following registers are absorbed into counter <counter_inc>: 1 register on signal <counter_inc>.
 The following registers are absorbed into counter <counter_dec>: 1 register on signal <counter_dec>.
 	The following adders/subtractors are grouped into adder tree <Madd_n0420_Madd1> :
- 	<Madd_n0610[8:0]> in block <mcb_soft_calibration>, 	<Madd_n0613[9:0]> in block <mcb_soft_calibration>, 	<Madd_n0616[10:0]_Madd> in block <mcb_soft_calibration>, 	<Madd__n0709_Madd> in block <mcb_soft_calibration>.
+ 	<Madd_n0610[8:0]> in block <mcb_soft_calibration>, 	<Madd_n0613[9:0]> in block <mcb_soft_calibration>, 	<Madd_n0616[10:0]_Madd> in block <mcb_soft_calibration>, 	<Madd__n0707_Madd> in block <mcb_soft_calibration>.
 	The following adders/subtractors are grouped into adder tree <Madd_n0592[9:0]1> :
  	<Madd_n0586[7:0]> in block <mcb_soft_calibration>, 	<Madd_n0589[8:0]> in block <mcb_soft_calibration>, 	<Madd_n0592[9:0]> in block <mcb_soft_calibration>.
 Unit <mcb_soft_calibration> synthesized (advanced).
@@ -6684,8 +6684,8 @@ Macro Statistics
 # Accumulators                                         : 10
  30-bit up accumulator                                 : 2
  32-bit up accumulator                                 : 8
-# Registers                                            : 7152
- Flip-Flops                                            : 7152
+# Registers                                            : 7008
+ Flip-Flops                                            : 7008
 # Comparators                                          : 294
  1-bit comparator equal                                : 8
  10-bit comparator greater                             : 2
@@ -6716,12 +6716,12 @@ Macro Statistics
  13-bit 2-to-1 multiplexer                             : 23
  16-bit 12-to-1 multiplexer                            : 8
  16-bit 17-to-1 multiplexer                            : 1
- 16-bit 2-to-1 multiplexer                             : 827
+ 16-bit 2-to-1 multiplexer                             : 819
  16-bit 21-to-1 multiplexer                            : 8
  16-bit 4-to-1 multiplexer                             : 16
  16-bit 8-to-1 multiplexer                             : 16
  18-bit 2-to-1 multiplexer                             : 24
- 32-bit 2-to-1 multiplexer                             : 109
+ 32-bit 2-to-1 multiplexer                             : 117
  33-bit 12-to-1 multiplexer                            : 8
  6-bit 2-to-1 multiplexer                              : 8
  7-bit 2-to-1 multiplexer                              : 4
@@ -7188,7 +7188,7 @@ INFO:Xst:2261 - The FF/Latch <SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_w
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 87.
+Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 86.
 WARNING:Xst:387 - The KEEP property attached to the net <SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/int_sys_rst> may hinder timing optimization.
    You may achieve better results by removing this property
 INFO:Xst:2260 - The FF/Latch <core0/a0/pc0/sync_interrupt_flop> in Unit <host/core0> is equivalent to the following FF/Latch : <core0/a0/pc0/sync_sleep_flop> 
@@ -7251,8 +7251,8 @@ Unit <main> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 7617
- Flip-Flops                                            : 7617
+# Registers                                            : 7473
+ Flip-Flops                                            : 7473
 # Shift Registers                                      : 3
  2-bit shift register                                  : 1
  6-bit shift register                                  : 2
@@ -7278,24 +7278,24 @@ Top Level Output File Name         : main.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 23406
+# BELS                             : 23334
 #      GND                         : 53
 #      INV                         : 101
 #      LUT1                        : 489
-#      LUT2                        : 2208
-#      LUT3                        : 671
-#      LUT4                        : 3283
-#      LUT5                        : 2152
-#      LUT6                        : 9829
+#      LUT2                        : 2071
+#      LUT3                        : 831
+#      LUT4                        : 3289
+#      LUT5                        : 2277
+#      LUT6                        : 9543
 #      LUT6_2                      : 50
 #      MULT_AND                    : 6
 #      MUXCY                       : 2711
-#      MUXF7                       : 408
+#      MUXF7                       : 468
 #      MUXF8                       : 28
 #      VCC                         : 12
 #      XORCY                       : 1405
-# FlipFlops/Latches                : 10750
-#      FD                          : 971
+# FlipFlops/Latches                : 10606
+#      FD                          : 827
 #      FDC                         : 678
 #      FDCE                        : 249
 #      FDE                         : 5116
@@ -7351,19 +7351,19 @@ Selected Device : 6slx45fgg484-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:           10702  out of  54576    19%  
- Number of Slice LUTs:                20801  out of  27288    76%  
-    Number used as Logic:             18783  out of  27288    68%  
+ Number of Slice Registers:           10558  out of  54576    19%  
+ Number of Slice LUTs:                20669  out of  27288    75%  
+    Number used as Logic:             18651  out of  27288    68%  
     Number used as Memory:             2018  out of   6408    31%  
        Number used as RAM:             2014
        Number used as SRL:                4
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  25019
-   Number with an unused Flip Flop:   14317  out of  25019    57%  
-   Number with an unused LUT:          4218  out of  25019    16%  
-   Number of fully used LUT-FF pairs:  6484  out of  25019    25%  
-   Number of unique control sets:       440
+ Number of LUT Flip Flop pairs used:  24889
+   Number with an unused Flip Flop:   14331  out of  24889    57%  
+   Number with an unused LUT:          4220  out of  24889    16%  
+   Number of fully used LUT-FF pairs:  6338  out of  24889    25%  
+   Number of unique control sets:       439
 
 IO Utilization: 
  Number of IOs:                         207
@@ -7418,7 +7418,7 @@ ti43/ep_trigger<4>                       | NONE(DAC_thresh_5_0)                 
 ti43/ep_trigger<5>                       | NONE(DAC_thresh_6_0)                                       | 16    |
 ti43/ep_trigger<6>                       | NONE(DAC_thresh_7_0)                                       | 16    |
 ti43/ep_trigger<7>                       | NONE(DAC_thresh_8_0)                                       | 16    |
-ti44/ep_trigger<1>                       | NONE(HPF_coefficient_0)                                    | 16    |
+ti44/ep_trigger<1>                       | NONE(filt_coeff_0)                                         | 16    |
 ti47/ep_trigger<0>                       | NONE(DAC_start_win_1_0)                                    | 16    |
 ti47/ep_trigger<1>                       | NONE(DAC_start_win_2_0)                                    | 16    |
 ti47/ep_trigger<2>                       | NONE(DAC_start_win_3_0)                                    | 16    |
@@ -7444,7 +7444,7 @@ ti43/ep_trigger<13>                      | NONE(DAC_thresh_pol_6)               
 ti43/ep_trigger<14>                      | NONE(DAC_thresh_pol_7)                                     | 1     |
 ti43/ep_trigger<15>                      | NONE(DAC_thresh_pol_8)                                     | 1     |
 ti44/ep_trigger<0>                       | NONE(HPF_en)                                               | 1     |
-ti44/ep_trigger<2>                       | NONE(DAC_ftype)                                            | 1     |
+ti44/ep_trigger<2>                       | NONE(DAC_ftype_7:0)                                        | 1     |
 ti45/ep_trigger<0>                       | NONE(max_aux_cmd_index_1_in_0)                             | 13    |
 ti45/ep_trigger<1>                       | NONE(max_aux_cmd_index_2_in_0)                             | 13    |
 ti45/ep_trigger<2>                       | NONE(max_aux_cmd_index_3_in_0)                             | 13    |
@@ -7457,7 +7457,7 @@ ti42/ep_trigger<1>                       | BUFG                                 
 hi_in<0>                                 | DCM_SP:CLK0                                                | 3087  |
 clk1_in                                  | PLL_ADV:CLKOUT3                                            | 237   |
 clk1_in                                  | PLL_ADV:CLKOUT2                                            | 399   |
-DAC_output_8/state_clk                   | BUFG                                                       | 400   |
+DAC_output_8/state_clk                   | BUFG                                                       | 256   |
 host/core0/okCH<1>                       | NONE(host/core0/core0/a0/pm0/ram_1k_generate.s6.kcpsm6_rom)| 1     |
 -----------------------------------------+------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -7472,7 +7472,7 @@ Speed Grade: -2
 
    Minimum period: 28.200ns (Maximum Frequency: 35.461MHz)
    Minimum input arrival time before clock: 7.073ns
-   Maximum output required time after clock: 19.135ns
+   Maximum output required time after clock: 19.871ns
    Maximum combinational path delay: 4.965ns
 
 Timing Details:
@@ -7481,67 +7481,68 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'variable_freq_clk_generator_inst/clkout_i'
-  Clock period: 22.554ns (frequency: 44.338MHz)
-  Total number of paths / destination ports: 823750199 / 8214
+  Clock period: 22.534ns (frequency: 44.377MHz)
+  Total number of paths / destination ports: 133795082 / 8214
 -------------------------------------------------------------------------
-Delay:               22.554ns (Levels of Logic = 43)
+Delay:               22.534ns (Levels of Logic = 44)
   Source:            DAC_reref_register_15 (FF)
-  Destination:       FIFO_data_in_6 (FF)
+  Destination:       DAC_output_1/DIN (FF)
   Source Clock:      variable_freq_clk_generator_inst/clkout_i rising
   Destination Clock: variable_freq_clk_generator_inst/clkout_i rising
 
-  Data Path: DAC_reref_register_15 to FIFO_data_in_6
+  Data Path: DAC_reref_register_15 to DAC_output_1/DIN
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q            272   0.525   2.434  DAC_reref_register_15 (DAC_reref_register_15)
-     LUT2:I1->O            0   0.254   0.000  DAC_output_5/Madd_n0286_Madd_Madd_lut<15> (DAC_output_5/Madd_n0286_Madd_Madd_lut<15>)
-     XORCY:LI->O          33   0.149   1.537  DAC_output_5/Madd_n0286_Madd_Madd_xor<15> (DAC_output_5/n0286<15>)
-     LUT6:I5->O            1   0.254   0.000  DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_lut<2> (DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_lut<2>)
-     MUXCY:S->O            1   0.215   0.000  DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<2> (DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<3> (DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<4> (DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<5> (DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<6> (DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<7> (DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<8> (DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<9> (DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<10> (DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<10>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<11> (DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<11>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<12> (DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<12>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<13> (DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<13>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<14> (DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<14>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<15> (DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<15>)
-     MUXCY:CI->O           0   0.023   0.000  DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<16> (DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_cy<16>)
-     XORCY:CI->O          48   0.206   1.788  DAC_output_5/Madd_multiplier_in_before_limit_Madd_Madd_xor<17> (DAC_output_5/multiplier_in_before_limit<17>)
-     LUT4:I3->O            3   0.254   0.766  DAC_output_5/Mmux_multiplier_in151 (DAC_output_5/multiplier_in<6>)
-     LUT4:I3->O            1   0.254   0.000  DAC_output_5/Madd_add_result_lut<4> (DAC_output_5/Madd_add_result_lut<4>)
-     MUXCY:S->O            1   0.215   0.000  DAC_output_5/Madd_add_result_cy<4> (DAC_output_5/Madd_add_result_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_add_result_cy<5> (DAC_output_5/Madd_add_result_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_add_result_cy<6> (DAC_output_5/Madd_add_result_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_add_result_cy<7> (DAC_output_5/Madd_add_result_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_add_result_cy<8> (DAC_output_5/Madd_add_result_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_add_result_cy<9> (DAC_output_5/Madd_add_result_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_add_result_cy<10> (DAC_output_5/Madd_add_result_cy<10>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_add_result_cy<11> (DAC_output_5/Madd_add_result_cy<11>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_add_result_cy<12> (DAC_output_5/Madd_add_result_cy<12>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Madd_add_result_cy<13> (DAC_output_5/Madd_add_result_cy<13>)
-     MUXCY:CI->O           0   0.023   0.000  DAC_output_5/Madd_add_result_cy<14> (DAC_output_5/Madd_add_result_cy<14>)
-     XORCY:CI->O          95   0.206   2.170  DAC_output_5/Madd_add_result_xor<15> (DAC_output_5/add_result<15>)
-     LUT5:I4->O           25   0.254   1.511  DAC_output_5/input_suppressed[14]_input_suppressed[15]_equal_29_o11 (DAC_output_5/input_suppressed[14]_input_suppressed[15]_equal_29_o1)
-     LUT5:I3->O            3   0.250   0.766  DAC_output_5/input_suppressed[14]_input_suppressed[15]_equal_34_o7111 (DAC_output_5/input_suppressed[14]_input_suppressed[15]_equal_34_o711)
-     LUT6:I5->O           21   0.254   1.310  DAC_output_5/input_suppressed[14]_input_suppressed[15]_equal_34_o721 (DAC_output_5/input_suppressed[14]_input_suppressed[15]_equal_34_o72)
-     LUT5:I4->O            3   0.254   0.874  DAC_output_5/Mmux_input_suppressed[15]_GND_84_o_MUX_4623_o11 (DAC_output_5/input_suppressed[15]_GND_84_o_MUX_4623_o)
-     LUT5:I3->O            1   0.250   0.682  DAC_output_5/Mmux_input_scaled<6>_3 (DAC_output_5/Mmux_input_scaled<6>_3)
-     LUT6:I5->O            3   0.254   0.994  DAC_output_5/Mmux_register131 (DAC_output_register_5<6>)
-     LUT6:I3->O            1   0.235   0.682  main_state_main_state[31]_GND_1_o_select_667_OUT<6>7 (main_state_main_state[31]_GND_1_o_select_667_OUT<6>6)
-     LUT4:I3->O            1   0.254   0.682  main_state_main_state[31]_GND_1_o_select_667_OUT<6>8_SW0 (N2631)
-     LUT6:I5->O            1   0.254   0.682  main_state_main_state[31]_GND_1_o_select_667_OUT<6>8 (main_state_main_state[31]_GND_1_o_select_667_OUT<6>7)
-     LUT5:I4->O            1   0.254   0.000  main_state_main_state[31]_GND_1_o_select_667_OUT<6>34 (main_state[31]_GND_1_o_select_667_OUT<6>)
-     FDR:D                     0.074          FIFO_data_in_6
+     FDE:C->Q            300   0.525   2.437  DAC_reref_register_15 (DAC_reref_register_15)
+     LUT2:I1->O            0   0.254   0.000  DAC_output_1/Madd_n0283_Madd_Madd_lut<15> (DAC_output_1/Madd_n0283_Madd_Madd_lut<15>)
+     XORCY:LI->O          33   0.149   1.537  DAC_output_1/Madd_n0283_Madd_Madd_xor<15> (DAC_output_1/n0283<15>)
+     LUT6:I5->O            1   0.254   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_lut<2> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_lut<2>)
+     MUXCY:S->O            1   0.215   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<2> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<3> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<4> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<5> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<6> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<7> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<8> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<9> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<10> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<11> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<12> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<13> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<14> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<15> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<15>)
+     MUXCY:CI->O           0   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<16> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<16>)
+     XORCY:CI->O          22   0.206   1.334  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_xor<17> (DAC_output_1/multiplier_in_before_limit<17>)
+     LUT4:I3->O            4   0.254   0.804  DAC_output_1/Mmux_multiplier_in151 (DAC_output_1/multiplier_in<6>)
+     LUT5:I4->O            4   0.254   0.803  DAC_output_1/Mmux_n0278111 (DAC_output_1/n0278<4>)
+     MUXCY:DI->O           1   0.181   0.000  DAC_output_1/Msub_subtract_result_cy<4> (DAC_output_1/Msub_subtract_result_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Msub_subtract_result_cy<5> (DAC_output_1/Msub_subtract_result_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Msub_subtract_result_cy<6> (DAC_output_1/Msub_subtract_result_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Msub_subtract_result_cy<7> (DAC_output_1/Msub_subtract_result_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Msub_subtract_result_cy<8> (DAC_output_1/Msub_subtract_result_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Msub_subtract_result_cy<9> (DAC_output_1/Msub_subtract_result_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Msub_subtract_result_cy<10> (DAC_output_1/Msub_subtract_result_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Msub_subtract_result_cy<11> (DAC_output_1/Msub_subtract_result_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Msub_subtract_result_cy<12> (DAC_output_1/Msub_subtract_result_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Msub_subtract_result_cy<13> (DAC_output_1/Msub_subtract_result_cy<13>)
+     MUXCY:CI->O           0   0.023   0.000  DAC_output_1/Msub_subtract_result_cy<14> (DAC_output_1/Msub_subtract_result_cy<14>)
+     XORCY:CI->O          61   0.206   1.906  DAC_output_1/Msub_subtract_result_xor<15> (DAC_output_1/subtract_result<15>)
+     LUT5:I4->O           25   0.254   1.631  DAC_output_1/input_suppressed[14]_input_suppressed[15]_equal_27_o11 (DAC_output_1/input_suppressed[14]_input_suppressed[15]_equal_27_o1)
+     LUT5:I2->O            3   0.235   0.766  DAC_output_1/input_suppressed[14]_input_suppressed[15]_equal_32_o7111 (DAC_output_1/input_suppressed[14]_input_suppressed[15]_equal_32_o711)
+     LUT6:I5->O           21   0.254   1.310  DAC_output_1/input_suppressed[14]_input_suppressed[15]_equal_32_o721 (DAC_output_1/input_suppressed[14]_input_suppressed[15]_equal_32_o72)
+     LUT5:I4->O            2   0.254   0.726  DAC_output_1/Mmux_input_suppressed[15]_GND_84_o_MUX_4623_o11 (DAC_output_1/input_suppressed[15]_GND_84_o_MUX_4623_o)
+     LUT6:I5->O            1   0.254   0.682  DAC_output_1/Mmux_input_scaled<4>_3_SW0 (N2621)
+     LUT6:I5->O            1   0.254   0.682  DAC_output_1/Mmux_input_scaled<4>_3 (DAC_output_1/Mmux_input_scaled<4>_3)
+     LUT6:I5->O            2   0.254   0.726  DAC_output_1/Mmux_register111 (DAC_output_register_1<4>)
+     LUT5:I4->O            1   0.254   0.682  DAC_output_1/main_state[31]_GND_84_o_Select_121_o1 (DAC_output_1/main_state[31]_GND_84_o_Select_121_o2)
+     LUT6:I5->O            1   0.254   0.000  DAC_output_1/main_state[31]_GND_84_o_Select_121_o4_G (N1970)
+     MUXF7:I1->O           1   0.175   0.682  DAC_output_1/main_state[31]_GND_84_o_Select_121_o4 (DAC_output_1/main_state[31]_GND_84_o_Select_121_o5)
+     LUT5:I4->O            1   0.254   0.000  DAC_output_1/main_state[31]_GND_84_o_Select_121_o12 (DAC_output_1/main_state[31]_GND_84_o_Select_121_o)
+     FDR:D                     0.074          DAC_output_1/DIN
     ----------------------------------------
-    Total                     22.554ns (5.677ns logic, 16.877ns route)
-                                       (25.2% logic, 74.8% route)
+    Total                     22.534ns (5.826ns logic, 16.708ns route)
+                                       (25.9% logic, 74.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sample_CLK_out_OBUF'
@@ -7568,11 +7569,11 @@ Delay:               11.881ns (Levels of Logic = 14)
      MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_fsm_start_win_in[15]_fsm_state_counter_in[15]_LessThan_1_o_cy<5> (DAC_output_1/Mcompar_fsm_start_win_in[15]_fsm_state_counter_in[15]_LessThan_1_o_cy<5>)
      MUXCY:CI->O           1   0.235   0.682  DAC_output_1/Mcompar_fsm_start_win_in[15]_fsm_state_counter_in[15]_LessThan_1_o_cy<6> (DAC_output_1/Mcompar_fsm_start_win_in[15]_fsm_state_counter_in[15]_LessThan_1_o_cy<6>)
      LUT5:I4->O            1   0.254   0.682  DAC_output_1/Mcompar_fsm_start_win_in[15]_fsm_state_counter_in[15]_LessThan_1_o_cy<7> (DAC_output_1/fsm_start_win_in[15]_fsm_state_counter_in[15]_LessThan_1_o)
-     LUT6:I5->O            1   0.254   0.790  out81_SW0 (N2667)
+     LUT6:I5->O            1   0.254   0.790  out81_SW0 (N2613)
      LUT6:I4->O            1   0.250   1.137  out81 (out8)
      LUT6:I0->O            2   0.254   1.002  out82 (out81)
      LUT4:I0->O           18   0.254   1.463  out89 (DAC_check_states)
-     LUT5:I2->O           16   0.235   1.181  _n8076_inv11 (_n8076_inv1)
+     LUT5:I2->O           16   0.235   1.181  _n8022_inv11 (_n8022_inv1)
      FDRE:CE                   0.302          DAC_fsm_counter_0
     ----------------------------------------
     Total                     11.881ns (3.115ns logic, 8.766ns route)
@@ -7639,7 +7640,7 @@ Delay:               4.512ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDR:C->Q              1   0.525   1.112  SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd3_1 (SDRAM_FIFO_inst/ddr2_state_machine_inst/state_FSM_FFd3_1)
-     LUT5:I0->O            2   0.254   0.834  SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_wr_data[31]_select_46_OUT<0>11_SW0 (N1952)
+     LUT5:I0->O            2   0.254   0.834  SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_wr_data[31]_select_46_OUT<0>11_SW0 (N1956)
      LUT6:I4->O           17   0.250   1.209  SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_wr_data[31]_select_46_OUT<0>11 (SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_wr_data[31]_select_46_OUT<0>1)
      LUT6:I5->O            1   0.254   0.000  SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_wr_data[31]_select_46_OUT<0> (SDRAM_FIFO_inst/ddr2_state_machine_inst/state[31]_p0_wr_data[31]_select_46_OUT<0>)
      FDE:D                     0.074          SDRAM_FIFO_inst/ddr2_state_machine_inst/p0_wr_data_0
@@ -7649,26 +7650,42 @@ Delay:               4.512ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'DAC_output_8/state_clk'
-  Clock period: 2.927ns (frequency: 341.647MHz)
-  Total number of paths / destination ports: 8336 / 400
+  Clock period: 2.909ns (frequency: 343.790MHz)
+  Total number of paths / destination ports: 8192 / 256
 -------------------------------------------------------------------------
-Delay:               2.927ns (Levels of Logic = 2)
-  Source:            DAC_output_7/filter_state_31 (FF)
-  Destination:       DAC_output_7/filter_state_31 (FF)
+Delay:               2.909ns (Levels of Logic = 18)
+  Source:            DAC_output_8/filter_state_15 (FF)
+  Destination:       DAC_output_8/filter_state_31 (FF)
   Source Clock:      DAC_output_8/state_clk rising
   Destination Clock: DAC_output_8/state_clk rising
 
-  Data Path: DAC_output_7/filter_state_31 to DAC_output_7/filter_state_31
+  Data Path: DAC_output_8/filter_state_15 to DAC_output_8/filter_state_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             50   0.525   1.929  DAC_output_7/filter_state_31 (DAC_output_7/filter_state_31)
-     LUT2:I0->O            0   0.250   0.000  DAC_output_7/Maccum_filter_state_lut<31> (DAC_output_7/Maccum_filter_state_lut<31>)
-     XORCY:LI->O           1   0.149   0.000  DAC_output_7/Maccum_filter_state_xor<31> (DAC_output_7/Result<31>)
-     FDR:D                     0.074          DAC_output_7/filter_state_31
+     FDR:C->Q             16   0.525   1.290  DAC_output_8/filter_state_15 (DAC_output_8/filter_state_15)
+     LUT2:I0->O            1   0.250   0.000  DAC_output_8/Maccum_filter_state_lut<15> (DAC_output_8/Maccum_filter_state_lut<15>)
+     MUXCY:S->O            1   0.215   0.000  DAC_output_8/Maccum_filter_state_cy<15> (DAC_output_8/Maccum_filter_state_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Maccum_filter_state_cy<16> (DAC_output_8/Maccum_filter_state_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Maccum_filter_state_cy<17> (DAC_output_8/Maccum_filter_state_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Maccum_filter_state_cy<18> (DAC_output_8/Maccum_filter_state_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Maccum_filter_state_cy<19> (DAC_output_8/Maccum_filter_state_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Maccum_filter_state_cy<20> (DAC_output_8/Maccum_filter_state_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Maccum_filter_state_cy<21> (DAC_output_8/Maccum_filter_state_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Maccum_filter_state_cy<22> (DAC_output_8/Maccum_filter_state_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Maccum_filter_state_cy<23> (DAC_output_8/Maccum_filter_state_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Maccum_filter_state_cy<24> (DAC_output_8/Maccum_filter_state_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Maccum_filter_state_cy<25> (DAC_output_8/Maccum_filter_state_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Maccum_filter_state_cy<26> (DAC_output_8/Maccum_filter_state_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Maccum_filter_state_cy<27> (DAC_output_8/Maccum_filter_state_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Maccum_filter_state_cy<28> (DAC_output_8/Maccum_filter_state_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Maccum_filter_state_cy<29> (DAC_output_8/Maccum_filter_state_cy<29>)
+     MUXCY:CI->O           0   0.023   0.000  DAC_output_8/Maccum_filter_state_cy<30> (DAC_output_8/Maccum_filter_state_cy<30>)
+     XORCY:CI->O           1   0.206   0.000  DAC_output_8/Maccum_filter_state_xor<31> (DAC_output_8/Result<31>)
+     FDR:D                     0.074          DAC_output_8/filter_state_31
     ----------------------------------------
-    Total                      2.927ns (0.998ns logic, 1.929ns route)
-                                       (34.1% logic, 65.9% route)
+    Total                      2.909ns (1.619ns logic, 1.290ns route)
+                                       (55.7% logic, 44.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'host/core0/okCH<1>'
@@ -7705,7 +7722,7 @@ Offset:              4.179ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O           134   1.328   2.542  MISO1_A_IBUF (MISO1_A_IBUF)
-     LUT4:I1->O            1   0.235   0.000  main_state[31]_in4x_A1[133]_select_721_OUT<1>2 (main_state[31]_in4x_A1[133]_select_721_OUT<132>)
+     LUT4:I1->O            1   0.235   0.000  main_state[31]_in4x_A1[133]_select_722_OUT<1>2 (main_state[31]_in4x_A1[133]_select_722_OUT<132>)
      FDE:D                     0.074          in4x_A1_132
     ----------------------------------------
     Total                      4.179ns (1.637ns logic, 2.542ns route)
@@ -7760,104 +7777,106 @@ Offset:              5.698ns (Levels of Logic = 5)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'hi_in<0>'
-  Total number of paths / destination ports: 366841 / 96
+  Total number of paths / destination ports: 58561 / 96
 -------------------------------------------------------------------------
-Offset:              19.135ns (Levels of Logic = 34)
-  Source:            wi1c/ep_dataout_7 (FF)
-  Destination:       TTL_out_direct<6> (PAD)
+Offset:              19.871ns (Levels of Logic = 35)
+  Source:            wi16/ep_dataout_7 (FF)
+  Destination:       TTL_out_direct<0> (PAD)
   Source Clock:      hi_in<0> rising
 
-  Data Path: wi1c/ep_dataout_7 to TTL_out_direct<6>
+  Data Path: wi16/ep_dataout_7 to TTL_out_direct<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDRE:C->Q            67   0.525   1.953  ep_dataout_7 (ep_dataout<7>)
-     end scope: 'wi1c:ep_dataout<7>'
-     LUT6:I5->O            1   0.254   0.682  DAC_reref_mode_DAC_7_input_is_ref_AND_727_o3 (DAC_reref_mode_DAC_7_input_is_ref_AND_727_o3)
-     LUT6:I5->O            1   0.254   0.910  DAC_reref_mode_DAC_7_input_is_ref_AND_727_o5_SW0 (N2147)
-     LUT6:I3->O            1   0.235   0.958  DAC_reref_mode_DAC_7_input_is_ref_AND_727_o5 (DAC_reref_mode_DAC_7_input_is_ref_AND_727_o5)
-     LUT5:I1->O           33   0.254   1.992  DAC_reref_mode_DAC_7_input_is_ref_AND_727_o7 (DAC_reref_mode_DAC_7_input_is_ref_AND_727_o)
-     LUT6:I0->O            1   0.254   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_lut<2> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_lut<2>)
-     MUXCY:S->O            1   0.215   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<2> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<3> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<4> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<5> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<6> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<7> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<8> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<9> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<10> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<10>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<11> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<11>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<12> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<12>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<13> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<13>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<14> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<14>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<15> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<15>)
-     MUXCY:CI->O           0   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<16> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<16>)
-     XORCY:CI->O          48   0.206   2.064  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_xor<17> (DAC_output_7/multiplier_in_before_limit<17>)
-     LUT6:I2->O            9   0.254   1.252  DAC_output_7/Mmux_filter_output81 (DAC_output_7/filter_output<1>)
-     LUT4:I0->O            0   0.254   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lutdi (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lutdi)
-     MUXCY:DI->O           1   0.181   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5>)
-     MUXCY:CI->O           1   0.235   0.682  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6>)
-     LUT5:I4->O            2   0.254   0.954  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<7> (DAC_output_7/thrsh[15]_input_offset[15]_LessThan_22_o)
-     LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out_direct<6>11 (TTL_out_direct_6_OBUF)
-     OBUF:I->O                 2.912          TTL_out_direct_6_OBUF (TTL_out_direct<6>)
+     end scope: 'wi16:ep_dataout<7>'
+     LUT6:I5->O            1   0.254   0.682  DAC_reref_mode_DAC_1_input_is_ref_AND_721_o3 (DAC_reref_mode_DAC_1_input_is_ref_AND_721_o3)
+     LUT6:I5->O            1   0.254   0.910  DAC_reref_mode_DAC_1_input_is_ref_AND_721_o5_SW0 (N2107)
+     LUT6:I3->O            1   0.235   0.958  DAC_reref_mode_DAC_1_input_is_ref_AND_721_o5 (DAC_reref_mode_DAC_1_input_is_ref_AND_721_o5)
+     LUT5:I1->O           33   0.254   1.992  DAC_reref_mode_DAC_1_input_is_ref_AND_721_o7 (DAC_reref_mode_DAC_1_input_is_ref_AND_721_o)
+     LUT6:I0->O            1   0.254   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_lut<2> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_lut<2>)
+     MUXCY:S->O            1   0.215   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<2> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<3> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<4> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<5> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<6> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<7> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<8> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<9> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<10> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<11> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<12> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<13> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<14> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<15> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<15>)
+     MUXCY:CI->O           0   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<16> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<16>)
+     XORCY:CI->O          22   0.206   1.562  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_xor<17> (DAC_output_1/multiplier_in_before_limit<17>)
+     LUT4:I1->O            2   0.235   1.002  DAC_output_1/Mmux_multiplier_in121 (DAC_output_1/multiplier_in<3>)
+     LUT5:I1->O            9   0.254   1.252  DAC_output_1/Mmux_n027881 (DAC_output_1/n0278<1>)
+     LUT4:I0->O            0   0.254   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lutdi (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5>)
+     MUXCY:CI->O           1   0.235   0.682  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6>)
+     LUT5:I4->O            2   0.254   0.954  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<7> (DAC_output_1/thrsh[15]_input_offset[15]_LessThan_20_o)
+     LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out_direct<0>11 (TTL_out_direct_0_OBUF)
+     OBUF:I->O                 2.912          TTL_out_direct_0_OBUF (TTL_out_direct<0>)
     ----------------------------------------
-    Total                     19.135ns (6.964ns logic, 12.171ns route)
-                                       (36.4% logic, 63.6% route)
+    Total                     19.871ns (7.199ns logic, 12.672ns route)
+                                       (36.2% logic, 63.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'variable_freq_clk_generator_inst/clkout_i'
-  Total number of paths / destination ports: 830881 / 49
+  Total number of paths / destination ports: 133527 / 49
 -------------------------------------------------------------------------
-Offset:              16.017ns (Levels of Logic = 31)
+Offset:              16.756ns (Levels of Logic = 32)
   Source:            DAC_reref_register_15 (FF)
-  Destination:       TTL_out_direct<6> (PAD)
+  Destination:       TTL_out_direct<0> (PAD)
   Source Clock:      variable_freq_clk_generator_inst/clkout_i rising
 
-  Data Path: DAC_reref_register_15 to TTL_out_direct<6>
+  Data Path: DAC_reref_register_15 to TTL_out_direct<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q            272   0.525   2.434  DAC_reref_register_15 (DAC_reref_register_15)
-     LUT2:I1->O            0   0.254   0.000  DAC_output_7/Madd_n0286_Madd_Madd_lut<15> (DAC_output_7/Madd_n0286_Madd_Madd_lut<15>)
-     XORCY:LI->O          33   0.149   1.537  DAC_output_7/Madd_n0286_Madd_Madd_xor<15> (DAC_output_7/n0286<15>)
-     LUT6:I5->O            1   0.254   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_lut<2> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_lut<2>)
-     MUXCY:S->O            1   0.215   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<2> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<3> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<4> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<5> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<6> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<7> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<8> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<9> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<10> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<10>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<11> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<11>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<12> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<12>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<13> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<13>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<14> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<14>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<15> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<15>)
-     MUXCY:CI->O           0   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<16> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<16>)
-     XORCY:CI->O          48   0.206   2.064  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_xor<17> (DAC_output_7/multiplier_in_before_limit<17>)
-     LUT6:I2->O            9   0.254   1.252  DAC_output_7/Mmux_filter_output81 (DAC_output_7/filter_output<1>)
-     LUT4:I0->O            0   0.254   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lutdi (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lutdi)
-     MUXCY:DI->O           1   0.181   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5>)
-     MUXCY:CI->O           1   0.235   0.682  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6>)
-     LUT5:I4->O            2   0.254   0.954  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<7> (DAC_output_7/thrsh[15]_input_offset[15]_LessThan_22_o)
-     LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out_direct<6>11 (TTL_out_direct_6_OBUF)
-     OBUF:I->O                 2.912          TTL_out_direct_6_OBUF (TTL_out_direct<6>)
+     FDE:C->Q            300   0.525   2.437  DAC_reref_register_15 (DAC_reref_register_15)
+     LUT2:I1->O            0   0.254   0.000  DAC_output_1/Madd_n0283_Madd_Madd_lut<15> (DAC_output_1/Madd_n0283_Madd_Madd_lut<15>)
+     XORCY:LI->O          33   0.149   1.537  DAC_output_1/Madd_n0283_Madd_Madd_xor<15> (DAC_output_1/n0283<15>)
+     LUT6:I5->O            1   0.254   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_lut<2> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_lut<2>)
+     MUXCY:S->O            1   0.215   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<2> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<3> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<4> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<5> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<6> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<7> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<8> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<9> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<10> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<11> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<12> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<13> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<14> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<15> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<15>)
+     MUXCY:CI->O           0   0.023   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<16> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_cy<16>)
+     XORCY:CI->O          22   0.206   1.562  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_xor<17> (DAC_output_1/multiplier_in_before_limit<17>)
+     LUT4:I1->O            2   0.235   1.002  DAC_output_1/Mmux_multiplier_in121 (DAC_output_1/multiplier_in<3>)
+     LUT5:I1->O            9   0.254   1.252  DAC_output_1/Mmux_n027881 (DAC_output_1/n0278<1>)
+     LUT4:I0->O            0   0.254   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lutdi (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5>)
+     MUXCY:CI->O           1   0.235   0.682  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6>)
+     LUT5:I4->O            2   0.254   0.954  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<7> (DAC_output_1/thrsh[15]_input_offset[15]_LessThan_20_o)
+     LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out_direct<0>11 (TTL_out_direct_0_OBUF)
+     OBUF:I->O                 2.912          TTL_out_direct_0_OBUF (TTL_out_direct<0>)
     ----------------------------------------
-    Total                     16.017ns (6.370ns logic, 9.647ns route)
-                                       (39.8% logic, 60.2% route)
+    Total                     16.756ns (6.605ns logic, 10.151ns route)
+                                       (39.4% logic, 60.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti43/ep_trigger<15>'
@@ -7880,81 +7899,67 @@ Offset:              5.418ns (Levels of Logic = 2)
                                        (68.1% logic, 31.9% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'DAC_output_8/state_clk'
-  Total number of paths / destination ports: 23984 / 8
--------------------------------------------------------------------------
-Offset:              12.756ns (Levels of Logic = 29)
-  Source:            DAC_output_7/filter_type_dependent_state_16 (FF)
-  Destination:       TTL_out_direct<6> (PAD)
-  Source Clock:      DAC_output_8/state_clk rising
-
-  Data Path: DAC_output_7/filter_type_dependent_state_16 to TTL_out_direct<6>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               1   0.525   1.112  DAC_output_7/filter_type_dependent_state_16 (DAC_output_7/filter_type_dependent_state_16)
-     LUT6:I1->O            1   0.254   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_lut<2> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_lut<2>)
-     MUXCY:S->O            1   0.215   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<2> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<3> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<4> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<5> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<6> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<7> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<8> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<9> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<10> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<10>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<11> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<11>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<12> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<12>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<13> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<13>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<14> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<14>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<15> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<15>)
-     MUXCY:CI->O           0   0.023   0.000  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<16> (DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_cy<16>)
-     XORCY:CI->O          48   0.206   2.064  DAC_output_7/Madd_multiplier_in_before_limit_Madd_Madd_xor<17> (DAC_output_7/multiplier_in_before_limit<17>)
-     LUT6:I2->O            9   0.254   1.252  DAC_output_7/Mmux_filter_output81 (DAC_output_7/filter_output<1>)
-     LUT4:I0->O            0   0.254   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lutdi (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lutdi)
-     MUXCY:DI->O           1   0.181   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5>)
-     MUXCY:CI->O           1   0.235   0.682  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6>)
-     LUT5:I4->O            2   0.254   0.954  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<7> (DAC_output_7/thrsh[15]_input_offset[15]_LessThan_22_o)
-     LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out_direct<6>11 (TTL_out_direct_6_OBUF)
-     OBUF:I->O                 2.912          TTL_out_direct_6_OBUF (TTL_out_direct<6>)
-    ----------------------------------------
-    Total                     12.756ns (5.967ns logic, 6.789ns route)
-                                       (46.8% logic, 53.2% route)
-
-=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti44/ep_trigger<0>'
   Total number of paths / destination ports: 480 / 8
 -------------------------------------------------------------------------
-Offset:              11.477ns (Levels of Logic = 12)
+Offset:              11.460ns (Levels of Logic = 12)
   Source:            HPF_en (FF)
-  Destination:       TTL_out_direct<6> (PAD)
+  Destination:       TTL_out_direct<0> (PAD)
   Source Clock:      ti44/ep_trigger<0> rising
 
-  Data Path: HPF_en to TTL_out_direct<6>
+  Data Path: HPF_en to TTL_out_direct<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q             350   0.525   2.897  HPF_en (HPF_en)
-     LUT6:I0->O            9   0.254   1.252  DAC_output_7/Mmux_filter_output81 (DAC_output_7/filter_output<1>)
-     LUT4:I0->O            0   0.254   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lutdi (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lutdi)
-     MUXCY:DI->O           1   0.181   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5>)
-     MUXCY:CI->O           1   0.235   0.682  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6>)
-     LUT5:I4->O            2   0.254   0.954  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<7> (DAC_output_7/thrsh[15]_input_offset[15]_LessThan_22_o)
-     LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out_direct<6>11 (TTL_out_direct_6_OBUF)
-     OBUF:I->O                 2.912          TTL_out_direct_6_OBUF (TTL_out_direct<6>)
+     FD:C->Q             426   0.525   2.880  HPF_en (HPF_en)
+     LUT5:I0->O            9   0.254   1.252  DAC_output_1/Mmux_n027881 (DAC_output_1/n0278<1>)
+     LUT4:I0->O            0   0.254   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lutdi (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5>)
+     MUXCY:CI->O           1   0.235   0.682  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6>)
+     LUT5:I4->O            2   0.254   0.954  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<7> (DAC_output_1/thrsh[15]_input_offset[15]_LessThan_20_o)
+     LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out_direct<0>11 (TTL_out_direct_0_OBUF)
+     OBUF:I->O                 2.912          TTL_out_direct_0_OBUF (TTL_out_direct<0>)
     ----------------------------------------
-    Total                     11.477ns (4.966ns logic, 6.510ns route)
+    Total                     11.460ns (4.966ns logic, 6.493ns route)
                                        (43.3% logic, 56.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DAC_output_8/state_clk'
+  Total number of paths / destination ports: 3478 / 8
+-------------------------------------------------------------------------
+Offset:              13.592ns (Levels of Logic = 15)
+  Source:            DAC_output_1/filter_state_31 (FF)
+  Destination:       TTL_out_direct<0> (PAD)
+  Source Clock:      DAC_output_8/state_clk rising
+
+  Data Path: DAC_output_1/filter_state_31 to TTL_out_direct<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             24   0.525   1.810  DAC_output_1/filter_state_31 (DAC_output_1/filter_state_31)
+     LUT5:I0->O            0   0.254   0.000  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_lut<17> (DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_lut<17>)
+     XORCY:LI->O          22   0.149   1.562  DAC_output_1/Madd_multiplier_in_before_limit_Madd_Madd_xor<17> (DAC_output_1/multiplier_in_before_limit<17>)
+     LUT4:I1->O            2   0.235   1.002  DAC_output_1/Mmux_multiplier_in121 (DAC_output_1/multiplier_in<3>)
+     LUT5:I1->O            9   0.254   1.252  DAC_output_1/Mmux_n027881 (DAC_output_1/n0278<1>)
+     LUT4:I0->O            0   0.254   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lutdi (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5>)
+     MUXCY:CI->O           1   0.235   0.682  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6>)
+     LUT5:I4->O            2   0.254   0.954  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<7> (DAC_output_1/thrsh[15]_input_offset[15]_LessThan_20_o)
+     LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out_direct<0>11 (TTL_out_direct_0_OBUF)
+     OBUF:I->O                 2.912          TTL_out_direct_0_OBUF (TTL_out_direct<0>)
+    ----------------------------------------
+    Total                     13.592ns (5.604ns logic, 7.987ns route)
+                                       (41.2% logic, 58.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti43/ep_trigger<7>'
@@ -7970,15 +7975,15 @@ Offset:              8.188ns (Levels of Logic = 11)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               4   0.525   1.080  DAC_thresh_8_0 (DAC_thresh_8_0)
-     LUT4:I0->O            1   0.254   0.000  DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lut<0> (DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0> (DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1> (DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2> (DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3> (DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4> (DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5> (DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5>)
-     MUXCY:CI->O           1   0.235   0.682  DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6> (DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6>)
-     LUT5:I4->O            2   0.254   0.954  DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<7> (DAC_output_8/thrsh[15]_input_offset[15]_LessThan_22_o)
+     LUT4:I0->O            1   0.254   0.000  DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lut<0> (DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0> (DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1> (DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2> (DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3> (DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4> (DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5> (DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5>)
+     MUXCY:CI->O           1   0.235   0.682  DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6> (DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6>)
+     LUT5:I4->O            2   0.254   0.954  DAC_output_8/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<7> (DAC_output_8/thrsh[15]_input_offset[15]_LessThan_20_o)
      LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out_direct<7>11 (TTL_out_direct_7_OBUF)
      OBUF:I->O                 2.912          TTL_out_direct_7_OBUF (TTL_out_direct<7>)
     ----------------------------------------
@@ -8019,15 +8024,15 @@ Offset:              8.188ns (Levels of Logic = 11)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               4   0.525   1.080  DAC_thresh_7_0 (DAC_thresh_7_0)
-     LUT4:I0->O            1   0.254   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lut<0> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5>)
-     MUXCY:CI->O           1   0.235   0.682  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6>)
-     LUT5:I4->O            2   0.254   0.954  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<7> (DAC_output_7/thrsh[15]_input_offset[15]_LessThan_22_o)
+     LUT4:I0->O            1   0.254   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lut<0> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5>)
+     MUXCY:CI->O           1   0.235   0.682  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6> (DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6>)
+     LUT5:I4->O            2   0.254   0.954  DAC_output_7/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<7> (DAC_output_7/thrsh[15]_input_offset[15]_LessThan_20_o)
      LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out_direct<6>11 (TTL_out_direct_6_OBUF)
      OBUF:I->O                 2.912          TTL_out_direct_6_OBUF (TTL_out_direct<6>)
     ----------------------------------------
@@ -8068,15 +8073,15 @@ Offset:              8.188ns (Levels of Logic = 11)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               4   0.525   1.080  DAC_thresh_6_0 (DAC_thresh_6_0)
-     LUT4:I0->O            1   0.254   0.000  DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lut<0> (DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0> (DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1> (DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2> (DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3> (DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4> (DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5> (DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5>)
-     MUXCY:CI->O           1   0.235   0.682  DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6> (DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6>)
-     LUT5:I4->O            2   0.254   0.954  DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<7> (DAC_output_6/thrsh[15]_input_offset[15]_LessThan_22_o)
+     LUT4:I0->O            1   0.254   0.000  DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lut<0> (DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0> (DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1> (DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2> (DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3> (DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4> (DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5> (DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5>)
+     MUXCY:CI->O           1   0.235   0.682  DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6> (DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6>)
+     LUT5:I4->O            2   0.254   0.954  DAC_output_6/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<7> (DAC_output_6/thrsh[15]_input_offset[15]_LessThan_20_o)
      LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out_direct<5>11 (TTL_out_direct_5_OBUF)
      OBUF:I->O                 2.912          TTL_out_direct_5_OBUF (TTL_out_direct<5>)
     ----------------------------------------
@@ -8117,15 +8122,15 @@ Offset:              8.188ns (Levels of Logic = 11)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               4   0.525   1.080  DAC_thresh_5_0 (DAC_thresh_5_0)
-     LUT4:I0->O            1   0.254   0.000  DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lut<0> (DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0> (DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1> (DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2> (DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3> (DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4> (DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5> (DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5>)
-     MUXCY:CI->O           1   0.235   0.682  DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6> (DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6>)
-     LUT5:I4->O            2   0.254   0.954  DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<7> (DAC_output_5/thrsh[15]_input_offset[15]_LessThan_22_o)
+     LUT4:I0->O            1   0.254   0.000  DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lut<0> (DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0> (DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1> (DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2> (DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3> (DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4> (DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5> (DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5>)
+     MUXCY:CI->O           1   0.235   0.682  DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6> (DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6>)
+     LUT5:I4->O            2   0.254   0.954  DAC_output_5/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<7> (DAC_output_5/thrsh[15]_input_offset[15]_LessThan_20_o)
      LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out_direct<4>11 (TTL_out_direct_4_OBUF)
      OBUF:I->O                 2.912          TTL_out_direct_4_OBUF (TTL_out_direct<4>)
     ----------------------------------------
@@ -8166,15 +8171,15 @@ Offset:              8.188ns (Levels of Logic = 11)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               4   0.525   1.080  DAC_thresh_4_0 (DAC_thresh_4_0)
-     LUT4:I0->O            1   0.254   0.000  DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lut<0> (DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0> (DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1> (DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2> (DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3> (DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4> (DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5> (DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5>)
-     MUXCY:CI->O           1   0.235   0.682  DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6> (DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6>)
-     LUT5:I4->O            2   0.254   0.954  DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<7> (DAC_output_4/thrsh[15]_input_offset[15]_LessThan_22_o)
+     LUT4:I0->O            1   0.254   0.000  DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lut<0> (DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0> (DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1> (DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2> (DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3> (DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4> (DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5> (DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5>)
+     MUXCY:CI->O           1   0.235   0.682  DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6> (DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6>)
+     LUT5:I4->O            2   0.254   0.954  DAC_output_4/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<7> (DAC_output_4/thrsh[15]_input_offset[15]_LessThan_20_o)
      LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out_direct<3>11 (TTL_out_direct_3_OBUF)
      OBUF:I->O                 2.912          TTL_out_direct_3_OBUF (TTL_out_direct<3>)
     ----------------------------------------
@@ -8215,15 +8220,15 @@ Offset:              8.188ns (Levels of Logic = 11)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               4   0.525   1.080  DAC_thresh_3_0 (DAC_thresh_3_0)
-     LUT4:I0->O            1   0.254   0.000  DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lut<0> (DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0> (DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1> (DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2> (DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3> (DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4> (DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5> (DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5>)
-     MUXCY:CI->O           1   0.235   0.682  DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6> (DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6>)
-     LUT5:I4->O            2   0.254   0.954  DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<7> (DAC_output_3/thrsh[15]_input_offset[15]_LessThan_22_o)
+     LUT4:I0->O            1   0.254   0.000  DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lut<0> (DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0> (DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1> (DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2> (DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3> (DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4> (DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5> (DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5>)
+     MUXCY:CI->O           1   0.235   0.682  DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6> (DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6>)
+     LUT5:I4->O            2   0.254   0.954  DAC_output_3/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<7> (DAC_output_3/thrsh[15]_input_offset[15]_LessThan_20_o)
      LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out_direct<2>11 (TTL_out_direct_2_OBUF)
      OBUF:I->O                 2.912          TTL_out_direct_2_OBUF (TTL_out_direct<2>)
     ----------------------------------------
@@ -8264,15 +8269,15 @@ Offset:              8.188ns (Levels of Logic = 11)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               4   0.525   1.080  DAC_thresh_2_0 (DAC_thresh_2_0)
-     LUT4:I0->O            1   0.254   0.000  DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lut<0> (DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0> (DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1> (DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2> (DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3> (DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4> (DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5> (DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5>)
-     MUXCY:CI->O           1   0.235   0.682  DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6> (DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6>)
-     LUT5:I4->O            2   0.254   0.954  DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<7> (DAC_output_2/thrsh[15]_input_offset[15]_LessThan_22_o)
+     LUT4:I0->O            1   0.254   0.000  DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lut<0> (DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0> (DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1> (DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2> (DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3> (DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4> (DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5> (DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5>)
+     MUXCY:CI->O           1   0.235   0.682  DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6> (DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6>)
+     LUT5:I4->O            2   0.254   0.954  DAC_output_2/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<7> (DAC_output_2/thrsh[15]_input_offset[15]_LessThan_20_o)
      LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out_direct<1>11 (TTL_out_direct_1_OBUF)
      OBUF:I->O                 2.912          TTL_out_direct_1_OBUF (TTL_out_direct<1>)
     ----------------------------------------
@@ -8300,6 +8305,36 @@ Offset:              5.418ns (Levels of Logic = 2)
                                        (68.1% logic, 31.9% route)
 
 =========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ti44/ep_trigger<2>'
+  Total number of paths / destination ports: 60 / 1
+-------------------------------------------------------------------------
+Offset:              10.459ns (Levels of Logic = 12)
+  Source:            DAC_ftype_7:0 (FF)
+  Destination:       TTL_out_direct<0> (PAD)
+  Source Clock:      ti44/ep_trigger<2> rising
+
+  Data Path: DAC_ftype_7:0 to TTL_out_direct<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              41   0.525   1.899  DAC_ftype_7:0 (DAC_ftype_7:0)
+     LUT5:I2->O            9   0.235   1.252  DAC_output_1/Mmux_n027881 (DAC_output_1/n0278<1>)
+     LUT4:I0->O            0   0.254   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lutdi (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5>)
+     MUXCY:CI->O           1   0.235   0.682  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6>)
+     LUT5:I4->O            2   0.254   0.954  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<7> (DAC_output_1/thrsh[15]_input_offset[15]_LessThan_20_o)
+     LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out_direct<0>11 (TTL_out_direct_0_OBUF)
+     OBUF:I->O                 2.912          TTL_out_direct_0_OBUF (TTL_out_direct<0>)
+    ----------------------------------------
+    Total                     10.459ns (4.948ns logic, 5.512ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ti43/ep_trigger<0>'
   Total number of paths / destination ports: 60 / 1
 -------------------------------------------------------------------------
@@ -8313,15 +8348,15 @@ Offset:              8.188ns (Levels of Logic = 11)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FD:C->Q               4   0.525   1.080  DAC_thresh_1_0 (DAC_thresh_1_0)
-     LUT4:I0->O            1   0.254   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lut<0> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<5>)
-     MUXCY:CI->O           1   0.235   0.682  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<6>)
-     LUT5:I4->O            2   0.254   0.954  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_22_o_cy<7> (DAC_output_1/thrsh[15]_input_offset[15]_LessThan_22_o)
+     LUT4:I0->O            1   0.254   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lut<0> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<5>)
+     MUXCY:CI->O           1   0.235   0.682  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6> (DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<6>)
+     LUT5:I4->O            2   0.254   0.954  DAC_output_1/Mcompar_thrsh[15]_input_offset[15]_LessThan_20_o_cy<7> (DAC_output_1/thrsh[15]_input_offset[15]_LessThan_20_o)
      LUT6:I3->O            2   0.235   0.725  Mmux_TTL_out_direct<0>11 (TTL_out_direct_0_OBUF)
      OBUF:I->O                 2.912          TTL_out_direct_0_OBUF (TTL_out_direct<0>)
     ----------------------------------------
@@ -8376,9 +8411,8 @@ Clock to Setup on destination clock DAC_output_8/state_clk
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-DAC_output_8/state_clk                   |    2.927|         |         |         |
+DAC_output_8/state_clk                   |    2.909|         |         |         |
 hi_in<0>                                 |    3.769|         |         |         |
-ti44/ep_trigger<2>                       |    3.198|         |         |         |
 variable_freq_clk_generator_inst/clkout_i|    3.406|         |         |         |
 -----------------------------------------+---------+---------+---------+---------+
 
@@ -8417,8 +8451,8 @@ Clock to Setup on destination clock sample_CLK_out_OBUF
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-DAC_output_8/state_clk                   |   15.014|         |         |         |
-hi_in<0>                                 |   21.393|         |         |         |
+DAC_output_8/state_clk                   |   15.849|         |         |         |
+hi_in<0>                                 |   22.129|         |         |         |
 sample_CLK_out_OBUF                      |   11.881|         |         |         |
 ti43/ep_trigger<0>                       |   10.446|         |         |         |
 ti43/ep_trigger<10>                      |    7.512|         |         |         |
@@ -8436,7 +8470,8 @@ ti43/ep_trigger<6>                       |   10.028|         |         |        
 ti43/ep_trigger<7>                       |   10.379|         |         |         |
 ti43/ep_trigger<8>                       |    7.788|         |         |         |
 ti43/ep_trigger<9>                       |    7.229|         |         |         |
-ti44/ep_trigger<0>                       |   13.734|         |         |         |
+ti44/ep_trigger<0>                       |   13.718|         |         |         |
+ti44/ep_trigger<2>                       |   12.717|         |         |         |
 ti47/ep_trigger<0>                       |   11.088|         |         |         |
 ti47/ep_trigger<10>                      |   10.331|         |         |         |
 ti47/ep_trigger<11>                      |    8.811|         |         |         |
@@ -8463,7 +8498,7 @@ ti48/ep_trigger<4>                       |    7.547|         |         |        
 ti48/ep_trigger<5>                       |    5.830|         |         |         |
 ti48/ep_trigger<6>                       |    6.002|         |         |         |
 ti48/ep_trigger<7>                       |    7.652|         |         |         |
-variable_freq_clk_generator_inst/clkout_i|   18.275|         |         |         |
+variable_freq_clk_generator_inst/clkout_i|   19.014|         |         |         |
 -----------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti42/ep_trigger<1>
@@ -8473,7 +8508,7 @@ Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fal
 -----------------------------------------+---------+---------+---------+---------+
 hi_in<0>                                 |    6.360|         |         |         |
 ti42/ep_trigger<1>                       |    2.284|         |         |         |
-variable_freq_clk_generator_inst/clkout_i|    3.396|         |         |         |
+variable_freq_clk_generator_inst/clkout_i|    3.395|         |         |         |
 -----------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ti43/ep_trigger<0>
@@ -8905,9 +8940,9 @@ Clock to Setup on destination clock variable_freq_clk_generator_inst/clkout_i
                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------+---------+---------+---------+---------+
-DAC_output_8/state_clk                   |   19.293|         |         |         |
+DAC_output_8/state_clk                   |   19.370|         |         |         |
 clk1_in                                  |    1.280|         |         |         |
-hi_in<0>                                 |   25.672|         |         |         |
+hi_in<0>                                 |   25.649|         |         |         |
 sample_CLK_out_OBUF                      |    6.720|         |         |         |
 ti42/ep_trigger<1>                       |    8.338|         |         |         |
 ti43/ep_trigger<0>                       |    4.625|         |         |         |
@@ -8926,8 +8961,9 @@ ti43/ep_trigger<6>                       |    4.625|         |         |        
 ti43/ep_trigger<7>                       |    4.625|         |         |         |
 ti43/ep_trigger<8>                       |    1.855|         |         |         |
 ti43/ep_trigger<9>                       |    1.855|         |         |         |
-ti44/ep_trigger<0>                       |   17.854|         |         |         |
+ti44/ep_trigger<0>                       |   18.855|         |         |         |
 ti44/ep_trigger<1>                       |    4.973|         |         |         |
+ti44/ep_trigger<2>                       |   16.711|         |         |         |
 ti45/ep_trigger<0>                       |    1.990|         |         |         |
 ti45/ep_trigger<1>                       |    1.990|         |         |         |
 ti45/ep_trigger<2>                       |    1.990|         |         |         |
@@ -8937,20 +8973,20 @@ ti45/ep_trigger<5>                       |    1.744|         |         |        
 ti45/ep_trigger<6>                       |    1.744|         |         |         |
 ti45/ep_trigger<7>                       |    1.744|         |         |         |
 ti48/ep_trigger<15>                      |    7.513|         |         |         |
-variable_freq_clk_generator_inst/clkout_i|   22.554|         |         |         |
+variable_freq_clk_generator_inst/clkout_i|   22.534|         |         |         |
 -----------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 496.00 secs
-Total CPU time to Xst completion: 496.05 secs
+Total CPU time to Xst completion: 495.98 secs
  
 --> 
 
-Total memory usage is 908120 kilobytes
+Total memory usage is 907864 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  393 (   0 filtered)
+Number of warnings :  395 (   0 filtered)
 Number of infos    :  340 (   0 filtered)
 

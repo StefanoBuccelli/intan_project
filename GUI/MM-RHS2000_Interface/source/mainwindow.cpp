@@ -185,9 +185,14 @@ MainWindow::MainWindow(int sampleRateIndex_, int stimStepIndex)
 //    notchFilterEnabled = true;
 
 //    signalProcessor->setNotchFilterEnabled(notchFilterEnabled);
-    dacFilterFrequency = 300.0;
-    dacFilterEnabled = true;
-    signalProcessor->setHighpassFilterEnabled(dacFilterEnabled);
+    dacFilterFrequency.resize(8);
+    dacFilterFrequency.fill(300.0);
+    dacFilterEnabled.resize(8);
+    dacFilterEnabled.fill(true);
+    dacFilterType.resize(8);
+    dacFilterType.fill(true);
+    curDacFilterChannel = 0;
+    signalProcessor->setHighpassFilterEnabled(dacFilterEnabled[curDacFilterChannel]);
 
     // MM - UPDATE - IIT:FILTERS FOR EVENT STREAMS TAB - 5/25/2018
     hpEvtFilterFrequency = 300.0;
@@ -275,8 +280,8 @@ MainWindow::MainWindow(int sampleRateIndex_, int stimStepIndex)
 
         changeDetectionMethod(DetectionMethod);
 
-        evalBoard->enableDacHighpassFilter(false);
-        evalBoard->setDacHighpassFilter(300.0);
+        evalBoard->enableDacFilter(true);
+        evalBoard->setDacFilter(300.0);
         // END UPDATE
     }
 
@@ -1575,24 +1580,42 @@ void MainWindow::createLayout()
     QGroupBox *bandwidthGroupBox = new QGroupBox(tr("Amplifier Hardware Bandwidth"));
     bandwidthGroupBox->setLayout(bandwidthLayout);
 
-    dacFilterComboBox = new QComboBox();
-    dacFilterComboBox->addItem(tr("disabled"));
-    dacFilterComboBox->addItem(tr("highpass"));
-    dacFilterComboBox->addItem(tr("lowpass"));
-    dacFilterComboBox->setCurrentIndex(1);
-    connect(dacFilterComboBox, SIGNAL(currentIndexChanged(int)),
+    dacFilterTypeComboBox = new QComboBox();
+    dacFilterTypeComboBox->addItem(tr("disabled"));
+    dacFilterTypeComboBox->addItem(tr("highpass"));
+    dacFilterTypeComboBox->addItem(tr("lowpass"));
+    dacFilterTypeComboBox->setCurrentIndex(1);
+    connect(dacFilterTypeComboBox, SIGNAL(currentIndexChanged(int)),
             this, SLOT(dacFilterSelected(int)));
 
-    dacFilterLineEdit = new QLineEdit(QString::number(dacFilterFrequency, 'f', 0));
+    dacFilterChannelComboBox = new QComboBox();
+    dacChannelList.append(1);
+    dacChannelList.append(2);
+    dacChannelList.append(3);
+    dacChannelList.append(4);
+    dacChannelList.append(5);
+    dacChannelList.append(6);
+    dacChannelList.append(7);
+    dacChannelList.append(8);
+    for (i = 0; i < dacChannelList.size(); ++i) {
+        dacFilterChannelComboBox->addItem("DAC-" + QString::number(dacChannelList[i]));
+    }
+    dacFilterChannelComboBox->setCurrentIndex(curDacFilterChannel);
+    connect(dacFilterChannelComboBox, SIGNAL(currentIndexChanged(int)),
+            this, SLOT(setDacFilterChannel(int)));
+
+    dacFilterLineEdit = new QLineEdit(QString::number(dacFilterFrequency[curDacFilterChannel], 'f', 0));
     dacFilterLineEdit->setValidator(new QDoubleValidator(0.01, 9999.99, 2, this));
     connect(dacFilterLineEdit, SIGNAL(textChanged(const QString &)),
             this, SLOT(dacFilterLineEditChanged()));
 
     QHBoxLayout *highpassFilterLayout = new QHBoxLayout;
     highpassFilterLayout->addWidget(new QLabel(tr("DAC filter:")));
-    highpassFilterLayout->addWidget(dacFilterComboBox);
+    highpassFilterLayout->addWidget(dacFilterTypeComboBox);
     highpassFilterLayout->addWidget(dacFilterLineEdit);
     highpassFilterLayout->addWidget(new QLabel(tr("Hz")));
+    highpassFilterLayout->addStretch(1);
+    highpassFilterLayout->addWidget(dacFilterChannelComboBox);
     highpassFilterLayout->addStretch(1);
     highpassFilterLayout->addWidget(helpDialogHighpassFilterButton);
 
@@ -2323,21 +2346,23 @@ void MainWindow::setDacChannelLabel(int dacChannel, QString channel,
 
 // MM - UPDATE - IIT:DAC LPF - 5/28/2018
 
-// Enable/disable software/FPGA high-pass filter.
+// Enable/disable software/FPGA (DAC) high-pass filter.
 void MainWindow::enableHighpassFilter(bool enable)
 {
+    dacFilterType[curDacFilterChannel] = true;
     signalProcessor->setHighpassFilterEnabled(enable);
     if (!synthMode) {
-        evalBoard->enableDacHighpassFilter(enable);
+        evalBoard->enableDacFilter(enable);
     }
     wavePlot->setFocus();
 }
 
 void MainWindow::enableLowpassFilter(bool enable)
 {
+    dacFilterType[curDacFilterChannel] = false;
     signalProcessor->setLowpassFilterEnabled(enable);
     if (!synthMode) {
-        evalBoard->enableDacLowpassFilter(enable);
+        evalBoard->enableDacFilter(enable);
     }
     wavePlot->setFocus();
 }
@@ -2345,24 +2370,40 @@ void MainWindow::enableLowpassFilter(bool enable)
 // Update software/FPGA high-pass filter when LineEdit changes.
 void MainWindow::dacFilterLineEditChanged()
 {
-    setDacFilterCutoff(dacFilterLineEdit->text().toDouble(),dacFilterComboBox->currentIndex());
+    setDacFilterCutoff(dacFilterLineEdit->text().toDouble(),dacFilterTypeComboBox->currentIndex());
+}
+
+void MainWindow::setDacFilterChannel(int channel)
+{
+    curDacFilterChannel = channel;
+    if (dacFilterEnabled[curDacFilterChannel]) {
+        if (dacFilterType[curDacFilterChannel]) {
+            dacFilterTypeComboBox->setCurrentIndex(1);
+        } else {
+            dacFilterTypeComboBox->setCurrentIndex(2);
+        }
+    } else {
+        dacFilterTypeComboBox->setCurrentIndex(0);
+    }
+    dacFilterLineEdit->setText(QString::number(dacFilterFrequency[curDacFilterChannel]));
+
 }
 
 // Update software/FPGA high-pass filter cutoff frequency.
 void MainWindow::setDacFilterCutoff(double cutoff, int type)
 {
-    dacFilterFrequency = cutoff;
+    dacFilterFrequency[curDacFilterChannel] = cutoff;
     switch (type) {
     case 1:
         signalProcessor->setFilterCutoff(cutoff, boardSampleRate);
         if (!synthMode) {
-            evalBoard->setDacHighpassFilter(cutoff);
+            evalBoard->setDacFilter(cutoff);
         }
         break;
     case 2:
         signalProcessor->setFilterCutoff(cutoff, boardSampleRate);
         if (!synthMode) {
-            evalBoard->setDacLowpassFilter(cutoff);
+            evalBoard->setDacFilter(cutoff);
         }
         break;
     default:
@@ -2515,10 +2556,10 @@ void MainWindow::changeSampleRate(int sampleRateIndex, bool updateStimParams)
 
     wavePlot->setSampleRate(boardSampleRate);
 
-    signalProcessor->setFilterCutoff(dacFilterFrequency, boardSampleRate);
+    signalProcessor->setFilterCutoff(dacFilterFrequency[curDacFilterChannel], boardSampleRate);
 
     if (!synthMode) {
-        evalBoard->setDacHighpassFilter(dacFilterFrequency);
+        evalBoard->setDacFilter(dacFilterFrequency[curDacFilterChannel]);
     }
 
     if (spikeScopeDialog) {
@@ -4081,9 +4122,9 @@ void MainWindow::loadSettings()
     inStream >> tempQint16;
     enableHighpassFilter((bool) tempQint16);
 
-    inStream >> dacFilterFrequency;
-    dacFilterLineEdit->setText(QString::number(dacFilterFrequency, 'f', 2));
-    setDacFilterCutoff(dacFilterFrequency,dacFilterComboBox->currentIndex());
+    inStream >> dacFilterFrequency[curDacFilterChannel];
+    dacFilterLineEdit->setText(QString::number(dacFilterFrequency[curDacFilterChannel], 'f', 2));
+    setDacFilterCutoff(dacFilterFrequency[curDacFilterChannel],dacFilterTypeComboBox->currentIndex());
 
     for (int i = 0; i < MAX_NUM_SPI_PORTS; ++i) {
         inStream >> tempQint16;
@@ -4264,8 +4305,11 @@ void MainWindow::saveSettings()
     outStream << (qint16) saveTtlOut;
     outStream << (qint16) saveDcAmps;
 
-    outStream << (qint16) dacFilterEnabled;
-    outStream << dacFilterFrequency;
+    // MM - UPDATE - 6/18/18 NOT SURE ON FORMAT STUFF HERE SO LEAVING IT ALONE FOR TIME BEING
+    outStream << (qint16) dacFilterEnabled[curDacFilterChannel];
+    // MM - END UPDATE
+
+    outStream << dacFilterFrequency[curDacFilterChannel];
 
     for (int i = 0; i < MAX_NUM_SPI_PORTS; ++i) {
         outStream << (qint16) manualDelayEnabled[i];
@@ -5891,24 +5935,42 @@ void MainWindow::dacFilterSelected(int index)
 {
     switch (index) {
     case 0: // NO FILTER
-        dacFilterEnabled = false;
-        enableHighpassFilter(dacFilterEnabled);
-        enableLowpassFilter(dacFilterEnabled);
+        dacFilterEnabled[curDacFilterChannel] = false;
+        enableHighpassFilter(dacFilterEnabled[curDacFilterChannel]);
+        enableLowpassFilter(dacFilterEnabled[curDacFilterChannel]);
         break;
     case 1: // HIGHPASS
-        dacFilterEnabled = true;
-        enableLowpassFilter(!dacFilterEnabled);
-        enableHighpassFilter(dacFilterEnabled);
+        if (!synthMode) {
+            if (!dacFilterType[curDacFilterChannel]) {
+                evalBoard->updateDacFilterType(curDacFilterChannel);
+            }
+        }
+        dacFilterEnabled[curDacFilterChannel] = true;
+        enableLowpassFilter(!dacFilterEnabled[curDacFilterChannel]);
+        enableHighpassFilter(dacFilterEnabled[curDacFilterChannel]);
         break;
     case 2: // LOWPASS
-        dacFilterEnabled = true;
-        enableHighpassFilter(!dacFilterEnabled);
-        enableLowpassFilter(dacFilterEnabled);
+        if (!synthMode) {
+            if (dacFilterType[curDacFilterChannel]) {
+                evalBoard->updateDacFilterType(curDacFilterChannel);
+            }
+        }
+        dacFilterEnabled[curDacFilterChannel] = true;
+        enableHighpassFilter(!dacFilterEnabled[curDacFilterChannel]);
+        enableLowpassFilter(dacFilterEnabled[curDacFilterChannel]);
+        if (dacFilterType[curDacFilterChannel]) {
+            evalBoard->updateDacFilterType(curDacFilterChannel);
+        }
         break;
     default: // HIGHPASS
-        dacFilterEnabled = true;
-        enableLowpassFilter(!dacFilterEnabled);
-        enableHighpassFilter(dacFilterEnabled);
+        if (!synthMode) {
+            if (!dacFilterType[curDacFilterChannel]) {
+                evalBoard->updateDacFilterType(curDacFilterChannel);
+            }
+        }
+        dacFilterEnabled[curDacFilterChannel] = true;
+        enableLowpassFilter(!dacFilterEnabled[curDacFilterChannel]);
+        enableHighpassFilter(dacFilterEnabled[curDacFilterChannel]);
         break;
     }
 }

@@ -436,7 +436,7 @@ module main #(
 	wire [7:0]		DAC_thresh_out;
 	
 	reg				HPF_en;
-	reg [15:0]		HPF_coefficient;
+	reg [15:0]		filt_coeff;
 	
 	wire				RAM_addr_reset;
 	
@@ -501,10 +501,9 @@ module main #(
 	
 	// END
 	
-	// MM update 29/05/2018 start
+	// MM update 06/18/2018 start
 	
-	wire DAC_filter_type;
-	reg DAC_ftype;
+	reg [15:0] DAC_ftype;
 	
 	// end update
 	
@@ -704,14 +703,13 @@ module main #(
 		HPF_en <=							ep1fwirein[0];
 	end
 	always @(posedge ep44trigin[1]) begin
-		HPF_coefficient <=				ep1fwirein;
+		filt_coeff <=				ep1fwirein;
 	end
 	
 	// IIT 5/29/2018 - FILTER MODIFICATIONS - START
 	always @(posedge ep44trigin[2]) begin
 		DAC_ftype <= ep1fwirein[2];
 	end
-	assign DAC_filter_type = DAC_ftype;
 	// END
 	
 	always @(posedge ep45trigin[0]) begin
@@ -3632,12 +3630,12 @@ module main #(
 		.fsm_stop_win_in (DAC_stop_win_1),
 		.fsm_state_counter_in (DAC_fsm_counter),
 		.fsm_inwin_out (DAC_in_window[0]),
-		.filter_coefficient (HPF_coefficient),
+		.filter_coefficient (filt_coeff),
 		.filter_en			(HPF_en),
 		.software_reference_mode (DAC_reref_mode & ~DAC_1_input_is_ref),
 		.software_reference (DAC_reref_register),
 		.register	(DAC_output_register_1),
-		.filter_type (DAC_filter_type)
+		.filter_type (DAC_ftype[0])
    );
 	
 	scalable_filter #(
@@ -3668,12 +3666,12 @@ module main #(
 		.fsm_stop_win_in (DAC_stop_win_2),
 		.fsm_state_counter_in (DAC_fsm_counter),
 		.fsm_inwin_out (DAC_in_window[1]),
-		.filter_coefficient (HPF_coefficient),
+		.filter_coefficient (filt_coeff),
 		.filter_en			(HPF_en),
 		.software_reference_mode (DAC_reref_mode & ~DAC_2_input_is_ref),
 		.software_reference (DAC_reref_register),
 		.register	(DAC_output_register_2),
-		.filter_type (DAC_filter_type)
+		.filter_type (DAC_ftype[1])
    );
 	
 		scalable_filter #(
@@ -3704,12 +3702,12 @@ module main #(
 		.fsm_stop_win_in (DAC_stop_win_3),
 		.fsm_state_counter_in (DAC_fsm_counter),
 		.fsm_inwin_out (DAC_in_window[2]),
-		.filter_coefficient (HPF_coefficient),
+		.filter_coefficient (filt_coeff),
 		.filter_en			(HPF_en),
 		.software_reference_mode (DAC_reref_mode & ~DAC_3_input_is_ref),
 		.software_reference (DAC_reref_register),
 		.register	(DAC_output_register_3),
-		.filter_type (DAC_filter_type)
+		.filter_type (DAC_ftype[2])
    );
 	
 		scalable_filter #(
@@ -3740,12 +3738,12 @@ module main #(
 		.fsm_stop_win_in (DAC_stop_win_4),
 		.fsm_state_counter_in (DAC_fsm_counter),
 		.fsm_inwin_out (DAC_in_window[3]),
-		.filter_coefficient (HPF_coefficient),
+		.filter_coefficient (filt_coeff),
 		.filter_en			(HPF_en),
 		.software_reference_mode (DAC_reref_mode & ~DAC_4_input_is_ref),
 		.software_reference (DAC_reref_register),
 		.register	(DAC_output_register_4),
-		.filter_type (DAC_filter_type)
+		.filter_type (DAC_ftype[3])
    );
 	
 		scalable_filter #(
@@ -3776,12 +3774,12 @@ module main #(
 		.fsm_stop_win_in (DAC_stop_win_5),
 		.fsm_state_counter_in (DAC_fsm_counter),
 		.fsm_inwin_out (DAC_in_window[4]),
-		.filter_coefficient (HPF_coefficient),
+		.filter_coefficient (filt_coeff),
 		.filter_en			(HPF_en),
 		.software_reference_mode (DAC_reref_mode & ~DAC_5_input_is_ref),
 		.software_reference (DAC_reref_register),
 		.register	(DAC_output_register_5),
-		.filter_type (DAC_filter_type)
+		.filter_type (DAC_ftype[4])
    );
 	
 		scalable_filter #(
@@ -3812,12 +3810,12 @@ module main #(
 		.fsm_stop_win_in (DAC_stop_win_6),
 		.fsm_state_counter_in (DAC_fsm_counter),
 		.fsm_inwin_out (DAC_in_window[5]),
-		.filter_coefficient (HPF_coefficient),
+		.filter_coefficient (filt_coeff),
 		.filter_en			(HPF_en),
 		.software_reference_mode (DAC_reref_mode & ~DAC_6_input_is_ref),
 		.software_reference (DAC_reref_register),
 		.register	(DAC_output_register_6),
-		.filter_type (DAC_filter_type)
+		.filter_type (DAC_ftype[5])
    );
 	
 		scalable_filter #(
@@ -3848,12 +3846,12 @@ module main #(
 		.fsm_stop_win_in (DAC_stop_win_7),
 		.fsm_state_counter_in (DAC_fsm_counter),
 		.fsm_inwin_out (DAC_in_window[6]),
-		.filter_coefficient (HPF_coefficient),
+		.filter_coefficient (filt_coeff),
 		.filter_en			(HPF_en),
 		.software_reference_mode (DAC_reref_mode & ~DAC_7_input_is_ref),
 		.software_reference (DAC_reref_register),
 		.register	(DAC_output_register_7),
-		.filter_type (DAC_filter_type)
+		.filter_type (DAC_ftype[6])
    );
 	
 		scalable_filter #(
@@ -3884,12 +3882,12 @@ module main #(
 		.fsm_stop_win_in (DAC_stop_win_8),
 		.fsm_state_counter_in (DAC_fsm_counter),
 		.fsm_inwin_out (DAC_in_window[7]),
-		.filter_coefficient (HPF_coefficient),
+		.filter_coefficient (filt_coeff),
 		.filter_en			(HPF_en),
 		.software_reference_mode (DAC_reref_mode & ~DAC_8_input_is_ref),
 		.software_reference (DAC_reref_register),
 		.register	(DAC_output_register_8),
-		.filter_type (DAC_filter_type)
+		.filter_type (DAC_ftype[7])
    );
 	// END UPDATE
 

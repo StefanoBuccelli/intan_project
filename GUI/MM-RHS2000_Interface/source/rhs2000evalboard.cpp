@@ -68,6 +68,7 @@ Rhs2000EvalBoard::Rhs2000EvalBoard()
     cableDelay.resize(MAX_NUM_SPI_PORTS, -1);
     lastNumWordsInFifo = 0;
     numWordsHasBeenUpdated = false;
+    dacFilterType = 65536;
 }
 
 Rhs2000EvalBoard::~Rhs2000EvalBoard()
@@ -1169,7 +1170,7 @@ void Rhs2000EvalBoard::setExtraStates(unsigned int extraStates)
 // while viewing only spikes without LFPs on the DAC outputs, for example.  This is useful when
 // using the low-latency FPGA thresholds to detect spikes and produce digital pulses on the TTL
 // outputs, for example.
-void Rhs2000EvalBoard::enableDacHighpassFilter(bool enable)
+void Rhs2000EvalBoard::enableDacFilter(bool enable)
 {
     lock_guard<mutex> lockOk(okMutex);
 
@@ -1183,7 +1184,7 @@ void Rhs2000EvalBoard::enableDacHighpassFilter(bool enable)
 // to record wideband neural data while viewing only spikes without LFPs on the DAC outputs,
 // for example.  This is useful when using the low-latency FPGA thresholds to detect spikes
 // and produce digital pulses on the TTL outputs, for example.
-void Rhs2000EvalBoard::setDacHighpassFilter(double cutoff)
+void Rhs2000EvalBoard::setDacFilter(double cutoff)
 {
     lock_guard<mutex> lockOk(okMutex);
 
@@ -1209,61 +1210,9 @@ void Rhs2000EvalBoard::setDacHighpassFilter(double cutoff)
 	dev->UpdateWireIns();
     dev->ActivateTriggerIn(TrigInDacFiltCoeff, 1);
 
-    dev->SetWireInValue(WireInMultiUse, 0x0002);
-    dev->UpdateWireIns();
-    dev->ActivateTriggerIn(TrigInDacFiltCoeff,2);
 }
 
 // MM - UPDATE - IIT:FILTERS FOR EVENT STREAMS TABS - 5/27/2018
-// Enable optional FPGA-implemented digital low-pass filters associated with DAC outputs
-// on USB interface board.. These one-pole filters can be used to record wideband neural data
-// while viewing only spikes without LFPs on the DAC outputs, for example.  This is useful when
-// using the low-latency FPGA thresholds to detect LFP events and produce digital pulses on the TTL
-// outputs, for example.
-void Rhs2000EvalBoard::enableDacLowpassFilter(bool enable)
-{
-    lock_guard<mutex> lockOk(okMutex);
-
-    dev->SetWireInValue(WireInMultiUse, enable ? 1 : 0);
-    dev->UpdateWireIns();
-    dev->ActivateTriggerIn(TrigInDacFiltCoeff, 0);
-}
-
-// Set cutoff frequency (in Hz) for optional FPGA-implemented digital low-pass filters
-// associated with DAC on USB interface board.  These one-pole filters can be used
-// to record wideband neural data while viewing event-triggered LFP-averages, for example.
-// This is useful when using the low-latency FPGA thresholds to detect events in the LFP
-// and produce digital pulses on the TTL outputs, for example.
-void Rhs2000EvalBoard::setDacLowpassFilter(double cutoff)
-{
-    lock_guard<mutex> lockOk(okMutex);
-
-    double b;
-    int filterCoefficient;
-    const double pi = 3.1415926535897;
-
-    // Note that the filter coefficient is a function of the amplifier sample rate, so this
-    // function should be called after the sample rate is changed.
-    b = exp(-2.0 * pi * cutoff / getSampleRate()) - 1.0;
-    // In hardware, the filter coefficient is represented as a 16-bit number.
-    filterCoefficient = (int)floor(65536.0 * b + 0.5);
-
-    if (filterCoefficient < 1) {
-        filterCoefficient = 1;
-    }
-    else if (filterCoefficient > 65535) {
-        filterCoefficient = 65535;
-    }
-
-    dev->SetWireInValue(WireInMultiUse, filterCoefficient);
-    dev->UpdateWireIns();
-    dev->ActivateTriggerIn(TrigInDacFiltCoeff, 1);
-
-    dev->SetWireInValue(WireInMultiUse, 0x0000);
-    dev->UpdateWireIns();
-    dev->ActivateTriggerIn(TrigInDacFiltCoeff,2);
-}
-
 // Set cutoff frequency (in Hz) for optional FPGA-implemented digital high-pass filters
 // associated with event streams on USB interface board.  These one-pole filters can be used
 // to record wideband neural data while viewing event-triggered rasters, for example.
@@ -1312,7 +1261,7 @@ void Rhs2000EvalBoard::setEvtLowpassFilter(double cutoff)
 
     // Note that the filter coefficient is a function of the amplifier sample rate, so this
     // function should be called after the sample rate is changed.
-    b = 1.0 - (1.0 - exp(-2.0 * pi * cutoff / getSampleRate()))/2.0;
+    b = 1.0 - exp(-2.0 * pi * cutoff / getSampleRate());
 
     // In hardware, the filter coefficient is represented as a 16-bit number.
     filterCoefficient = (int)floor(65536.0 * b + 0.5);
@@ -1327,7 +1276,17 @@ void Rhs2000EvalBoard::setEvtLowpassFilter(double cutoff)
     // update registers here
 //    dev->SetWireInValue(WireInMultiUse, filterCoefficient);
 //    dev->UpdateWireIns();
-//    dev->ActivateTriggerIn(TrigInDacFiltCoeff, 1);
+    //    dev->ActivateTriggerIn(TrigInDacFiltCoeff, 1);
+}
+
+// Sets the filter type register for a particular channel
+void Rhs2000EvalBoard::updateDacFilterType(int channel)
+{
+    toggle(dacFilterType, channel);
+
+    dev->SetWireInValue(WireInMultiUse, dacFilterType);
+    dev->UpdateWireIns();
+    dev->ActivateTriggerIn(TrigInDacFiltCoeff,2);
 }
 // MM - END UPDATE
 
@@ -2484,4 +2443,12 @@ void Rhs2000EvalBoard::resetSequencers()
     lock_guard<mutex> lockOk(okMutex);
 
     dev->ActivateTriggerIn(TrigInSpiStart, 1);
+}
+
+// MM - UPDATE - 6/18/2018
+// Utility function for toggling bits
+// https://www.geeksforgeeks.org/bitwise-hacks-for-competitive-programming/
+void Rhs2000EvalBoard::toggle(unsigned int &num, int pos)
+{
+    num ^= (1 << pos);
 }
