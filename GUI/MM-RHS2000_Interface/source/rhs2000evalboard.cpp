@@ -1197,12 +1197,11 @@ void Rhs2000EvalBoard::setDacFilter(double cutoff)
 	b = 1.0 - exp(-2.0 * pi * cutoff / getSampleRate());
 
 	// In hardware, the filter coefficient is represented as a 16-bit number.
-	filterCoefficient = (int)floor(65536.0 * b + 0.5);
+    filterCoefficient = (int) floor(65536.0 * b + 0.5);
 
 	if (filterCoefficient < 1) {
 		filterCoefficient = 1;
-	}
-	else if (filterCoefficient > 65535) {
+    } else if (filterCoefficient > 65535) {
 		filterCoefficient = 65535;
 	}
 
@@ -1282,6 +1281,8 @@ void Rhs2000EvalBoard::setEvtLowpassFilter(double cutoff)
 // Sets the filter type register for a particular channel
 void Rhs2000EvalBoard::updateDacFilterType(int channel)
 {
+    lock_guard<mutex> lockOk(okMutex);
+
     toggle(dacFilterType, channel);
 
     dev->SetWireInValue(WireInMultiUse, dacFilterType);
