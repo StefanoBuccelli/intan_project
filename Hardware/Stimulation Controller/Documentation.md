@@ -36,13 +36,13 @@ The following identifiers are used :
 
 #### WireIn configuration bits ####
 
-Bits | Name           | Signification
----- | ----           | -------------
-0    | CST_enable     | If 1, enables custom computation; if 0, provide the original behavior of INTAN design
-1    | *reserved*     |
-2    | CSTtrig_to_DAC | If 1, outputs trigger outputs to the DACs (*DAC_en* and *CST_enable* must also be set); if 0, DACs output provide the original behavior.
-4-3  | *reserved*     |
-15-5 | -              | available for new developments
+Bits  | Name           | Signification
+----  | ----           | -------------
+0     | CST_enable     | If 1, enables custom computation; if 0, provide the original behavior of INTAN design
+1     | *reserved*     |
+2     | CSTtrig_to_DAC | If 1, outputs trigger outputs to the DACs (*DAC_en* and *CST_enable* must also be set); if 0, DACs output provide the original behavior.
+4-3   | *reserved*     |
+15-5  | -              | available for new developments
 
 #### WireOut configuration bits ####
 
@@ -71,7 +71,7 @@ All added computation is performed in the *cust_arch* module that is positioned 
 
 ### Computation module Architecture ###
 
-For there is no computation implemented in *cust_arch* today, there is no architecture available yet... :(
+There is no computation implemented in *cust_arch* today, there is no architecture available yet... :(
 
 ---
 ## Development remarks ##
