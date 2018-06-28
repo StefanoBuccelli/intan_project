@@ -10,9 +10,15 @@
 // Description:    Generates SPI control signals for Analog Devices AD5662 16-bit DAC
 //                 with adjustable gain and noise suppression, and built-in digital
 //                 one-pole high-pass filter.  Optional software reference subtraction.
+//                 This revised file handles a bypass to be used as output for external
+//                 triggers
+//                 FIXME: I feel quite bad with this module which uselessly uses long
+//                 critical path, might be interesting to check system timings and put
+//                 a bit of regs to break this long path...
 //
 // Dependencies: 
 //
+// Revision:       2.0-CST (27 june 2018)
 // Revision:       2.0 (15 October 2016)
 // Revision 0.01 - File Created
 // Additional Comments: 
@@ -43,15 +49,13 @@ module DAC_output_scalable_HPF #(
 	input wire [15:0]	DAC_thrsh,
 	input wire			DAC_thrsh_pol,
 	output wire			DAC_thrsh_out,
-	input wire [15:0] DAC_fsm_start_win_in,     // MM - UPDATE - 1/16/18
-	input wire [15:0] DAC_fsm_stop_win_in,      // MM - UPDATE - 1/16/18
-	input wire [15:0] DAC_fsm_state_counter_in, // MM - UPDATE - 1/16/18
-	output wire			DAC_fsm_inwin_out,		  // MM - UPDATE - 1/16/18
 	input wire [15:0] HPF_coefficient,
 	input wire			HPF_en,
 	input wire			software_reference_mode,
 	input wire [15:0] software_reference,
-	output wire [15:0] DAC_register
+	output wire [15:0] DAC_register,
+    input wire         Trigger_value,   // added for rev 2.0-CST
+    input wire         Trigger_bypass   // added for rev 2.0-CST
    );
 
 	wire [15:0]    DAC_input_twos_comp, DAC_input_offset, DAC_register_pre, subtract_result, add_result;
@@ -67,15 +71,13 @@ module DAC_output_scalable_HPF #(
 	reg				state_clk;
 	wire [15:0]		pre_ref_input_twos_comp, software_reference_twos_comp, input_minus_ref;
 	wire [16:0]		input_minus_ref_before_limit;
-	wire				negative_overflow_ref, positive_overflow_ref;
-	
-	// MM - UPDATE - WINDOW DISCRIMINATOR - 1/16/18
-	// Return whether counter is within window for state machine
-	assign DAC_fsm_inwin_out = (DAC_fsm_state_counter_in >= DAC_fsm_start_win_in) && (DAC_fsm_stop_win_in > DAC_fsm_state_counter_in);
-	// END UPDATE
+	wire			negative_overflow_ref, positive_overflow_ref;
+    wire [15:0]     DAC_final_value;    //added for rev 2.0-CST, the last value before sending to DAC
+                                        // this value might be discarded if Trigger_bypass is True
+    wire [15:0]     DAC_Trigg_out;      //added for rev 2.0-CST, the Trigg value for DAC
 	
 	// Optionally, subtract "software reference" value from input
-	
+
 	// Convert DAC_input and software_reference from unsigned (offset) representation to signed
 	// (two's complement) represention by inverting the MSB.
 	assign pre_ref_input_twos_comp = {~DAC_input[15], DAC_input[14:0]};
@@ -191,8 +193,12 @@ module DAC_output_scalable_HPF #(
 	// representation for input to the DAC.  If DAC_en == 0, set the DAC to midrange (zero volts).
 	
 	assign DAC_register_pre = use_sequencer ? DAC_sequencer_in : {~DAC_input_scaled[15], DAC_input_scaled[14:0]};
-	
-	assign DAC_register = (DAC_en | use_sequencer) ? DAC_register_pre : 16'b1000000000000000;
+
+	// modified in rev 2.0-CST...
+	assign DAC_final_value = (DAC_en | use_sequencer)  ? DAC_register_pre : 16'b1000000000000000;
+    assign DAC_Trigg_out   = (Trigger_value)           ? 16'hFFFF : 16'h8000; // do not send negative values for next device outputs
+    assign DAC_register    = (DAC_en | Trigger_bypass) ? DAC_Trigg_out : DAC_final_value;
+    
 	
 
 	// AD5662 16-bit DAC SPI output logic
