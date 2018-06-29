@@ -59,6 +59,12 @@ Bits | Name           | Signification
 No instruction yet, because nothing to do :(
 
 
+## Actual architecture
+
+
+![alt text](../../doc/Images//New_custom_architecture.png)
+
+
   
 ---  
  
