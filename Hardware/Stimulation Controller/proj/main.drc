@@ -1,36 +1,15 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Jun 18 19:01:52 2018
+Mon Jul 02 14:42:27 2018
 
 drc -z main.ncd main.pcf
 
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<5> is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<7> is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep45trigin<5> is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep48trigin<0> is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep47trigin<0> is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net ep45trigin<0> is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep44trigin<0> is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<0> is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep47trigin<11> is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<11> is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
@@ -38,22 +17,7 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<11> is sourced
 WARNING:PhysDesignRules:372 - Gated clock. Clock net ep45trigin<3> is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep47trigin<9> is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep47trigin<13> is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep47trigin<1> is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep47trigin<3> is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep47trigin<5> is sourced by
-   a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep47trigin<7> is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep45trigin<5> is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<9> is sourced by
@@ -68,60 +32,75 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<1> is sourced by
 WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<3> is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep48trigin<3> is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<5> is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net ep48trigin<5> is sourced by
+WARNING:PhysDesignRules:372 - Gated clock. Clock net ep43trigin<7> is sourced by
    a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_charge_recov_on2_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_B2/Mram_event_charge_recov_on1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_amp_settle_off2_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_B2/Mram_event_charge_recov_on2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_amp_settle_on_repeat1_RAMD_D1_O> is incomplete.
+   <stim_sequencer_A1/Mram_event_end_stim1_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A1/Mram_event_amp_settle_on2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A1/Mram_event_charge_recov_on1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A1/Mram_event_amp_settle_on_repeat2_RAMD_D1_O> is incomplete.
    The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_charge_recov_on1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_amp_settle_off_repeat2_RAMD_D1_O> is
+   <stim_sequencer_A1/Mram_event_amp_settle_off_repeat1_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_end_stim2_RAMD_D1_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_end_stim1_RAMD_D1_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_amp_settle_off2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_charge_recov_off1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <stim_sequencer_A2/Mram_number_of_stim_pulses1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_repeat_stim1_RAMD_D1_O> is incomplete. The
+   <host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM1_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C1/Mram_event_charge_recov_on2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_amp_settle_off1_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_C1/Mram_event_charge_recov_on1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_charge_recov_off2_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_B2/Mram_event_end1_RAMD_D1_O> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B2/Mram_event_end2_RAMD_D1_O> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C1/Mram_event_repeat_stim1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_end_stim2_RAMD_D1_O> is incomplete. The signal
+   <stim_sequencer_A1/Mram_event_amp_settle_on1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A1/Mram_event_end_stim2_RAMD_D1_O> is incomplete. The signal
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_start_stim1_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_A1/Mram_event_charge_recov_on2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_amp_settle_on_repeat2_RAMD_D1_O> is incomplete.
-   The signal does not drive any load pins in the design.
+   <stim_sequencer_A1/Mram_event_amp_settle_off_repeat2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A1/Mram_event_charge_recov_off1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A1/Mram_event_charge_recov_off2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A1/Mram_event_amp_settle_off2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <stim_sequencer_A2/Mram_event_amp_settle_off1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
@@ -129,196 +108,241 @@ WARNING:PhysDesignRules:367 - The signal
    <stim_sequencer_A2/Mram_event_amp_settle_on2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_start_stim1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_charge_recov_on2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_amp_settle_off_repeat1_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_amp_settle_on_repeat2_RAMD_D1_O> is incomplete.
-   The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_amp_settle_on_repeat1_RAMD_D1_O> is incomplete.
-   The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_amp_settle_off_repeat2_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_repeat_stim2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_number_of_stim_pulses1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_end_stim1_RAMD_D1_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_amp_settle_off_repeat1_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_end1_RAMD_D1_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_amp_settle_on2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_stim_phase22_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_start_stim2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_amp_settle_on1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
    <stim_sequencer_A2/Mram_event_charge_recov_off2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_charge_recov_on1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_end2_RAMD_D1_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_end1_RAMD_D1_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM2_RAMD_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_charge_recov_off1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_start_stim2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_amp_settle_on1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_stim_phase21_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_stim_phase32_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_charge_recov_on1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_amp_settle_off_repeat2_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_charge_recov_on2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_amp_settle_on1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_start_stim1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_amp_settle_off1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_stim_phase32_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_stim_phase22_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_end2_RAMD_D1_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_stim_phase31_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM1_RAMD_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_charge_recov_off1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_start_stim2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_start_stim1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_number_of_stim_pulses1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_amp_settle_off_repeat1_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_charge_recov_on1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_amp_settle_on2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_amp_settle_off2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_start_stim2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_end1_RAMD_D1_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_end2_RAMD_D1_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_stim_phase31_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_stim_phase21_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_B2/Mram_event_charge_recov_off1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <stim_sequencer_B2/Mram_event_charge_recov_off2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_repeat_stim2_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_C1/Mram_event_charge_recov_off2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_event_repeat_stim1_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_C1/Mram_event_amp_settle_off1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B1/Mram_number_of_stim_pulses1_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_C1/Mram_event_amp_settle_off2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_repeat_stim2_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_C1/Mram_event_repeat_stim2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_repeat_stim2_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_A1/Mram_event_stim_phase21_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_amp_settle_off2_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_A1/Mram_event_amp_settle_on_repeat1_RAMD_D1_O> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A1/Mram_number_of_stim_pulses1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <stim_sequencer_A1/Mram_event_end1_RAMD_D1_O> is incomplete. The signal does
    not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_end2_RAMD_D1_O> is incomplete. The signal does
+   <stim_sequencer_A2/Mram_event_start_stim2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A2/Mram_event_amp_settle_off_repeat2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A2/Mram_event_amp_settle_on1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A2/Mram_event_charge_recov_off1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B2/Mram_event_amp_settle_off_repeat2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C1/Mram_event_amp_settle_on1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C1/Mram_number_of_stim_pulses1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A1/Mram_event_stim_phase22_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A1/Mram_event_start_stim2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A1/Mram_event_start_stim1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A2/Mram_event_amp_settle_off_repeat1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A2/Mram_event_start_stim1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <host/core0/core0/a0/cb0/BU2/U0/grf.rf/mem/gdm.dm/Mram_RAM2_RAMD_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B2/Mram_event_amp_settle_off1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B2/Mram_event_amp_settle_off2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C1/Mram_event_end_stim2_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C1/Mram_event_end_stim1_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C1/Mram_event_start_stim1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C1/Mram_event_amp_settle_off_repeat2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C1/Mram_event_end1_RAMD_D1_O> is incomplete. The signal does
    not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_end1_RAMD_D1_O> is incomplete. The signal does
+   <stim_sequencer_D1/Mram_event_repeat_stim2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A1/Mram_event_stim_phase31_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A1/Mram_event_repeat_stim2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A1/Mram_event_amp_settle_off1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C2/Mram_number_of_stim_pulses1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A2/Mram_event_repeat_stim2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A2/Mram_event_amp_settle_off2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B2/Mram_number_of_stim_pulses1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B2/Mram_event_amp_settle_off_repeat1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B2/Mram_event_start_stim2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B2/Mram_event_amp_settle_on2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B2/Mram_event_start_stim1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B2/Mram_event_repeat_stim1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C1/Mram_event_amp_settle_on_repeat2_RAMD_D1_O> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C1/Mram_event_charge_recov_off1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C1/Mram_event_start_stim2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C1/Mram_event_end2_RAMD_D1_O> is incomplete. The signal does
    not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A1/Mram_event_stim_phase32_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D1/Mram_event_end2_RAMD_D1_O> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A1/Mram_event_repeat_stim1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A1/Mram_event_end2_RAMD_D1_O> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A2/Mram_event_end_stim1_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A2/Mram_event_stim_phase22_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A2/Mram_event_end_stim2_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A2/Mram_event_stim_phase21_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A2/Mram_event_stim_phase31_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A2/Mram_event_repeat_stim1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A2/Mram_event_amp_settle_on_repeat1_RAMD_D1_O> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A2/Mram_event_charge_recov_on1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B2/Mram_event_amp_settle_on_repeat2_RAMD_D1_O> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B2/Mram_event_end_stim1_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B2/Mram_event_amp_settle_on1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B2/Mram_event_end_stim2_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B2/Mram_event_repeat_stim2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C1/Mram_event_amp_settle_on2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C1/Mram_event_amp_settle_on_repeat1_RAMD_D1_O> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C1/Mram_event_amp_settle_off_repeat1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <stim_sequencer_D1/Mram_event_amp_settle_on_repeat2_RAMD_D1_O> is incomplete.
    The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_amp_settle_on_repeat1_RAMD_D1_O> is incomplete.
+   <stim_sequencer_D1/Mram_event_repeat_stim1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D1/Mram_number_of_stim_pulses1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D1/Mram_event_end1_RAMD_D1_O> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A2/Mram_event_stim_phase32_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A2/Mram_event_amp_settle_on_repeat2_RAMD_D1_O> is incomplete.
    The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_event_charge_recov_on2_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_A2/Mram_event_end1_RAMD_D1_O> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A2/Mram_event_end2_RAMD_D1_O> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_A2/Mram_event_charge_recov_on2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_event_charge_recov_on1_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_B1/Mram_number_of_stim_pulses1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_event_charge_recov_off1_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_B1/Mram_event_charge_recov_on2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <stim_sequencer_B2/Mram_event_stim_phase31_RAMD_D1_O> is incomplete. The
@@ -327,307 +351,130 @@ WARNING:PhysDesignRules:367 - The signal
    <stim_sequencer_B2/Mram_event_stim_phase32_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A2/Mram_event_repeat_stim1_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_D1/Mram_event_amp_settle_on1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_amp_settle_off1_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_D1/Mram_event_amp_settle_on2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_stim_phase21_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_repeat_stim1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_number_of_stim_pulses1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_amp_settle_on_repeat1_RAMD_D1_O> is incomplete.
-   The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_charge_recov_off2_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_D2/Mram_number_of_stim_pulses1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <stim_sequencer_D2/Mram_event_charge_recov_on2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_charge_recov_off2_RAMD_D1_O> is incomplete. The
+   <digout_sequencer_1/Mram_event_repeat_stim1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_end_stim1_RAMD_D1_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_stim_phase22_RAMD_D1_O> is incomplete. The
+   <digout_sequencer_1/Mram_event_repeat_stim2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_event_amp_settle_off1_RAMD_D1_O> is incomplete. The
+   <digout_sequencer_1/Mram_event_start_stim1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B1/Mram_event_charge_recov_off1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B1/Mram_event_charge_recov_off2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B2/Mram_event_amp_settle_on_repeat1_RAMD_D1_O> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B1/Mram_event_charge_recov_on1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <stim_sequencer_B2/Mram_event_stim_phase22_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_event_start_stim2_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_B2/Mram_event_stim_phase21_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_event_amp_settle_on1_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_C1/Mram_event_stim_phase32_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_stim_phase22_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_C1/Mram_event_stim_phase22_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_charge_recov_on2_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_C1/Mram_event_stim_phase21_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_end2_RAMD_D1_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_amp_settle_on2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_amp_settle_off2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_amp_settle_on1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_amp_settle_off1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_charge_recov_on2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_charge_recov_off1_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_D1/Mram_event_start_stim1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <stim_sequencer_D1/Mram_event_end_stim2_RAMD_D1_O> is incomplete. The signal
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_stim_phase32_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_event_amp_settle_off2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_event_amp_settle_on_repeat2_RAMD_D1_O> is incomplete.
+   <stim_sequencer_C2/Mram_event_amp_settle_on_repeat2_RAMD_D1_O> is incomplete.
    The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_event_amp_settle_on_repeat1_RAMD_D1_O> is incomplete.
+   <stim_sequencer_C2/Mram_event_amp_settle_on_repeat1_RAMD_D1_O> is incomplete.
    The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_event_stim_phase21_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_C2/Mram_event_amp_settle_on1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_event_repeat_stim1_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_C2/Mram_event_start_stim2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_event_repeat_stim2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_stim_phase31_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_stim_phase32_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_start_stim1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_start_stim2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_amp_settle_off_repeat2_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_charge_recov_on1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_amp_settle_off1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_amp_settle_off_repeat2_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_amp_settle_off_repeat1_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_repeat_stim1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_repeat_stim2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_stim_phase32_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
+   <stim_sequencer_C2/Mram_event_end1_RAMD_D1_O> is incomplete. The signal does
+   not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <stim_sequencer_D2/Mram_event_stim_phase31_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_charge_recov_off2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_charge_recov_off1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_amp_settle_off2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_charge_recov_on1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_start_stim1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_repeat_stim2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_repeat_stim1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_stim_phase31_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D1/Mram_event_stim_phase21_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_event_amp_settle_off_repeat2_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_event_amp_settle_off_repeat1_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_event_end_stim1_RAMD_D1_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_event_amp_settle_on2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_number_of_stim_pulses1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_end_stim1_RAMD_D1_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_end_stim2_RAMD_D1_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_amp_settle_off_repeat1_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_amp_settle_on_repeat2_RAMD_D1_O> is incomplete.
-   The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_amp_settle_on_repeat1_RAMD_D1_O> is incomplete.
-   The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_amp_settle_on_repeat2_RAMD_D1_O> is incomplete.
-   The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_end_stim1_RAMD_D1_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_stim_phase22_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <stim_sequencer_D2/Mram_event_stim_phase21_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_amp_settle_on_repeat1_RAMD_D1_O> is incomplete.
-   The signal does not drive any load pins in the design.
+   <stim_sequencer_D2/Mram_event_end1_RAMD_D1_O> is incomplete. The signal does
+   not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_amp_settle_off_repeat2_RAMD_D1_O> is
+   <digout_sequencer_1/Mram_event_start_stim2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B1/Mram_event_amp_settle_on1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B1/Mram_event_amp_settle_on2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B1/Mram_event_start_stim2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B1/Mram_event_amp_settle_off_repeat2_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_start_stim2_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_B1/Mram_event_start_stim1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_end2_RAMD_D1_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_event_end_stim2_RAMD_D1_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_event_start_stim1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C2/Mram_event_repeat_stim1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_event_end2_RAMD_D1_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C2/Mram_event_end1_RAMD_D1_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_amp_settle_on1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_amp_settle_on2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_charge_recov_off2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_A1/Mram_event_charge_recov_off1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_D2/Mram_event_end_stim2_RAMD_D1_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_amp_settle_on_repeat2_RAMD_D1_O> is incomplete.
-   The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_amp_settle_on2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_amp_settle_off_repeat1_RAMD_D1_O> is
+   <stim_sequencer_B1/Mram_event_amp_settle_off_repeat1_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_amp_settle_on1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
+   <stim_sequencer_B1/Mram_event_amp_settle_on_repeat1_RAMD_D1_O> is incomplete.
+   The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_end_stim2_RAMD_D1_O> is incomplete. The signal
+   <stim_sequencer_B1/Mram_event_end_stim2_RAMD_D1_O> is incomplete. The signal
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_end1_RAMD_D1_O> is incomplete. The signal does
-   not drive any load pins in the design.
+   <stim_sequencer_B1/Mram_event_amp_settle_on_repeat2_RAMD_D1_O> is incomplete.
+   The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_number_of_stim_pulses1_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_B1/Mram_event_stim_phase31_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C2/Mram_event_stim_phase21_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C2/Mram_event_stim_phase22_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C2/Mram_event_stim_phase31_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C2/Mram_event_stim_phase32_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C2/Mram_event_start_stim1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C2/Mram_event_repeat_stim2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C2/Mram_number_of_stim_pulses1_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_B2/Mram_event_end1_RAMD_D1_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C2/Mram_event_end2_RAMD_D1_O> is incomplete. The signal does
-   not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_stim_phase21_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_B1/Mram_event_repeat_stim1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <stim_sequencer_C1/Mram_event_stim_phase31_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_stim_phase32_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_D1/Mram_event_amp_settle_on_repeat1_RAMD_D1_O> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D1/Mram_event_end_stim1_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D1/Mram_event_start_stim2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <stim_sequencer_C2/Mram_event_amp_settle_off_repeat2_RAMD_D1_O> is
@@ -636,49 +483,157 @@ WARNING:PhysDesignRules:367 - The signal
    <stim_sequencer_C2/Mram_event_amp_settle_off_repeat1_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C2/Mram_event_start_stim2_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_C2/Mram_event_amp_settle_off1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C2/Mram_event_amp_settle_on_repeat2_RAMD_D1_O> is incomplete.
-   The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C2/Mram_event_charge_recov_off1_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_C2/Mram_event_amp_settle_on2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <digout_sequencer_1/Mram_event_end_stim1_RAMD_D1_O> is incomplete. The signal
+   <stim_sequencer_C2/Mram_event_start_stim1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C2/Mram_event_charge_recov_on2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C2/Mram_event_charge_recov_on1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C2/Mram_event_end2_RAMD_D1_O> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D2/Mram_event_repeat_stim1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D2/Mram_event_end_stim2_RAMD_D1_O> is incomplete. The signal
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C2/Mram_event_charge_recov_off2_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_D2/Mram_event_stim_phase32_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <digout_sequencer_1/Mram_event_end_stim2_RAMD_D1_O> is incomplete. The signal
+   <stim_sequencer_D2/Mram_event_stim_phase22_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D2/Mram_event_end_stim1_RAMD_D1_O> is incomplete. The signal
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <digout_sequencer_1/Mram_event_start_stim1_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_D2/Mram_event_end2_RAMD_D1_O> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D2/Mram_event_charge_recov_on1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <digout_sequencer_1/Mram_event_start_stim2_RAMD_D1_O> is incomplete. The
+   <digout_sequencer_1/Mram_number_of_stim_pulses1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <digout_sequencer_1/Mram_event_end2_RAMD_D1_O> is incomplete. The signal does
    not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <digout_sequencer_1/Mram_event_repeat_stim1_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_D1/Mram_event_charge_recov_on1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <digout_sequencer_1/Mram_event_repeat_stim2_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
+   <stim_sequencer_D1/Mram_event_amp_settle_off_repeat1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_end_stim1_RAMD_D1_O> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C1/Mram_event_stim_phase22_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
+   <stim_sequencer_D1/Mram_event_amp_settle_off_repeat2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <stim_sequencer_C2/Mram_event_amp_settle_off2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C2/Mram_event_amp_settle_off1_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_C2/Mram_event_charge_recov_off1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C2/Mram_event_charge_recov_off2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D2/Mram_event_repeat_stim2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <digout_sequencer_1/Mram_event_end_stim1_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B1/Mram_event_amp_settle_off1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B1/Mram_event_amp_settle_off2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B1/Mram_event_stim_phase21_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B1/Mram_event_stim_phase22_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B1/Mram_event_stim_phase32_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B1/Mram_event_end1_RAMD_D1_O> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D1/Mram_event_charge_recov_on2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D1/Mram_event_amp_settle_off2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D1/Mram_event_amp_settle_off1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D1/Mram_event_stim_phase22_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D1/Mram_event_stim_phase31_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D1/Mram_event_stim_phase32_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C2/Mram_event_repeat_stim2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D2/Mram_event_amp_settle_on2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D2/Mram_event_amp_settle_on1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D2/Mram_event_start_stim2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D2/Mram_event_start_stim1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D2/Mram_event_amp_settle_off_repeat1_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D2/Mram_event_amp_settle_off_repeat2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D2/Mram_event_charge_recov_off1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <digout_sequencer_1/Mram_event_end_stim2_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B1/Mram_event_repeat_stim2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B1/Mram_event_end2_RAMD_D1_O> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_B1/Mram_event_end_stim1_RAMD_D1_O> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C2/Mram_event_stim_phase21_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C2/Mram_event_stim_phase31_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C2/Mram_event_repeat_stim1_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C2/Mram_event_stim_phase32_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <stim_sequencer_C2/Mram_event_end_stim2_RAMD_D1_O> is incomplete. The signal
@@ -687,22 +642,31 @@ WARNING:PhysDesignRules:367 - The signal
    <stim_sequencer_C2/Mram_event_end_stim1_RAMD_D1_O> is incomplete. The signal
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C2/Mram_event_amp_settle_on1_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_D2/Mram_event_amp_settle_off2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C2/Mram_event_amp_settle_on2_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_D2/Mram_event_amp_settle_off1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C2/Mram_event_amp_settle_on_repeat1_RAMD_D1_O> is incomplete.
+   <stim_sequencer_D2/Mram_event_amp_settle_on_repeat1_RAMD_D1_O> is incomplete.
    The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C2/Mram_event_charge_recov_on2_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_D2/Mram_event_amp_settle_on_repeat2_RAMD_D1_O> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D2/Mram_event_charge_recov_off2_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <stim_sequencer_C2/Mram_event_charge_recov_on1_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_D1/Mram_event_charge_recov_off1_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <digout_sequencer_1/Mram_number_of_stim_pulses1_RAMD_D1_O> is incomplete. The
+   <stim_sequencer_D1/Mram_event_charge_recov_off2_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_D1/Mram_event_stim_phase21_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <stim_sequencer_C2/Mram_event_stim_phase22_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <digout_sequencer_1/Mram_event_end1_RAMD_D1_O> is incomplete. The signal does
@@ -772,5 +736,5 @@ WARNING:PhysDesignRules:1414 - Issue with pin connections and/or configuration
    block:<SDRAM_FIFO_inst/memc3_wrapper_inst/memc3_mcb_raw_wrapper_inst/gen_addr
    _delay_obuft[4].delay_addr_inst>:<IODELAY2_IODELAY2>.  When DELAY_SRC is not
    IO programming the T input pin is not used and will be ignored.
-DRC detected 0 errors and 247 warnings.  Please see the previously displayed
+DRC detected 0 errors and 235 warnings.  Please see the previously displayed
 individual error or warning messages for more details.
