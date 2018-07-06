@@ -44,6 +44,7 @@ Bits | Name           | Signification
 4-3  | *reserved*     |
 15-5 | -              | available for new developments
 
+
 #### WireOut configuration bits ####
 
 Bits | Name           | Signification
@@ -56,10 +57,30 @@ Bits | Name           | Signification
 
 #### PipeIn / PipeOut instruction set ####
 
-No instruction yet, because nothing to do :(
+command set:
+
+| group | command | signification |
+| ----  | ----    | ---- |
+| 0x0000 | | idle, no command (repeat 3 times if not aware of the receiver state)|
+| 0x01-- | |  single word commands |
+| | 0x0100 | (not implemented yet) get architecture version (major) |
+| | 0x0101 | (not implemented yet) get architecture version (minor) |
+| | 0x0102 | (not implemented yet) read last error |
+| 0x02-- | | two words commands |
+| | 0x0200 + *coeff* | set filter 1 coefficient |
+| | ... | |
+| | 0x0210 + *chan*  | (not implemented yet) select channel to trigger output 0
+| | 0x0211 + *chan*  | (not implemented yet) select channel to trigger output 1
+| | 0x0212 + *chan*  | (not implemented yet) select channel to trigger output 2
+| | 0x0213 + *chan*  | (not implemented yet) select channel to trigger output 3
+| | 0x0214 + *chan*  | (not implemented yet) select channel to trigger output 4
+| | 0x0215 + *chan*  | (not implemented yet) select channel to trigger output 5
+| | 0x0216 + *chan*  | (not implemented yet) select channel to trigger output 6
+| | 0x0217 + *chan*  | (not implemented yet) select channel to trigger output 7
+| | 0x0218 + *length*| (not implemented yet) set length of stimulation trigger (in microseconds) |
+| 0x03-- | | next group of commands |
 
 
-  
 ---  
  
 
@@ -67,11 +88,21 @@ No instruction yet, because nothing to do :(
 
 ### Interaction with INTAN architecture ###
 
-All added computation is performed in the *cust_arch* module that is positioned between the main state machine that controls data flows and the FIFO that stores data waiting for USB transfer. Therefore, both data input and data output of *cust_arch* use the data stream format that is used by INTAN for USB transfers. the *cust_arch* module can also replace any data with results it computed itself.
+All added computation is performed in the *cust_arch* module that is positioned between the main state machine that controls data flows and the FIFO that stores data waiting for USB transfer. Therefore, both data input and data output of *cust_arch* use the data stream format that is used by INTAN for USB transfers. the *cust_arch* module can also replace any data with results it computed itself, so 
 
 ### Computation module Architecture ###
 
-For there is no computation implemented in *cust_arch* today, there is no architecture available yet... :(
+There is only a High pass filter implemented. This filter is exactly the same that is provided for the analog output, but it is performed on all 128 channels.
+
+the communication between computation modules is standardized:
+ - each data sample goes with the ID of its channel to avoid messing up data
+ - flow protocol:
+    * each module outputs its data as soon as they are available (data_ready)
+    * the data receiver tells if it accepts the data with the data_read I/O.
+    * if data in ouptut is not accepted by the receiver module, the emitter
+      hold the data and data_ready bit until data is accepted by the receiver
+    * data are actually exchanged when both data_ready and read_chan are set.
+
 
 ---
 ## Development remarks ##
