@@ -47,6 +47,65 @@ module TB_cust_comp();
 
     always #1 clk=~clk;
  
+ 
+     initial begin
+        #16     pipein_en  = 1;
+                pipein     = 16'h0200;
+        
+        #2      pipein     = 16'h1234;
+        
+        #2      pipein     = 16'h0100;
+        
+        #2      pipein     = 16'h0101;
+        
+        #2      pipein     = 16'h0102;  // should read 'no error' (0)
+        
+        #2      pipein     = 16'h0100;
+        
+        #2      pipein     = 16'h0101;
+                
+        #2      pipein     = 16'h01F1;
+                
+        #2      pipein     = 16'h0102; // should read 'unknown command' (1)
+
+        #2      pipein     = 16'h0102; // should read 'no error' (0)
+
+        #2      pipein     = 16'h0101;
+
+        #2      pipein     = 16'h0100;
+
+        #2      pipein     = 16'h0101;
+
+        #2      pipein     = 16'h0101;
+
+        #2      pipein_en  = 0;
+        
+        #2      pipeout_en = 1;
+        
+        #2      pipeout_en = 0;
+        
+        #4      pipeout_en = 1;
+        
+        #6      pipeout_en = 0;
+         
+        #2      pipein_en  = 1;
+                pipein     = 16'h0102;  // should read 'FIFO full' (2)
+
+        #2      pipein_en  = 0;
+        
+        #4      pipeout_en = 1;
+        
+        #20     pipein_en  = 1;
+                pipein     = 16'h0102;  // should read 'FIFO empty' (4)
+
+        #2      pipein_en  = 0;
+         
+    end
+ 
+ 
+ 
+ 
+ 
     initial begin
                 reset      = 0;
 

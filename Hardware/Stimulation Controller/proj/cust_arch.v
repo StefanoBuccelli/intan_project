@@ -15,30 +15,35 @@
 //                      because it is closely related to the existing hardware it runs
 //                      on. Submodules should be configurable in terms of channel number
 //
+// How to improve:
+//       computation actually waits until all channels have been received, we could start
+//       earlier to reduce computation latency...
+//
 //
 //////////////////////////////////////////////////////////////////////////////////
 
 module CUST_ARCH #(
+    parameter RESP_FIFO_SIZE        = 10,
     parameter BOARD_ID              = 16'h0000,
     parameter BOARD_VERSION         = 16'h0000,
     parameter HEADER_MAGIC_NUMBER   = 64'h0
 	)
 	(
-    input wire          clk,
-    input wire          reset,
-    input wire          FIFO_write_to,
-    input wire [15:0]   FIFO_data_in,
-    output reg          comp_data_out_valid,
-    output reg [15:0]   comp_data_out,
-    output reg [ 7:0]   trig_stim,
-    output reg          computing,
-    input wire [15:0]   pipe_in_data,
-    input wire          pipe_in_en,
-    output reg [15:0]   pipe_out_data,
-    input wire          pipe_out_read,
-    input wire [15:0]   cfg,
-    input wire [ 7:0]   data_stream_en,
-    output reg [15:0]   status
+    input wire           clk,
+    input wire           reset,
+    input wire           FIFO_write_to,
+    input wire  [15:0]   FIFO_data_in,
+    output reg           comp_data_out_valid,
+    output reg  [15:0]   comp_data_out,
+    output reg  [ 7:0]   trig_stim,
+    output reg           computing,
+    input wire  [15:0]   pipe_in_data,
+    input wire           pipe_in_en,
+    output reg  [15:0]   pipe_out_data,
+    input wire           pipe_out_read,
+    input wire  [15:0]   cfg,
+    input wire  [ 7:0]   data_stream_en,
+    output wire [15:0]   status
    );
 
 
@@ -60,10 +65,13 @@ the next part should be removed at the end of the initial module synthesis
         comp_data_out       <= FIFO_data_in;
         computing           <= 1'b0;
         //trig_stim           <= cfg[15:8];
-        pipe_out_data       <= 16'h0042;
-        status              <= cfg;
+        //pipe_out_data       <= 16'h0042;
+        //status              <= cfg;
     end
-
+    
+        assign status[ 9: 0] = pipe_out_data_size;
+        assign status[15:10] = 6'h00;
+    
 
 /*
 ######  #######  ###### ##       #####  ######   #####  ######## ##  ######  ###    ## #######
@@ -73,7 +81,9 @@ the next part should be removed at the end of the initial module synthesis
 ######  #######  ###### ####### ##   ## ##   ## ##   ##    ##    ##  ######  ##   #### #######
 */
 
-
+    localparam LOC_RESP_FIFO_SIZE = (RESP_FIFO_SIZE <1024) ? RESP_FIFO_SIZE : 1024;
+    localparam VERSION_MAJOR      = 16'h0001;
+    localparam VERSION_MINOR      = 16'h0002;
 
 
     reg  [ 2:0]  source_device;      // the spi device that provided the data
@@ -122,6 +132,22 @@ the next part should be removed at the end of the initial module synthesis
 
     reg [15:0] filter_coeff;
 
+
+
+    // response fifo registers
+    reg [15:0]  pipe_out_FIFO[0:LOC_RESP_FIFO_SIZE-2];  // this memory is used to store responses
+                                                        // to commands. its size is one cell less
+                                                        // than requesed because there is an output
+                                                        // reg.
+    reg [ 9:0]  write_addr;                             // the address to write the new data
+    reg [ 9:0]  read_addr;                              // the address where to read the next data
+    reg [ 9:0]  pipe_out_data_size;                     // the number of elements in the FIFO
+    
+    reg [15:0]  pipe_out_FIFO_data;                     // the data to write to FIFO
+    reg         pipe_out_FIFO_write;                    // the write order to FIFO
+    reg         pipe_out_valid;                         // true when the output is ready for read
+    
+    reg [15:0]  last_err;                               // the last error detected by the system
 
 
 /*
@@ -493,22 +519,6 @@ This is where computation actually starts... as soon as sample data are received
 ##      ##   ## ##   ## ##   ## ##      ## #######    ##    ####### ##   ##     ##      ## ##   ## ##   #### ##   ##  ######  ####### ##      ## ####### ##   ####    ##
 
 
-
-command set:
-
-        0x0000 : idle, no command
-        0x01-- : single word commands
-            0x0100 : (not implemented yet) get architecture version (major)
-            0x0101 : (not implemented yet) get architecture version (minor)
-            0x0102 : (not implemented yet) read last error
-
-        0x02-- : two words commands
-            0x0200 + <coeff>: set filter 1 coefficient
-
-        0x03-- : 
-
-
-
 */
 
     always @(posedge clk) begin
@@ -550,6 +560,131 @@ command set:
             filter_coeff <= 16'h0000;
         else if (cmd_words[0]==16'h0200 && next_cmd_word_num==2'b01 && pipe_in_en)
             filter_coeff <= pipe_in_data;
+    end
+
+
+
+
+
+/*
+ ###### ###    ### ######      ######  ####### ####### ######   ######  ###    ## ####### ####### #######
+##      ####  #### ##   ##     ##   ## ##      ##      ##   ## ##    ## ####   ## ##      ##      ##
+##      ## #### ## ##   ##     ######  #####   ####### ######  ##    ## ## ##  ## ####### #####   #######
+##      ##  ##  ## ##   ##     ##   ## ##           ## ##      ##    ## ##  ## ##      ## ##           ##
+ ###### ##      ## ######      ##   ## ####### ####### ##       ######  ##   #### ####### ####### #######
+*/
+
+
+    always @(posedge clk) begin
+        if (reset)
+            pipe_out_FIFO_write <= 1'b0;
+        else if (next_cmd_word_num==2'b00 && pipe_in_en && pipe_in_data==16'h0100)
+            begin
+                pipe_out_FIFO_write <= 1'b1;
+                pipe_out_FIFO_data  <= VERSION_MAJOR;
+            end
+        else if (next_cmd_word_num==2'b00 && pipe_in_en && pipe_in_data==16'h0101)
+            begin
+                pipe_out_FIFO_write <= 1'b1;
+                pipe_out_FIFO_data  <= VERSION_MINOR;
+            end
+        else if (next_cmd_word_num==2'b00 && pipe_in_en && pipe_in_data==16'h0102)
+            begin
+                pipe_out_FIFO_write <= 1'b1;
+                pipe_out_FIFO_data  <= last_err;
+            end
+        else
+            pipe_out_FIFO_write <= 1'b0;
+    end
+
+
+    // error management...
+    always @(posedge clk) begin
+        if (reset)
+            if ((BOARD_ID==16'd800) && (BOARD_VERSION==16'd1))
+                last_err <= 0;
+            else
+                last_err <= 8;                      // system version mismatch
+        else if (pipe_out_FIFO_write && (pipe_out_data_size==LOC_RESP_FIFO_SIZE))
+            last_err <= 2;                          // no space in FIFO to store responses
+        else if (pipe_out_read && (pipe_out_data_size==0))
+            last_err <= 4;                          // reading empty FIFO
+        else if (pipe_in_en && next_cmd_word_num==2'b00)
+            case(pipe_in_data)
+                16'h0000,
+                16'h0100, 16'h0101, 
+                16'h0200:   begin end
+                
+                16'h0102:   last_err <= 16'h0000;   // reading the error clears it
+                default :   last_err <= 16'h0001;   // unknown command
+            endcase
+            
+    end
+
+
+/*
+######  ####### ####### ######   ######  ###    ## ####### #######     ####### ## #######  ######
+##   ## ##      ##      ##   ## ##    ## ####   ## ##      ##          ##      ## ##      ##    ##
+######  #####   ####### ######  ##    ## ## ##  ## ####### #####       #####   ## #####   ##    ##
+##   ## ##           ## ##      ##    ## ##  ## ##      ## ##          ##      ## ##      ##    ##
+##   ## ####### ####### ##       ######  ##   #### ####### #######     ##      ## ##       ######
+
+
+The FIFO code is actually wrong because the FIFO reports having one element
+befor the element is actually available on the output (1 clock cycle delay)
+It does not really matter since the USB master will require much more than
+one clock cycle to consult the FIFO status and decide to read its content
+
+The fix is easy, we just need to change status from wire to reg, but it takes
+flip-flops for nothing...
+
+*/
+
+
+    
+
+    always @(posedge clk) begin
+        if (reset)
+            pipe_out_valid <= 0;
+        else if (~pipe_out_valid || pipe_out_read)
+            begin
+                pipe_out_data  <= pipe_out_FIFO[read_addr];
+                if (pipe_out_read)
+                    pipe_out_valid <= pipe_out_data_size > 1;
+                else
+                    pipe_out_valid <= pipe_out_data_size > 0;
+            end;
+        if (reset)
+            read_addr <= 0;
+        else if ((pipe_out_read && pipe_out_data_size>1) || ((~pipe_out_valid) && (pipe_out_data_size!=0)))
+            if (read_addr>=LOC_RESP_FIFO_SIZE-2)
+                read_addr <= 0;
+            else
+                read_addr <= read_addr +1;
+    end
+
+    always @(posedge clk) begin
+        if (pipe_out_FIFO_write && (pipe_out_data_size!=(LOC_RESP_FIFO_SIZE-1)))
+            pipe_out_FIFO[write_addr] <= pipe_out_FIFO_data;
+            
+        if (reset)
+            write_addr <= 0;
+        else if (pipe_out_FIFO_write && (pipe_out_data_size!=(LOC_RESP_FIFO_SIZE-1)))
+            if (write_addr>=LOC_RESP_FIFO_SIZE-2)
+                write_addr <= 0;
+            else
+                write_addr <= write_addr + 1;
+    end
+
+    always @(posedge clk) begin
+        if (reset)
+            pipe_out_data_size <= 0;
+        else if (pipe_out_read && ~pipe_out_FIFO_write && pipe_out_data_size!=0)
+            pipe_out_data_size <= pipe_out_data_size - 1;
+        else if (pipe_out_FIFO_write && ~pipe_out_read && pipe_out_data_size!=(LOC_RESP_FIFO_SIZE-1))
+            pipe_out_data_size <= pipe_out_data_size + 1;
+        else if (pipe_out_FIFO_write && pipe_out_read && pipe_out_data_size==0)
+            pipe_out_data_size <= pipe_out_data_size + 1;
     end
 
 
