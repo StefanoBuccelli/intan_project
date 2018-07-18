@@ -13,7 +13,7 @@ cd ..\..\sample_data
 % data_reduced =(data_reduced_scaled/0.195)+32768; % scale voltage levels
 
 load('data_reduced')
-
+fs=30e3;
 data_hex=dec2hex(data_reduced,16);
 hex_matrix=char(data_hex);
 
