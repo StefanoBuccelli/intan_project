@@ -1,0 +1,19 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/BuccelliLab/Documents/GitHub/intan_project/Hardware/Stimulation Controller/proj/CUST_HP_filter_tb_isim_beh.exe -prj C:/Users/BuccelliLab/Documents/GitHub/intan_project/Hardware/Stimulation Controller/proj/CUST_HP_filter_tb_beh.prj CUST_HP_filter_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 20
+Turning on mult-threading, number of parallel sub-compilation jobs: 40 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/BuccelliLab/Documents/GitHub/intan_project/Hardware/Stimulation Controller/proj/cust_HP_filter.v" into library work
+Analyzing Verilog file "C:/Users/BuccelliLab/Documents/GitHub/intan_project/Hardware/Stimulation Controller/proj/cust_HP_filter_tb.v" into library work
+WARNING:HDLCompiler:1591 - "C:/Users/BuccelliLab/Documents/GitHub/intan_project/Hardware/Stimulation Controller/proj/cust_HP_filter_tb.v" Line 16: Root scope declaration is not allowed in verilog 95/2K mode
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module CUST_HP_filter(CHANNELS=1)
+Compiling module CUST_HP_filter_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 3 Verilog Units
+Built simulation executable C:/Users/BuccelliLab/Documents/GitHub/intan_project/Hardware/Stimulation Controller/proj/CUST_HP_filter_tb_isim_beh.exe
+Fuse Memory Usage: 33816 KB
+Fuse CPU Usage: 530 ms

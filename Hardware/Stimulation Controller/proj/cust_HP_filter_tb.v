@@ -23,7 +23,7 @@ wire[15 : 0] chan_out_sample;
 wire[ 6 : 0] chan_out_num;
 reg [15 : 0] coeff;
 reg [15:0] data_stored [0:WIDTH-1]; //200001 16-bits words is the length of raw_data.txt
-integer i, f, count;
+integer i, f;
 
 
 CUST_HP_filter #(.CHANNELS(1), .CHANNELS_PW2(7)) DUT (
@@ -68,7 +68,7 @@ initial $readmemb("raw_data_bin.txt", data_stored); // read data from txt in bin
 	chan_in_num =7'd0;
 	chan_in_valid = 1'b1;
 	chan_out_read =1'b1;
-	coeff =16'd10;
+	coeff =16'd3991; // (1-exp(-2*pi*300/30000))*65536 coefficient for 300Hz
 	i = 0;
 	f = $fopen("output.txt","w");
 	
