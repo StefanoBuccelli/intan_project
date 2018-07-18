@@ -23,27 +23,29 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module CUST_ARCH #(
-    parameter RESP_FIFO_SIZE        = 10,
-    parameter BOARD_ID              = 16'h0000,
-    parameter BOARD_VERSION         = 16'h0000,
-    parameter HEADER_MAGIC_NUMBER   = 64'h0
+    parameter CLKFREQ_MHZ           = 100,      // system frequency in MHz
+    parameter TRIGGER_NUM           = 8,        // number of trigger channels
+    parameter RESP_FIFO_SIZE        = 10,       // size of the FIFO that contains instruction responses
+    parameter BOARD_ID              = 16'h0000, // board ID from the main project
+    parameter BOARD_VERSION         = 16'h0000, // board version from the main project
+    parameter HEADER_MAGIC_NUMBER   = 64'h0     // data stream magic number
 	)
 	(
-    input wire           clk,
-    input wire           reset,
-    input wire           FIFO_write_to,
-    input wire  [15:0]   FIFO_data_in,
-    output reg           comp_data_out_valid,
-    output reg  [15:0]   comp_data_out,
-    output reg  [ 7:0]   trig_stim,
-    output reg           computing,
-    input wire  [15:0]   pipe_in_data,
-    input wire           pipe_in_en,
-    output reg  [15:0]   pipe_out_data,
-    input wire           pipe_out_read,
-    input wire  [15:0]   cfg,
-    input wire  [ 7:0]   data_stream_en,
-    output wire [15:0]   status
+    input wire                      clk,
+    input wire                      reset,
+    input wire                      FIFO_write_to,
+    input wire  [15           :0]   FIFO_data_in,
+    output reg                      comp_data_out_valid,
+    output reg  [15           :0]   comp_data_out,
+    output reg  [TRIGGER_NUM-1:0]   trig_stim,
+    output reg                      computing,
+    input wire  [15           :0]   pipe_in_data,
+    input wire                      pipe_in_en,
+    output reg  [15           :0]   pipe_out_data,
+    input wire                      pipe_out_read,
+    input wire  [15           :0]   cfg,
+    input wire  [ 7           :0]   data_stream_en,
+    output wire [15           :0]   status
    );
 
 
@@ -83,7 +85,7 @@ the next part should be removed at the end of the initial module synthesis
 
     localparam LOC_RESP_FIFO_SIZE = (RESP_FIFO_SIZE <1024) ? RESP_FIFO_SIZE : 1024;
     localparam VERSION_MAJOR      = 16'h0001;
-    localparam VERSION_MINOR      = 16'h0002;
+    localparam VERSION_MINOR      = 16'h0003;
 
 
     reg  [ 2:0]  source_device;      // the spi device that provided the data
@@ -134,6 +136,13 @@ the next part should be removed at the end of the initial module synthesis
 
 
 
+    reg  [7:0] trigg_basetime;              // the counter that provides system microseconds for trigger duration
+                                            // 8 bits is more than required today because we run at 100MHz, this is
+                                            // just to anticipate higher frequencies.
+    reg [15:0] trig_counter[0:TRIGGER_NUM]; // used to decount the number of microseconds for trigger
+    reg [15:0] trig_length;                 // the time to decount in microseconds ()
+
+
     // response fifo registers
     reg [15:0]  pipe_out_FIFO[0:LOC_RESP_FIFO_SIZE-2];  // this memory is used to store responses
                                                         // to commands. its size is one cell less
@@ -149,6 +158,8 @@ the next part should be removed at the end of the initial module synthesis
     
     reg [15:0]  last_err;                               // the last error detected by the system
 
+    // internal loop counter
+    integer index;
 
 /*
 ###    ###  #####  ## ###    ##     ####### ####### ###    ###
@@ -478,7 +489,7 @@ This is where computation actually starts... as soon as sample data are received
 */
     
         
-    always @(posedge clk) trig_stim = data_from_filter; // this is for debug only
+    //always @(posedge clk) trig_stim = data_from_filter; // this is for debug only
 
     wire [15:0]   data_from_filter;
     wire  [6:0]   chan_from_filter;
@@ -508,6 +519,59 @@ This is where computation actually starts... as soon as sample data are received
 
         .coeff                      (filter_coeff)
         );
+
+
+
+
+/*
+######## ######  ##  ######   ######  ####### ######      ######  ##    ## ##      ####### ####### #######
+   ##    ##   ## ## ##       ##       ##      ##   ##     ##   ## ##    ## ##      ##      ##      ##
+   ##    ######  ## ##   ### ##   ### #####   ######      ######  ##    ## ##      ####### #####   #######
+   ##    ##   ## ## ##    ## ##    ## ##      ##   ##     ##      ##    ## ##           ## ##           ##
+   ##    ##   ## ##  ######   ######  ####### ##   ##     ##       ######  ####### ####### ####### #######
+*/
+
+
+
+
+    // the basetime that counts microseconds
+    always @(posedge clk) begin
+        if (reset)
+            trigg_basetime <= 0;
+        else if (trigg_basetime >= CLKFREQ_MHZ)
+            trigg_basetime <= 0;
+        else
+            trigg_basetime <= trigg_basetime + 1;
+    end
+
+    // the trigger counters...
+    // these counters are set to the pulse length if activated, and decreased each microsecond.
+    // the resulting length is actually between trig_length-1 and trig_length microseconds
+    // depending of when the counter is activated vs trigg_basetime
+    always @(posedge clk) begin
+        for (index=0; index<TRIGGER_NUM; index=index+1) begin
+            if (reset)
+                trig_counter[index] <= 0;
+            else if (next_cmd_word_num==2'b01 && cmd_words[0]==16'h0219 && pipe_in_en && pipe_in_data[index])
+                trig_counter[index] <= trig_length;
+            // here we should add the test to trigg according to the selected event
+            else if (trigg_basetime == 0 && trig_counter[index]>0 )
+                trig_counter[index] <= trig_counter[index] - 1;
+        end
+    end
+
+    // the trigger outputs, they are active as far as the corresponding counter is different from 0
+    always @(posedge clk) begin
+        for (index=0; index<TRIGGER_NUM; index=index+1) begin
+            if (reset)
+                trig_stim[index] <= 1'b0;
+            else if (trig_counter[index]>=0)
+                trig_stim[index] <= 1'b1;
+            else
+                trig_stim[index] <= 1'b0;
+        end
+    end
+
 
 
 
@@ -554,7 +618,7 @@ This is where computation actually starts... as soon as sample data are received
     end
 
 
-
+    // HPF1 filter coefficient
     always @(posedge clk) begin
         if (reset)
             filter_coeff <= 16'h0000;
@@ -562,6 +626,13 @@ This is where computation actually starts... as soon as sample data are received
             filter_coeff <= pipe_in_data;
     end
 
+    // the length of the triggers
+    always @(posedge clk) begin
+        if (reset)
+            trig_length <= 16'h0000;
+        else if (cmd_words[0]==16'h0218 && next_cmd_word_num==2'b01 && pipe_in_en)
+            trig_length <= pipe_in_data;
+    end
 
 
 
