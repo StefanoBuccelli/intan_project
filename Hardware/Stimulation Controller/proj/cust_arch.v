@@ -136,11 +136,17 @@ the next part should be removed at the end of the initial module synthesis
 
 
 
-    reg  [7:0] trigg_basetime;              // the counter that provides system microseconds for trigger duration
-                                            // 8 bits is more than required today because we run at 100MHz, this is
-                                            // just to anticipate higher frequencies.
-    reg [15:0] trig_counter[0:TRIGGER_NUM]; // used to decount the number of microseconds for trigger
-    reg [15:0] trig_length;                 // the time to decount in microseconds ()
+    reg  [7:0] trigg_basetime;                  // the counter that provides system microseconds for trigger duration
+                                                // 8 bits is more than required today because we run at 100MHz, this is
+                                                // just to anticipate higher frequencies.
+    reg [15:0] trig_counter[0:TRIGGER_NUM-1];   // used to decount the number of microseconds for trigger
+    reg [15:0] trig_length;                     // the time to decount in microseconds ()
+    reg [15:0] trig_source [0:TRIGGER_NUM-1];   // what is the event source to use for each trigger ?
+
+
+    reg [TRIGGER_NUM-1:0] trig_enable;          // should the corresponding trigger be active ?
+
+
 
 
     // response fifo registers
@@ -480,11 +486,15 @@ This is where computation actually starts... as soon as sample data are received
 
  - each data sample goes with the ID of its channel to avoid messing up data
  - flow protocol:
-    * each module outputs its data as soon as they are available (data_ready)
+    * each module outputs its data as soon as they are available and tells with
+      data_valid if it is available
     * the data receiver tells if it accepts the data with the data_read I/O.
     * if data in ouptut is not accepted by the receiver module, the emitter
-      hold the data and data_ready bit until data is accepted by the receiver
-    * data are actually exchanged when both data_ready and read_chan are set.
+      holds the data and data_valid bit until data is accepted by the receiver
+    * data are actually exchanged when both data_ready and read_chan are set. Both
+      emitter and receiver may transfer new data on the following clock cycle
+      
+ - for events, data actually is the timestamp of the event.
 
 */
     
@@ -494,8 +504,12 @@ This is where computation actually starts... as soon as sample data are received
     wire [15:0]   data_from_filter;
     wire  [6:0]   chan_from_filter;
     wire         valid_from_filter;
-    wire               read_filter;
+    wire          read_from_filter;
 
+    wire [15:0] tstamp_from_spkdetect0;
+    wire  [6:0]   chan_from_spkdetect0;
+    wire         valid_from_spkdetect0;
+    wire          read_from_spkdetect0;
 
 
     CUST_HP_filter  #(
@@ -515,13 +529,40 @@ This is where computation actually starts... as soon as sample data are received
         .chan_out_sample            (data_from_filter),
         .chan_out_num               (chan_from_filter),
         .chan_out_valid             (valid_from_filter),
-        .chan_out_read              (1'b1),
+        .chan_out_read              (read_from_filter),
 
         .coeff                      (filter_coeff)
         );
+        
+        assign read_from_filter = 1'b1;
+
+/*
+    CUST_spk_detect_0  #(
+        .CHANNELS                   (8),
+        .CHANNELS_PW2               (3)
+        )
+    spk_detect_0
+        (
+        .clk                        (clk),
+        .reset                      (reset),
+        
+        .chan_in_tstamp             (r_timestamp),
+        .chan_in_sample             (data_from_filter),
+        .chan_in_num                (chan_from_filter),
+        .chan_in_valid              (valid_from_filter),
+        .chan_in_read               (read_filter),
+        
+        .chan_out_tstamp            (tstamp_from_spkdetect0),
+        .chan_out_num               (chan_from_spkdetect0),
+        .chan_out_valid             (valid_from_spkdetect0),
+        .chan_out_read              (read_spkdetect0),
+        
+        .thresh0                    (16'h0000)
+        );
 
 
-
+    assign read_spkdetect0 = 1'b1;
+*/
 
 /*
 ######## ######  ##  ######   ######  ####### ######      ######  ##    ## ##      ####### ####### #######
@@ -552,7 +593,7 @@ This is where computation actually starts... as soon as sample data are received
         for (index=0; index<TRIGGER_NUM; index=index+1) begin
             if (reset)
                 trig_counter[index] <= 0;
-            else if (next_cmd_word_num==2'b01 && cmd_words[0]==16'h0219 && pipe_in_en && pipe_in_data[index])
+            else if (next_cmd_word_num==2'b01 && cmd_words[0]==16'h0222 && pipe_in_en && pipe_in_data[index])
                 trig_counter[index] <= trig_length;
             // here we should add the test to trigg according to the selected event
             else if (trigg_basetime == 0 && trig_counter[index]>0 )
@@ -566,7 +607,7 @@ This is where computation actually starts... as soon as sample data are received
             if (reset)
                 trig_stim[index] <= 1'b0;
             else if (trig_counter[index]>=0)
-                trig_stim[index] <= 1'b1;
+                trig_stim[index] <= trig_enable[index];
             else
                 trig_stim[index] <= 1'b0;
         end
@@ -626,14 +667,37 @@ This is where computation actually starts... as soon as sample data are received
             filter_coeff <= pipe_in_data;
     end
 
+
+
+    // event source per trigger
+    always @(posedge clk) begin
+        for (index=0; index<TRIGGER_NUM; index=index+1) begin
+            if (reset)
+                trig_source[index] <= 16'h0000;
+            else if (cmd_words[0][15:4]==12'h021 && cmd_words[0][3:0]==index && next_cmd_word_num==2'b01 && pipe_in_en)
+                trig_source[index] <= pipe_in_data;
+        end
+    end
+
+
     // the length of the triggers
     always @(posedge clk) begin
         if (reset)
             trig_length <= 16'h0000;
-        else if (cmd_words[0]==16'h0218 && next_cmd_word_num==2'b01 && pipe_in_en)
+        else if (cmd_words[0]==16'h0220 && next_cmd_word_num==2'b01 && pipe_in_en)
             trig_length <= pipe_in_data;
     end
 
+    // enable triggers (or not)
+    always @(posedge clk) begin
+        if (reset)
+            trig_enable <= 0;
+        else if (cmd_words[0]==16'h0221 && next_cmd_word_num==2'b01 && pipe_in_en)
+            trig_enable <= pipe_in_data[TRIGGER_NUM-1:0];
+    end
+
+
+    // force trigg instruction is directly managed at the trigger management...
 
 
 
