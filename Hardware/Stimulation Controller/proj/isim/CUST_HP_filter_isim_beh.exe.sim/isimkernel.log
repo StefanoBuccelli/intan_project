@@ -1,0 +1,29 @@
+Command line:
+   CUST_HP_filter_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  28688
+
+Fri Jul 20 09:08:29 2018
+
+
+ Elaboration Time: 0.0624 sec
+
+ Current Memory Usage: 671.371 Meg
+
+ Total Signals          : 27
+ Total Nets             : 154
+ Total Signal Drivers   : 11
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 19
+ Total Traceable Variables  : 40
+ Total Scalar Nets and Variables : 4655
+Total Line Count : 70
+
+ Total Simulation Time: 0.078 sec
+
+ Current Memory Usage: 671.371 Meg
+
+Fri Jul 20 09:08:40 2018
+

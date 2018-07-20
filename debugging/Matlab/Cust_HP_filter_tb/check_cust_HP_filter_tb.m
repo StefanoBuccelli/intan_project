@@ -12,14 +12,15 @@ cd ..\..\sample_data
 % data_reduced_scaled=data(1e5:3e5);
 % data_reduced =(data_reduced_scaled/0.195)+32768; % scale voltage levels
 
-load('data_reduced')
+% load('data_reduced')
+load('D:\raw_data_r17.mat')
 fs=30e3;
 data_hex=dec2hex(data_reduced,16);
 hex_matrix=char(data_hex);
 
 data_bin=dec2bin(data_reduced,16);
 bin_matrix=char(data_bin);
-fileID = fopen('raw_data_bin.txt', 'w');
+fileID = fopen('raw_data_bin_r17.txt', 'w');
  for i=1:length(bin_matrix)
 %     fprintf(fileID, '%s \n', hex_matrix(i,:));
     fprintf(fileID, '%s \n', bin_matrix(i,:));
@@ -63,6 +64,7 @@ figure
 plot(time_s,data_reduced_scaled(1:num_samples))
 hold on
 plot(time_s,retrieved_bin_matrix_scaled)
+plot(time_s,out(1:num_samples))
 xlabel('Time [s]')
 legend({'original','filtered HP @ 300Hz'})
 title('check results of the filter')

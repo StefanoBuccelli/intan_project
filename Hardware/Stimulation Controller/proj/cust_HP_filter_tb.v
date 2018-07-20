@@ -13,7 +13,7 @@
 // Revision:       0.1 (17 july 2018)
 //
 //////////////////////////////////////////////////////////////////////////////////
-parameter WIDTH = 200001;
+parameter WIDTH = 10001;
 module CUST_HP_filter_tb();
 reg clk, reset, chan_in_valid, chan_out_read;
 wire chan_in_read, chan_out_valid;
@@ -51,7 +51,7 @@ CUST_HP_filter #(.CHANNELS(1), .CHANNELS_PW2(7)) DUT (
    end
 	
 
-initial $readmemb("raw_data_bin.txt", data_stored); // read data from txt in binary format
+initial $readmemb("raw_data_bin_10001.txt", data_stored); // read data from txt in binary format
 	
 	
 	initial begin
@@ -67,10 +67,10 @@ initial $readmemb("raw_data_bin.txt", data_stored); // read data from txt in bin
 	chan_in_sample =16'd0;
 	chan_in_num =7'd0;
 	chan_in_valid = 1'b1;
-	chan_out_read =1'b1;
+	chan_out_read =1'b0;
 	coeff =16'd3991; // (1-exp(-2*pi*300/30000))*65536 coefficient for 300Hz
 	i = 0;
-	f = $fopen("output.txt","w");
+	f = $fopen("output_read_0.txt","w");
 	
 	// 
 		repeat(WIDTH) @(posedge clk) begin
