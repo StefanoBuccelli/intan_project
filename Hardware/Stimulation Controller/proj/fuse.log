@@ -9,11 +9,11 @@ WARNING:HDLCompiler:1591 - "C:/Users/BuccelliLab/Documents/GitHub/intan_project/
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Compiling module CUST_HP_filter(CHANNELS=1)
+Compiling module CUST_HP_filter(CHANNELS=5)
 Compiling module CUST_HP_filter_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Compiled 3 Verilog Units
 Built simulation executable C:/Users/BuccelliLab/Documents/GitHub/intan_project/Hardware/Stimulation Controller/proj/CUST_HP_filter_tb_isim_beh.exe
-Fuse Memory Usage: 33744 KB
-Fuse CPU Usage: 623 ms
+Fuse Memory Usage: 33840 KB
+Fuse CPU Usage: 561 ms

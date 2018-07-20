@@ -7,8 +7,13 @@ retrieved_bin_matrix= reshape(retrieved_bin_vector,16,[])';
 fclose(fileID);
 
 %% check how to obtain the binary form of the raw data as FPGA sees it
-retrieved_bin_matrix_dec=bin2dec(retrieved_bin_matrix(5:end,:)); % from 5 which is the clock rate, not the sample rate
+retrieved_bin_matrix_dec=bin2dec(retrieved_bin_matrix(1:end,:)); % from 5 which is the clock rate, not the sample rate
+
+% retrieved_bin_matrix_dec=bin2dec(retrieved_bin_matrix(5:end,:)); % from 5 which is the clock rate, not the sample rate
+% retrieved_bin_matrix_dec=bin2dec(retrieved_bin_matrix(35:end,:)); % from 5 which is the clock rate, not the sample rate
+
 retrieved_bin_matrix_scaled=0.195 * (retrieved_bin_matrix_dec - 32768); % units = microvolts
+
 
 % save('output_scaled','retrieved_bin_matrix_scaled')
 end

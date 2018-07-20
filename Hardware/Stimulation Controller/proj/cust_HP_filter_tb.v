@@ -23,10 +23,10 @@ wire[15 : 0] chan_out_sample;
 wire[ 6 : 0] chan_out_num;
 reg [15 : 0] coeff;
 reg [15:0] data_stored [0:WIDTH-1]; //200001 16-bits words is the length of raw_data.txt
-integer i, f;
+integer i, f, count;
 
 
-CUST_HP_filter #(.CHANNELS(1), .CHANNELS_PW2(7)) DUT (
+CUST_HP_filter #(.CHANNELS(5), .CHANNELS_PW2(7)) DUT (
 		.clk(clk),
 		.reset(reset),
 		.chan_in_sample(chan_in_sample),
@@ -51,7 +51,7 @@ CUST_HP_filter #(.CHANNELS(1), .CHANNELS_PW2(7)) DUT (
    end
 	
 
-initial $readmemb("raw_data_bin_10001.txt", data_stored); // read data from txt in binary format
+initial $readmemb("raw_data_bin_r17_10001.txt", data_stored); // read data from txt in binary format
 	
 	
 	initial begin
@@ -67,20 +67,42 @@ initial $readmemb("raw_data_bin_10001.txt", data_stored); // read data from txt 
 	chan_in_sample =16'd0;
 	chan_in_num =7'd0;
 	chan_in_valid = 1'b1;
-	chan_out_read =1'b0;
+	chan_out_read =1'b1;
 	coeff =16'd3991; // (1-exp(-2*pi*300/30000))*65536 coefficient for 300Hz
 	i = 0;
-	f = $fopen("output_read_0.txt","w");
-	
+	f = $fopen("output_read_1_r17.txt","w");
+	count = 1;
 	// 
-		repeat(WIDTH) @(posedge clk) begin
-			chan_in_sample = data_stored[i];
-			$fwrite(f,"%b\n",   chan_out_sample); // write to output_file
-			
-			$display ("Current value of i is %d", i); // display to console jsut for debugging purposes
-			i =i + 1;
-		end
-		
+		repeat(WIDTH*5) @(posedge clk) begin
+			if (count == 1) begin
+				chan_in_sample = data_stored[i];
+				chan_in_num =7'b0000001;
+				count =count+1;
+				end
+			else if (count==2) begin
+				chan_in_sample = data_stored[i];
+				chan_in_num =7'b0000010;
+				count =count+1;
+				end
+			else if (count==3) begin
+				chan_in_sample = data_stored[i];
+				chan_in_num =7'b0000100;
+				count =count+1;
+				end
+			else if (count==4) begin
+				chan_in_sample = data_stored[i];
+				chan_in_num =7'b0001000;
+				count =count+1;
+				end
+			else if (count==5) begin
+				chan_in_sample = data_stored[i];
+				chan_in_num =7'b0010000;
+				count =1;
+				$fwrite(f,"%b\n",   chan_out_sample); // write to output_file
+				$display ("Current value of i is %d", i); // display to console jsut for debugging purposes
+				i =i + 1;
+				end
+end
 	chan_in_num = 7'd1;
 	chan_in_valid = 1'b1;
 	chan_out_read = 1'b0;
