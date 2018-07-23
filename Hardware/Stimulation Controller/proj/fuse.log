@@ -15,5 +15,5 @@ Compiling module glbl
 Time Resolution for simulation is 1ps.
 Compiled 3 Verilog Units
 Built simulation executable C:/Users/BuccelliLab/Documents/GitHub/intan_project/Hardware/Stimulation Controller/proj/CUST_HP_filter_tb_isim_beh.exe
-Fuse Memory Usage: 33840 KB
+Fuse Memory Usage: 33724 KB
 Fuse CPU Usage: 561 ms
