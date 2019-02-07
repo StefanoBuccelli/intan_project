@@ -38,7 +38,7 @@ for curr_dac=1:8
         hold on
         title('detected spikes in the last two samples')
         subplot(1,2,2)
-        plot(time_ms(window_samples_shifted),dac_thresholds_0195(curr_dac),incl_exc_col{DAC_edge_type(curr_dac)+1})
+        plot(time_ms(window_samples_shifted+1),dac_thresholds_0195(curr_dac),incl_exc_col{DAC_edge_type(curr_dac)+1})
         hold on
         title('aborted spikes in the last two samples')
     end
