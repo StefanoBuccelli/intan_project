@@ -1,10 +1,11 @@
-clear
+% clear
 clc
 close all
 % matlab testbench for the spike detection with window disciriminators
-read_Intan_RHS2000_file('C:\Users\BuccelliLab\Desktop\Prova_intan\Test Recording MM awake 02 02 2019\R18-159_2019_02_01_2_190201_143203.rhs')
-fs=frequency_parameters.amplifier_sample_rate;
-data=0.195*(board_dac_data(1,:)./312.5e-6);
+% x = readModifiedIntan(fullfile('R:\Rat\Intan\R18-159',...
+%    'R18-159_2019_02_01_2_190201_143203.rhs'));
+fs=x.frequency_parameters.amplifier_sample_rate;
+data=0.195*(x.board_dac_data(1,:)./312.5e-6);
 
 %% set parameters
 DAC_en=[0 0 0 0 1 1 1 1];
@@ -29,8 +30,10 @@ DAC_fsm_out=zeros(1,length(data));
 
 %% cycle over samples
 tic
+fprintf(1,'Simulating recording...%03g%%\n',0);
+pct = 0;
 for curr_sample=1:length(data)
-   disp(100*curr_sample/length(data))
+%    disp(100*curr_sample/length(data))
    %% work done by DAC_output
    DAC_thresh_out=zeros(1,8);
    DAC_in_window=(fsm_counter(curr_sample)>=window_start) & (fsm_counter(curr_sample)<window_stop);
@@ -73,52 +76,57 @@ for curr_sample=1:length(data)
        case 2
             DAC_fsm_out(curr_sample+1)=2;
             fsm_window_state(curr_sample+1)=0;
-            figure(101)
-            plot(data([curr_sample-29:curr_sample+30]-DAC_stop_max),'k')
+            figure(101);
+            plot(data([curr_sample-29:curr_sample+30]-DAC_stop_max),'k');
             hold on
    end
-
+   cur_pct = floor(100*curr_sample/length(data));
+   if (cur_pct > pct)
+      pct = cur_pct;
+      fprintf(1,'\b\b\b\b\b%03g%%\n',pct);
+   end
 end
 toc
 %% compare results
 fsm_from_matlab=fsm_window_state;
 
-num_dig_in=size(board_dig_in_channels,2);
+num_dig_in=size(x.board_dig_in_channels,2);
 for curr_ind=1:num_dig_in
-    if (board_dig_in_channels(curr_ind).native_channel_name=='DIGITAL-IN-13')
+    if (x.board_dig_in_channels(curr_ind).native_channel_name=='DIGITAL-IN-13')
         indx_complete=curr_ind;
-    elseif (board_dig_in_channels(curr_ind).native_channel_name=='DIGITAL-IN-14')
+    elseif (x.board_dig_in_channels(curr_ind).native_channel_name=='DIGITAL-IN-14')
         indx_active=curr_ind;
     end
 end
 
 
-fsm_from_dig_in=board_dig_in_data(indx_complete,:)*2+board_dig_in_data(indx_active,:);
+fsm_from_dig_in=x.board_dig_in_data(indx_complete,:)*2+x.board_dig_in_data(indx_active,:);
 %%
-figure
+figure;
 h(1)=subplot(4,1,1);
-plot(fsm_from_dig_in)
-title('fsm out from dig in (FPGA)')
+plot(fsm_from_dig_in);
+title('fsm out from dig in (FPGA)');
 h(2)=subplot(4,1,2);
-plot(fsm_from_matlab)
-title('fsm out from matlab')
+plot(fsm_from_matlab);
+title('fsm out from matlab');
 h(3)=subplot(4,1,3);
-plot(fsm_from_matlab(1:length(fsm_from_dig_in)-2)-fsm_from_dig_in(3:end))
-title('fsm out from matlab - FPGA')
+plot(fsm_from_matlab(1:length(fsm_from_dig_in)-2)-fsm_from_dig_in(3:end));
+title('fsm out from matlab - FPGA');
 h(4)=subplot(4,1,4);
-plot(data)
-linkaxes(h,'x')
+plot(data);
+linkaxes(h,'x');
 
 figure
-plot(fsm_from_dig_in)
+plot(fsm_from_dig_in);
 hold on
-plot(fsm_from_matlab)
+plot(fsm_from_matlab);
 
+%%
 function safe_th=get_safe(threshold)
-% if negative put +, if positive put -
-if threshold>=0
-    safe_th=round(threshold/0.195)*0.195-0.195/2;
-else
-    safe_th=round(threshold/0.195)*0.195+0.195/2;
-end
+   % if negative put +, if positive put -
+   if threshold>=0
+       safe_th=round(threshold/0.195)*0.195-0.195/2;
+   else
+       safe_th=round(threshold/0.195)*0.195+0.195/2;
+   end
 end
