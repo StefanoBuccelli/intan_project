@@ -11,9 +11,13 @@ DAC_en=[0 0 0 0 1 1 1 1];
 DAC_edge_type=[1 1 1 1 1 1 1 0]; % 0==Inclusion, 1==Exclusion
 dac_thresholds=[-140 140 -140 -140 13 -25 -149 -40];
 pos_th=dac_thresholds>=0;
-dac_thresholds_0195=round(dac_thresholds./0.195)*0.195;
-window_start=[0 2 1 1 2 1 2 2];
-window_stop=[1 5 2 5 25 2 3 6];
+dac_thresholds_0195=zeros(1,8);
+for curr_dac=1:8
+    dac_thresholds_0195(curr_dac)=get_safe(dac_thresholds(curr_dac));
+end
+
+window_start=[0 2 1 1 3 4 1 0];
+window_stop=[1 5 2 5 15 11 6 1];
 DAC_stop_max=max(window_stop.*DAC_en);
 
 %% initialize arrays
@@ -21,7 +25,19 @@ fsm_counter=zeros(1,length(data));
 fsm_window_state=zeros(1,length(data));
 DAC_fsm_out=zeros(1,length(data));
 
+%% initialize figure with window discriminators
+figure(101)
+time_ms=(1:60)/fs;
+incl_exc_col={'bo','ro'}
+for curr_dac=1:8
+    if DAC_en(curr_dac)
+        if 
+    end
+end
+
+
 %% cycle over samples
+tic
 for curr_sample=1:length(data)
    disp(100*curr_sample/length(data))
    %% work done by DAC_output
@@ -30,7 +46,7 @@ for curr_sample=1:length(data)
    check_all_pos=data(curr_sample)>=dac_thresholds_0195;
    check_all_neg=data(curr_sample)<=dac_thresholds_0195;
    DAC_thresh_out(pos_th)=check_all_pos(pos_th);
-   DAC_thresh_out(~pos_th)=check_all_pos(~pos_th);
+   DAC_thresh_out(~pos_th)=check_all_neg(~pos_th);
    
    %% set logic
    DAC_in_en = (~DAC_in_window) | (~DAC_en); % Tracks "In window" or "Enabled"; if a DAC channel is not one or the other, it will not interrupt state machine
@@ -52,7 +68,7 @@ for curr_sample=1:length(data)
        case 1
             DAC_fsm_out(curr_sample+1)=1;
             if DAC_advance
-                if fsm_counter==DAC_stop_max
+                if fsm_counter(curr_sample)==DAC_stop_max
                     fsm_window_state(curr_sample+1)=2;
                     fsm_counter(curr_sample+1)=0;
                 else
@@ -66,10 +82,13 @@ for curr_sample=1:length(data)
        case 2
             DAC_fsm_out(curr_sample+1)=2;
             fsm_window_state(curr_sample+1)=0;
+            figure(101)
+            plot(data([curr_sample-29:curr_sample+30]-DAC_stop_max),'k')
+            hold on
    end
-    
-end
 
+end
+toc
 %% compare results
 fsm_from_matlab=fsm_window_state;
 
@@ -91,10 +110,24 @@ plot(fsm_from_dig_in)
 title('fsm out from dig in (FPGA)')
 h(2)=subplot(4,1,2);
 plot(fsm_from_matlab)
-title('fsm out from simulink')
+title('fsm out from matlab')
 h(3)=subplot(4,1,3);
-plot(fsm_from_matlab(1:length(fsm_from_dig_in)-1)-fsm_from_dig_in(2:end))
-title('fsm out from simulink - FPGA')
+plot(fsm_from_matlab(1:length(fsm_from_dig_in)-2)-fsm_from_dig_in(3:end))
+title('fsm out from matlab - FPGA')
 h(4)=subplot(4,1,4);
-% plot(squeeze(DAC_0195_0.Data))
+plot(data)
 linkaxes(h,'x')
+
+figure
+plot(fsm_from_dig_in)
+hold on
+plot(fsm_from_matlab)
+
+function safe_th=get_safe(threshold)
+% if negative put +, if positive put -
+if threshold>=0
+    safe_th=round(threshold/0.195)*0.195-0.195/2;
+else
+    safe_th=round(threshold/0.195)*0.195+0.195/2;
+end
+end
