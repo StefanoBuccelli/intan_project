@@ -156,3 +156,4 @@ Hardware/Stimulation Controller/proj/isim.log
 Hardware/Stimulation Controller/proj/isim.cmd
 Hardware/Stimulation Controller/proj/CUST_HP_filter_tb_isim_beh.wdb
 Hardware/Stimulation Controller/proj/CUST_HP_filter_tb_isim_beh.exe
+debugging/simulink/matlab_tb.m.orig

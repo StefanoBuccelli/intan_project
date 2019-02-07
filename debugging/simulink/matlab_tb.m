@@ -27,6 +27,17 @@ fsm_window_state=zeros(1,length(data));
 DAC_fsm_out=zeros(1,length(data));
 
 %% initialize figure with window discriminators
+figure(101)
+time_ms=(1:60)/fs;
+incl_exc_col={'bo','ro'};
+for curr_dac=1:8
+    if DAC_en(curr_dac)
+        window_samples=window_start(curr_dac):window_stop(curr_dac)-1;
+        window_samples_shifted=window_samples+29;
+        plot(time_ms(window_samples_shifted),dac_thresholds(curr_dac),incl_exc_col{DAC_edge_type(curr_dac)+1})
+        hold on
+    end
+end
 
 %% cycle over samples
 tic
@@ -77,7 +88,7 @@ for curr_sample=1:length(data)
             DAC_fsm_out(curr_sample+1)=2;
             fsm_window_state(curr_sample+1)=0;
             figure(101);
-            plot(data([curr_sample-29:curr_sample+30]-DAC_stop_max),'k');
+            plot(time_ms,data([curr_sample-29:curr_sample+30]-DAC_stop_max),'k')
             hold on
    end
    cur_pct = floor(100*curr_sample/length(data));
