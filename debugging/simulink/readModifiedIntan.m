@@ -435,6 +435,7 @@ if (data_present)
    stim_data = stim_data .* stim_polarity;
    stim_data = stim_parameters.stim_step_size * stim_data / 1.0e-6; % units = microamps
    board_adc_data = 312.5e-6 * (board_adc_data - 32768); % units = volts
+   board_dac_data = 312.5e-6 * (board_dac_data - 32768);
    
    % Check for gaps in timestamps.
    num_gaps = sum(diff(t) ~= 1);

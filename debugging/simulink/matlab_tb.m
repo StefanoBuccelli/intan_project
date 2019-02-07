@@ -1,9 +1,9 @@
-% clear
+clear
 clc
 close all
 % matlab testbench for the spike detection with window disciriminators
-% x = readModifiedIntan(fullfile('R:\Rat\Intan\R18-159',...
-%    'R18-159_2019_02_01_2_190201_143203.rhs'));
+x = readModifiedIntan(fullfile('R:\Rat\Intan\R18-159',...
+   'R18-159_2019_02_01_2_190201_143203.rhs'));
 fs=x.frequency_parameters.amplifier_sample_rate;
 data=0.195*(x.board_dac_data(1,:)./312.5e-6);
 
@@ -59,8 +59,7 @@ for curr_sample=1:length(data)
    DAC_state_status = DAC_thresh_int | DAC_in_en; % The thresholding does not matter outside the window, or if DAC is disabled.
    DAC_check_states = all(DAC_state_status); % Reduce the state status to a logical value (all conditions must be met)
    DAC_any_enabled = any(DAC_en); 				% At least one DAC must be enabled to run the machine (otherwise it will constantly stim.)
-   DAC_advance = DAC_check_states && DAC_any_enabled; % If all state criteria are met, advances to next clock cycle iteration.
-   
+   DAC_advance = DAC_check_states && DAC_any_enabled; % If all state criteria are met, advances to next clock cycle iteration.   
 
    %% fsm
    switch fsm_window_state(curr_sample)
@@ -131,13 +130,3 @@ figure
 plot(fsm_from_dig_in);
 hold on
 plot(fsm_from_matlab);
-
-%%
-function safe_th=get_safe(threshold)
-   % if negative put +, if positive put -
-   if threshold>=0
-       safe_th=round(threshold/0.195)*0.195-0.195/2;
-   else
-       safe_th=round(threshold/0.195)*0.195+0.195/2;
-   end
-end
