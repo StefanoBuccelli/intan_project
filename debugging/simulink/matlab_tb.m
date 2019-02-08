@@ -7,7 +7,7 @@ fs=frequency_parameters.amplifier_sample_rate;
 data=0.195*(board_dac_data(1,:)./312.5e-6);
 
 %% set parameters
-DAC_en=[0 0 0 0 1 1 1 1];
+DAC_en=[0 0 0 0 0 0 0 1];
 DAC_edge_type=[1 1 1 1 1 1 1 0]; % 0==Inclusion, 1==Exclusion
 dac_thresholds=[-140 140 -140 -140 13 -25 -149 -40];
 pos_th=dac_thresholds>=0;
@@ -24,7 +24,8 @@ DAC_stop_max=max(window_stop.*DAC_en);
 fsm_counter=zeros(1,length(data));
 fsm_window_state=zeros(1,length(data));
 DAC_fsm_out=zeros(1,length(data));
-
+last_spike_sample=0;
+refractory_samples=2*fs/1e3; % 2 ms at least
 %% initialize figure with window discriminators
 figure(101)
 time_ms=1e3*(1:60)/fs;
@@ -36,7 +37,7 @@ for curr_dac=1:8
         subplot(1,2,1)
         plot(time_ms(window_samples_shifted),dac_thresholds_0195(curr_dac),incl_exc_col{DAC_edge_type(curr_dac)+1})
         hold on
-        title('detected spikes in the last two samples')
+        title('detected spikes')
         subplot(1,2,2)
         plot(time_ms(window_samples_shifted+1),dac_thresholds_0195(curr_dac),incl_exc_col{DAC_edge_type(curr_dac)+1})
         hold on
@@ -86,7 +87,7 @@ for curr_sample=1:length(data)
             else
                 fsm_window_state(curr_sample+1)=0;
                 fsm_counter(curr_sample+1)=0;
-                if fsm_counter(curr_sample)==(DAC_stop_max-1)||fsm_counter(curr_sample)==(DAC_stop_max-2)
+                if fsm_counter(curr_sample)==(DAC_stop_max-1)||fsm_counter(curr_sample)==(DAC_stop_max-2) && curr_sample>29
                     %% plotting aborted spikes in different subplot
                     figure(101)
                     subplot(1,2,2)
@@ -97,10 +98,13 @@ for curr_sample=1:length(data)
        case 2
             DAC_fsm_out(curr_sample+1)=2;
             fsm_window_state(curr_sample+1)=0;
-            figure(101)
-            subplot(1,2,1)
-            plot(time_ms,data([curr_sample-29:curr_sample+30]-DAC_stop_max),'k')
-            hold on
+            if curr_sample>29 && curr_sample>(last_spike_sample+refractory_samples)
+                figure(101)
+                subplot(1,2,1)
+                plot(time_ms,data([curr_sample-29:curr_sample+30]-DAC_stop_max),'k')
+                hold on
+                last_spike_sample=curr_sample;
+            end
    end
 
 end
