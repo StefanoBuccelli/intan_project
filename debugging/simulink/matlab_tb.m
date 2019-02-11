@@ -1,7 +1,8 @@
-clear
-clc
-close all
+% clear
+% clc
+% close all
 % matlab testbench for the spike detection with window disciriminators
+% read_Intan_RHS2000_file('C:\Users\BuccelliLab\Desktop\Prova_intan\Test Recording MM awake 02 02 2019\R18-159_2019_02_01_2_190201_143203.rhs')
 read_Intan_RHS2000_file('C:\Users\BuccelliLab\Desktop\Prova_intan\Test Recording MM awake 02 02 2019\R18-159_2019_02_01_2_190201_143203.rhs')
 fs=frequency_parameters.amplifier_sample_rate;
 data=0.195*(board_dac_data(1,:)./312.5e-6);
@@ -26,6 +27,7 @@ fsm_window_state=zeros(1,length(data));
 DAC_fsm_out=zeros(1,length(data));
 last_spike_sample=0;
 refractory_samples=2*fs/1e3; % 2 ms at least
+curr_counter=1;
 %% initialize figure with window discriminators
 figure(101)
 time_ms=1e3*(1:60)/fs;
@@ -101,9 +103,11 @@ for curr_sample=1:length(data)
             if curr_sample>29 && curr_sample>(last_spike_sample+refractory_samples)
                 figure(101)
                 subplot(1,2,1)
-                plot(time_ms,data([curr_sample-29:curr_sample+30]-DAC_stop_max),'k')
+                spikes_fsm(curr_counter,:)=data([curr_sample-29:curr_sample+30]-DAC_stop_max);
+                plot(time_ms,spikes_fsm(curr_counter,:),'k')
                 hold on
                 last_spike_sample=curr_sample;
+                curr_counter=curr_counter+1;
             end
    end
 
